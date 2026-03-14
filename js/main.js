@@ -10,7 +10,7 @@ class SPARouter {
         // Map routes to HTML files in the pages folder
         this.routes = {
             '/': 'pages/home.html',
-            '/Challenges': 'pages/Challenges.html',
+            '/challenges': 'pages/challenges.html',
             '/profile': 'pages/profile.html',
             '/games': 'pages/games.html',
             '/videos': 'pages/videos.html'
@@ -102,7 +102,7 @@ class SPARouter {
     updateTitle(route) {
         const titles = {
             '/': 'Home - FLISH FLASH',
-            '/Challenges': 'Challenges - FLISH FLASH',
+            '/challenges': 'Challenges - FLISH FLASH',
             '/profile': 'Profile - FLISH FLASH',
             '/games': 'Games - FLISH FLASH',
             '/videos': 'Videos - FLISH FLASH'
@@ -151,7 +151,8 @@ class SPARouter {
                 break;
             case '/profile':
                 break;
-            case '/Challenges':
+            case '/challenges':
+                this.initChallengesPage();
                 break;
         }
     }
@@ -252,6 +253,16 @@ class SPARouter {
             gameContainer.scrollIntoView({ behavior: 'smooth' });
         }
     }
+    initChallengesPage() {
+        // Add challenges page specific functionality
+        const categoryItems = document.querySelectorAll('.category-item');
+        categoryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                alert(`Exploring: ${item.textContent}`);
+            });
+        });
+    }
+
     async show404() {
         this.app.innerHTML = `
             <div class="error-page">
