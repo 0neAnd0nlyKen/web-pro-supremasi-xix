@@ -26,6 +26,44 @@
             padding: 20px 0; */
         }
 
+        /* Game container - don't set height to 100% */
+        .game-container {
+            display: flex;
+            /* must fill window */
+            height: 100vh; /* Full viewport height */
+            scroll-snap-align: start;
+            scroll-snap-stop: always; /* Prevent skipping containers */
+            /* gap: 20px;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2); */
+        }
+
+        /* Ensure columns don't force height */
+        .col {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 10px; */
+        }
+
+        .left, .right {
+            /* background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 20px;
+            min-height: 350px; */
+        }
+
+        .middle {
+            /* background: rgba(0, 0, 0, 0.3);
+            min-height: 350px; */
+        }
+
     </style>
 </head>
 <body>
@@ -33,6 +71,22 @@
         <div class="container-fluid">
             <h1 style="color: white; margin-bottom: 30px; font-size: 32px;">🎮 Flash Games</h1>
             <div id="gamesFeed">
+                <!-- Template game container -->
+                <div class="game-container">
+                    <!-- Left column -->
+                    <div class="col left">
+                        <!-- Thumbnail and info will be injected here by JS -->
+                    </div>
+                    
+                    <!-- Middle column with Flash/Ruffle player -->
+                    <div class="col middle">
+                    </div>
+                    
+                    <!-- Right column -->
+                    <div class="col right">
+                        <!-- Additional controls will be injected here by JS -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
