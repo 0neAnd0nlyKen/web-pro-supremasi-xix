@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Feed - Ruffle Player</title>
+    
+
+    <style>
+        .games-page {
+            height: 100vh;
+            overflow-y: scroll; /* Enable scrolling on games-page */
+            scroll-snap-type: y mandatory; /* Enable snap scrolling */
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+            /* 
+            height: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2); */
+        }
+
+        /* Games feed container */
+        #gamesFeed {
+            display: flex;
+            flex-direction: column;
+            /* gap: 20px;
+            padding: 20px 0; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="games-page">
+        <div class="container-fluid">
+            <h1 style="color: white; margin-bottom: 30px; font-size: 32px;">🎮 Flash Games</h1>
+            <div id="gamesFeed">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
