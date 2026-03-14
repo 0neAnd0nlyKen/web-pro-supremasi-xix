@@ -252,6 +252,28 @@ class SPARouter {
             gameContainer.scrollIntoView({ behavior: 'smooth' });
         }
     }
+    async show404() {
+        this.app.innerHTML = `
+            <div class="error-page">
+                <h1>404 - Page Not Found</h1>
+                <p>The page you're looking for doesn't exist.</p>
+                <button onclick="router.navigateTo('/')">Go Home</button>
+            </div>
+        `;
+    }
+
+    showError(error, file) {
+        this.app.innerHTML = `
+            <div class="error-page">
+                <h1>Error Loading Page</h1>
+                <p>Could not load ${file}</p>
+                <p style="color: #ff6b6b; margin-top: 10px;">${error.message}</p>
+                <button onclick="router.navigateTo('/')">Go Home</button>
+            </div>
+        `;
+    }
+}
+
 // Initialize the router
 const router = new SPARouter();
 
