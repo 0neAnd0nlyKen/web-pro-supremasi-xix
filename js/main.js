@@ -147,11 +147,109 @@ class SPARouter {
     initPageFunctions(route) {
         switch(route) {
             case '/games':
+                this.initGamesFeed();
                 break;
             case '/profile':
                 break;
             case '/Challenges':
                 break;
+        }
+    }
+
+    initGamesFeed() {
+        const gamesFeed = document.getElementById('gamesFeed');
+        if (!gamesFeed) return;
+
+        // Games array
+        const games = [
+            {
+                id: 1,
+                name: 'Billiards 2 Play',
+                swfPath: './assets/games/2_billiards-2-play/2_billiards_2_play.swf',
+                thumbnail: './assets/games/2_billiards-2-play/__ia_thumb.jpg',
+                description: 'Classic 2-player billiards game'
+            },
+            {
+                id: 2,
+                name: 'Sample Game 2',
+                swfPath: './assets/games/2_billiards-2-play/2_billiards_2_play.swf',
+                thumbnail: './assets/games/2_billiards-2-play/__ia_thumb.jpg',
+                description: 'Another exciting game'
+            },
+            {
+                id: 3,
+                name: 'Sample Game 3',
+                swfPath: './assets/games/sample-game3/game.swf',
+                thumbnail: './assets/games/sample-game3/thumb.jpg',
+                description: 'Third sample game'
+            }
+        ];
+
+        // Get template
+        const template = document.querySelector('.game-container');
+        if (!template) return;
+
+        // Clear feed
+        gamesFeed.innerHTML = '';
+
+        // Create game containers
+        games.forEach((game) => {
+            const gameContainer = template.cloneNode(true);
+            
+            gameContainer.dataset.gameId = game.id;
+            gameContainer.dataset.gameName = game.name;
+            
+            // Set up object tag
+            const objectEl = gameContainer.querySelector('object');
+            if (objectEl) {
+                objectEl.setAttribute('data', game.swfPath);
+                objectEl.setAttribute('type', 'application/x-shockwave-flash');
+            }
+            
+            // Add content to left column
+            const leftCol = gameContainer.querySelector('.col.left');
+            if (leftCol) {
+                leftCol.innerHTML = `
+                    <div style="text-align: center; width: 100%;">
+                        <img src="${game.thumbnail}" 
+                             alt="${game.name}"
+                             style="width: 100%; max-width: 150px; height: auto; border-radius: 8px; margin-bottom: 10px; border: 2px solid rgba(255,255,255,0.2);"
+                             onerror="this.src='assets/games/placeholder.jpg'">
+                        <h3 style="font-size: 18px; margin: 10px 0 5px; color: white;">${game.name}</h3>
+                        <p style="font-size: 14px; opacity: 0.8; margin: 0; color: white;">${game.description}</p>
+                    </div>
+                `;
+            }
+            
+            // Add content to right column
+            const rightCol = gameContainer.querySelector('.col.right');
+            if (rightCol) {
+                rightCol.innerHTML = `
+                    <div style="text-align: center; color: white;">
+                        <button onclick="router.loadGame(${game.id})" 
+                                style="background: #F6AE4E; border: none; color: white; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">
+                            Play
+                        </button>
+                        <div style="font-size: 12px; opacity: 0.6;">
+                            <div>❤️ 123</div>
+                            <div>▶️ ${game.id}K plays</div>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            gamesFeed.appendChild(gameContainer);
+        });
+
+        console.log(`✅ Loaded ${games.length} games`);
+    }
+
+    loadGame(gameId) {
+        console.log(`Loading game ${gameId}`);
+        // Optional: Implement fullscreen or dedicated view
+        const gameContainer = document.querySelector(`[data-game-id="${gameId}"]`);
+        if (gameContainer) {
+            gameContainer.scrollIntoView({ behavior: 'smooth' });
         }
     }
 // Initialize the router
