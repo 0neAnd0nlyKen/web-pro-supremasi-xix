@@ -1,0 +1,140 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent body scrolling */
+}
+/* Layout */
+.layout {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+/* Sidebar - Now hideable and positioned above content */
+.sidebar {
+    width: 260px;
+    background: #F6AE4E;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: fixed;
+    top: 0;
+    left: -260px; /* Hidden by default */
+    bottom: 0;
+    z-index: 2000; /* Higher z-index to appear above content */
+    overflow-y: auto;
+    transition: left 0.3s ease; /* Smooth transition */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar visible state */
+.sidebar.visible {
+    left: 0; /* Slide in when visible */
+}
+
+/* Overlay when sidebar is open */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1500;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar-overlay.visible {
+    display: block;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2500;
+    background: #F6AE4E;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+
+/* Logo */
+.logo {
+    border: 4px solid white;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Menu */
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Menu Item */
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    margin-left: 0;
+    background: #000;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+#app {
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+/* Page Styles - Keep existing page styles */
+.page {
+    height: 100%;
+    overflow-y: auto;
+    color: white;
+}
