@@ -64,6 +64,22 @@
             min-height: 350px; */
         }
 
+        .game-wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            /* border-radius: 8px;
+            background: #2a2a2a; */
+        }
+
+        object, ruffle-player {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }        
     </style>
 </head>
 <body>
@@ -80,6 +96,20 @@
                     
                     <!-- Middle column with Flash/Ruffle player -->
                     <div class="col middle">
+                        <div class="game-wrapper">
+                            <object 
+                                type="application/x-shockwave-flash" 
+                                data=""  
+                                width="100%" 
+                                height="100%"
+                            >
+                                <param name="quality" value="high">
+                                <param name="wmode" value="transparent">
+                                <p>Flash content not supported. 
+                                   <a href="https://ruffle.rs" style="color: #F6AE4E;">Get Ruffle</a>
+                                </p>
+                            </object>
+                        </div>
                     </div>
                     
                     <!-- Right column -->
@@ -91,5 +121,7 @@
         </div>
     </div>
 
+    <!-- Ruffle CDN -->
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </body>
 </html>
