@@ -174,3 +174,16 @@ html, body {
     overflow-y: auto;
     color: white;
 }
+@media (max-width: 768px) {
+    .sidebar {
+        width: 220px;
+    }
+    .game-container {
+        flex-direction: column;
+    }
+    
+    .col {
+        width: 100%;
+        min-height: 250px;
+    }
+}
