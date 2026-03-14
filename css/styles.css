@@ -70,6 +70,9 @@ html, body {
     transition: all 0.3s ease;
 }
 
+.menu-toggle:hover {
+    background: #e09d3e;
+}
 
 .menu-toggle span {
     width: 25px;
@@ -79,6 +82,18 @@ html, body {
     transition: all 0.3s ease;
 }
 
+/* Menu toggle animation when sidebar is open */
+.menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
 
 /* Logo */
 .logo {
@@ -114,6 +129,27 @@ html, body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+.menu-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.menu-item img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+/* Active Menu Item */
+.menu-item.active {
+    background: white;
+    color: #F6504A;
+}
+
+.menu-item.active img {
+    filter: invert(39%) sepia(71%) saturate(3653%) hue-rotate(339deg);
+}
+
 /* Main Content Area */
 .main-content {
     flex: 1;
