@@ -254,15 +254,141 @@ class SPARouter {
         }
     }
     initChallengesPage() {
-        // Add challenges page specific functionality
-        const categoryItems = document.querySelectorAll('.category-item');
-        categoryItems.forEach(item => {
-            item.addEventListener('click', () => {
-                alert(`Exploring: ${item.textContent}`);
+        const topicSelector = document.getElementById('topicSelector');
+        const slidesContainer = document.getElementById('slidesContainer');
+        
+        if (!topicSelector || !slidesContainer) return;
+
+        // Fetch challenges data
+        fetch('assets/challenges.json')
+            .then(response => response.json())
+            .then(data => {
+                this.challengesData = data;
+                this.currentTopicIndex = 0;
+                
+                // Render topic buttons
+                this.renderTopicButtons(data.topics);
+                
+                // Render first topic's slides
+                this.renderSlides(data.topics[0]);
+            })
+            .catch(error => {
+                console.error('Error loading challenges:', error);
+                slidesContainer.innerHTML = '<div class="slide">Failed to load challenges</div>';
             });
+    }
+
+    renderTopicButtons(topics) {
+        const topicSelector = document.getElementById('topicSelector');
+        topicSelector.innerHTML = '';
+        
+        topics.forEach((topic, index) => {
+            const btn = document.createElement('button');
+            btn.className = `topic-btn ${index === 0 ? 'active' : ''}`;
+            btn.textContent = topic.title;
+            btn.dataset.topicIndex = index;
+            
+            btn.addEventListener('click', (e) => {
+                // Update active button
+                document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                // Render slides for selected topic
+                this.renderSlides(topics[parseInt(e.target.dataset.topicIndex)]);
+            });
+            
+            topicSelector.appendChild(btn);
         });
     }
 
+    renderSlides(topic) {
+        const slidesContainer = document.getElementById('slidesContainer');
+        slidesContainer.innerHTML = '';
+        
+        topic.slides.forEach((slide, index) => {
+            const slideDiv = document.createElement('div');
+            slideDiv.className = 'slide';
+            slideDiv.dataset.slideIndex = index;
+            
+            switch(slide.type) {
+                case 'material':
+                    slideDiv.innerHTML = slide.content;
+                    break;
+                    
+                case 'quiz':
+                    slideDiv.innerHTML = this.renderQuiz(slide);
+                    this.attachQuizHandlers(slideDiv, slide);
+                    break;
+                    
+                case 'external':
+                    slideDiv.innerHTML = `
+                        <div class="external-card">
+                            ${slide.content}
+                            <a href="${slide.link}" target="_blank" class="external-link">Open Project</a>
+                        </div>
+                    `;
+                    break;
+            }
+            
+            slidesContainer.appendChild(slideDiv);
+        });
+    }
+
+    renderQuiz(slide) {
+        return `
+            <div class="quiz-container">
+                <div class="quiz-question">${slide.question}</div>
+                <div class="quiz-answers">
+                    <div class="chooseAnswer" data-answer="1">A. ${slide.answerA}</div>
+                    <div class="chooseAnswer" data-answer="2">B. ${slide.answerB}</div>
+                    <div class="chooseAnswer" data-answer="3">C. ${slide.answerC}</div>
+                    <div class="chooseAnswer" data-answer="4">D. ${slide.answerD}</div>
+                </div>
+                <div class="explanation-box correct" id="correctExplanation">
+                    ${slide.explanationRight}
+                </div>
+                <div class="explanation-box wrong" id="wrongExplanation">
+                    ${slide.explanationWrong}
+                </div>
+            </div>
+        `;
+    }
+
+    attachQuizHandlers(container, slide) {
+        const answers = container.querySelectorAll('.chooseAnswer');
+        const correctBox = container.querySelector('#correctExplanation');
+        const wrongBox = container.querySelector('#wrongExplanation');
+        
+        answers.forEach(answer => {
+            answer.addEventListener('click', (e) => {
+                // Prevent multiple answers
+                if (container.querySelector('.chooseAnswer.correct') || 
+                    container.querySelector('.chooseAnswer.wrong')) {
+                    return;
+                }
+                
+                const selectedAnswer = parseInt(e.target.dataset.answer);
+                const isCorrect = (selectedAnswer === slide.rightAnswer);
+                
+                // Mark selected answer
+                e.target.classList.add(isCorrect ? 'correct' : 'wrong');
+                
+                // Show appropriate explanation
+                if (isCorrect) {
+                    correctBox.classList.add('visible');
+                } else {
+                    wrongBox.classList.add('visible');
+                    
+                    // Also highlight the correct answer
+                    answers.forEach(a => {
+                        if (parseInt(a.dataset.answer) === slide.rightAnswer) {
+                            a.classList.add('correct');
+                        }
+                    });
+                }
+            });
+        });
+    }
     async show404() {
         this.app.innerHTML = `
             <div class="error-page">
