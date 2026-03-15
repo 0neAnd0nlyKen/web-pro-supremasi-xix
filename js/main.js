@@ -10,7 +10,7 @@ class SPARouter {
         // Map routes to HTML files in the pages folder
         this.routes = {
             '/': 'pages/home.html',
-            '/challenges': 'pages/challenges.html',
+            '/challenges': 'pages/challengesTest.html',
             '/profile': 'pages/profile.html',
             '/games': 'pages/games.html',
             '/videos': 'pages/videos.html'
