@@ -1,0 +1,40 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "JavaScript Basics",
+      "slides": [
+        {
+          "type": "material",
+          "content": "<div class='material-card'><h2>What is JavaScript?</h2><p>JavaScript is a programming language that makes websites interactive.</p><img src='assets/js-logo.png' class='slide-image'></div>"
+        },
+        {
+          "type": "quiz",
+          "question": "<h3>Which keyword is used to declare a variable?</h3>",
+          "answerA": "var",
+          "answerB": "let",
+          "answerC": "const",
+          "answerD": "All of the above",
+          "rightAnswer": 4,
+          "explanationRight": "<div class='explanation correct'>✅ Correct! var, let, and const are all used to declare variables in JavaScript.</div>",
+          "explanationWrong": "<div class='explanation wrong'>❌ Not quite. The correct answer is 'All of the above'. var, let, and const are all variable declarations.</div>"
+        },
+        {
+          "type": "external",
+          "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+          "link": "https://scratch.mit.edu/projects/12345678"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "HTML & CSS",
+      "slides": [
+        {
+          "type": "material",
+          "content": "<div class='material-card'><h2>HTML Structure</h2><p>HTML uses tags to structure content on the web.</p><pre>&lt;div&gt;Hello World&lt;/div&gt;</pre></div>"
+        }
+      ]
+    }
+  ]
+}
