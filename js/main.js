@@ -278,23 +278,53 @@ class SPARouter {
     renderTopicList(topics) {
         const topicList = document.getElementById('topicList');
         topicList.innerHTML = '';
-        
+
+        // Small SVG placeholder as a fallback image
+        const placeholderSvg = `data:image/svg+xml;base64,${btoa(`
+            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="240">
+                <rect width="100%" height="100%" fill="#2b2d42" />
+                <text x="50%" y="50%" fill="#edf2f4" font-family="system-ui, sans-serif" font-size="72" text-anchor="middle" dominant-baseline="middle">?</text>
+            </svg>
+        `)}`;
+
         topics.forEach((topic, index) => {
-            const item = document.createElement('div');
-            item.className = 'topic-list-item';
-            item.textContent = topic.title;
-            item.dataset.topicIndex = index;
-            
-            item.addEventListener('click', (e) => {
+            const card = document.createElement('div');
+            card.className = 'topic-card';
+            card.dataset.topicIndex = index;
+
+            const badge = document.createElement('div');
+            badge.className = 'topic-card-badge';
+            badge.textContent = topic.title?.trim()?.[0]?.toUpperCase() || '';
+
+            const img = document.createElement('img');
+            img.alt = `${topic.title} thumbnail`;
+            img.src = `assets/challenges/${topic.title.toLowerCase()}/a.png`;
+            img.onerror = () => {
+                img.src = placeholderSvg;
+            };
+
+            const body = document.createElement('div');
+            body.className = 'topic-card-body';
+
+            const title = document.createElement('div');
+            title.className = 'topic-card-title';
+            title.textContent = topic.title;
+
+            body.appendChild(title);
+            card.appendChild(badge);
+            card.appendChild(img);
+            card.appendChild(body);
+
+            card.addEventListener('click', (e) => {
                 // Hide topic list
                 topicList.style.display = 'none';
-                
+
                 // Show topic selector
                 document.getElementById('topicSelector').style.display = 'flex';
-                
+
                 // Render topic buttons
                 this.renderTopicButtons(topics);
-                
+
                 // Set active button for selected topic
                 const buttons = document.querySelectorAll('.topic-btn');
                 buttons.forEach((btn, i) => {
@@ -304,12 +334,12 @@ class SPARouter {
                         btn.classList.remove('active');
                     }
                 });
-                
+
                 // Render slides for selected topic
                 this.renderSlides(topic);
             });
-            
-            topicList.appendChild(item);
+
+            topicList.appendChild(card);
         });
     }
 

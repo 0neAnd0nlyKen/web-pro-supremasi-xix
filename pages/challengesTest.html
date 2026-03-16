@@ -47,35 +47,74 @@
             border-color: white;
         }
 
-        /* Topic List */
+        /* Topic Grid */
         .topic-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            padding: 24px;
+            justify-items: center;
+            align-items: start;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .topic-card {
+            width: 100%;
+            max-width: 280px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 18px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            position: relative;
             display: flex;
             flex-direction: column;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .topic-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            display: block;
+            background: rgba(0,0,0,0.15);
+        }
+
+        .topic-card-body {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .topic-card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: white;
+            margin: 0;
+        }
+
+        .topic-card-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            width: 44px;
+            height: 44px;
+            border-radius: 14px;
+            background: rgba(0,0,0,0.6);
+            display: flex;
             align-items: center;
             justify-content: center;
-            height: 100%;
-            padding: 20px;
-        }
-
-        .topic-list-item {
-            width: 100%;
-            max-width: 400px;
-            padding: 20px;
-            margin: 10px 0;
-            background: rgba(255,255,255,0.1);
-            border: 2px solid transparent;
-            border-radius: 15px;
+            font-size: 22px;
+            font-weight: 700;
             color: white;
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: 600;
-            text-align: center;
-            transition: all 0.2s;
-        }
-
-        .topic-list-item:hover {
-            background: rgba(255,255,255,0.2);
-            border-color: #F6AE4E;
+            border: 1px solid rgba(255,255,255,0.2);
         }
 
         /* Slides Container */
