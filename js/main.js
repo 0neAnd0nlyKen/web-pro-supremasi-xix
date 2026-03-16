@@ -254,28 +254,63 @@ class SPARouter {
         }
     }
     initChallengesPage() {
+        const topicList = document.getElementById('topicList');
         const topicSelector = document.getElementById('topicSelector');
         const slidesContainer = document.getElementById('slidesContainer');
         
-        if (!topicSelector || !slidesContainer) return;
+        if (!topicList || !topicSelector || !slidesContainer) return;
 
         // Fetch challenges data
         fetch('assets/challenges.json')
             .then(response => response.json())
             .then(data => {
                 this.challengesData = data;
-                this.currentTopicIndex = 0;
                 
-                // Render topic buttons
-                this.renderTopicButtons(data.topics);
-                
-                // Render first topic's slides
-                this.renderSlides(data.topics[0]);
+                // Render topic list
+                this.renderTopicList(data.topics);
             })
             .catch(error => {
                 console.error('Error loading challenges:', error);
                 slidesContainer.innerHTML = '<div class="slide">Failed to load challenges</div>';
             });
+    }
+
+    renderTopicList(topics) {
+        const topicList = document.getElementById('topicList');
+        topicList.innerHTML = '';
+        
+        topics.forEach((topic, index) => {
+            const item = document.createElement('div');
+            item.className = 'topic-list-item';
+            item.textContent = topic.title;
+            item.dataset.topicIndex = index;
+            
+            item.addEventListener('click', (e) => {
+                // Hide topic list
+                topicList.style.display = 'none';
+                
+                // Show topic selector
+                document.getElementById('topicSelector').style.display = 'flex';
+                
+                // Render topic buttons
+                this.renderTopicButtons(topics);
+                
+                // Set active button for selected topic
+                const buttons = document.querySelectorAll('.topic-btn');
+                buttons.forEach((btn, i) => {
+                    if (i === index) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+                
+                // Render slides for selected topic
+                this.renderSlides(topic);
+            });
+            
+            topicList.appendChild(item);
+        });
     }
 
     renderTopicButtons(topics) {
@@ -284,7 +319,7 @@ class SPARouter {
         
         topics.forEach((topic, index) => {
             const btn = document.createElement('button');
-            btn.className = `topic-btn ${index === 0 ? 'active' : ''}`;
+            btn.className = 'topic-btn';
             btn.textContent = topic.title;
             btn.dataset.topicIndex = index;
             
@@ -305,31 +340,93 @@ class SPARouter {
         const slidesContainer = document.getElementById('slidesContainer');
         slidesContainer.innerHTML = '';
         
-        topic.slides.forEach((slide, index) => {
+        const types = Object.keys(topic.slides);
+        
+        types.forEach((type, typeIndex) => {
             const slideDiv = document.createElement('div');
             slideDiv.className = 'slide';
-            slideDiv.dataset.slideIndex = index;
+            slideDiv.dataset.type = type;
+            slideDiv.dataset.typeIndex = typeIndex;
             
-            switch(slide.type) {
-                case 'material':
-                    slideDiv.innerHTML = slide.content;
-                    break;
-                    
-                case 'quiz':
-                    slideDiv.innerHTML = this.renderQuiz(slide);
-                    this.attachQuizHandlers(slideDiv, slide);
-                    break;
-                    
-                case 'external':
-                    slideDiv.innerHTML = `
-                        <div class="external-card">
-                            ${slide.content}
-                            <a href="${slide.link}" target="_blank" class="external-link">Open Project</a>
-                        </div>
-                    `;
-                    break;
-            }
+            const subSlides = topic.slides[type];
+            let currentSubIndex = 0;
             
+            // Create content container
+            const contentContainer = document.createElement('div');
+            contentContainer.className = 'slide-content';
+            
+            // Create navigation buttons
+            const navDiv = document.createElement('div');
+            navDiv.className = 'slide-navigation';
+            
+            const prevBtn = document.createElement('button');
+            prevBtn.className = 'nav-btn prev-btn';
+            prevBtn.textContent = '← Previous';
+            prevBtn.disabled = currentSubIndex === 0;
+            
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'nav-btn next-btn';
+            nextBtn.textContent = 'Next →';
+            nextBtn.disabled = subSlides.length <= 1;
+            
+            const counter = document.createElement('span');
+            counter.className = 'slide-counter';
+            counter.textContent = `${currentSubIndex + 1} / ${subSlides.length}`;
+            
+            navDiv.appendChild(prevBtn);
+            navDiv.appendChild(counter);
+            navDiv.appendChild(nextBtn);
+            
+            // Function to render current sub-slide
+            const renderCurrentSubSlide = () => {
+                contentContainer.innerHTML = '';
+                const subSlide = subSlides[currentSubIndex];
+                
+                switch(type) {
+                    case 'material':
+                        contentContainer.innerHTML = subSlide.content;
+                        break;
+                        
+                    case 'quiz':
+                        contentContainer.innerHTML = this.renderQuiz(subSlide);
+                        this.attachQuizHandlers(contentContainer, subSlide);
+                        break;
+                        
+                    case 'external':
+                        contentContainer.innerHTML = `
+                            <div class="external-card">
+                                ${subSlide.content}
+                                <a href="${subSlide.link}" target="_blank" class="external-link">Open Project</a>
+                            </div>
+                        `;
+                        break;
+                }
+                
+                counter.textContent = `${currentSubIndex + 1} / ${subSlides.length}`;
+                prevBtn.disabled = currentSubIndex === 0;
+                nextBtn.disabled = currentSubIndex === subSlides.length - 1;
+            };
+            
+            // Attach navigation handlers
+            prevBtn.addEventListener('click', () => {
+                if (currentSubIndex > 0) {
+                    currentSubIndex--;
+                    renderCurrentSubSlide();
+                }
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                if (currentSubIndex < subSlides.length - 1) {
+                    currentSubIndex++;
+                    renderCurrentSubSlide();
+                }
+            });
+            
+            // Initial render
+            renderCurrentSubSlide();
+            
+            slideDiv.appendChild(contentContainer);
+            slideDiv.appendChild(navDiv);
             slidesContainer.appendChild(slideDiv);
         });
     }

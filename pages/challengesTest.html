@@ -8,10 +8,12 @@
     <style>
         /* Challenges Container */
         .challenges-page {
-            height: 100%;
+            height: 100vh;
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
-            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
         }
 
         .topic-selector {
@@ -45,9 +47,40 @@
             border-color: white;
         }
 
+        /* Topic List */
+        .topic-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 20px;
+        }
+
+        .topic-list-item {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            margin: 10px 0;
+            background: rgba(255,255,255,0.1);
+            border: 2px solid transparent;
+            border-radius: 15px;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .topic-list-item:hover {
+            background: rgba(255,255,255,0.2);
+            border-color: #F6AE4E;
+        }
+
         /* Slides Container */
         .slides-container {
-            height: calc(100% - 80px);
+            flex: 1;
             overflow-y: auto;
             scroll-snap-type: y mandatory;
         }
@@ -55,13 +88,19 @@
         .slide {
             min-height: 100%;
             scroll-snap-align: start;
-            padding: 40px;
+            padding: 5px;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
             background: rgba(255,255,255,0.05);
             border-bottom: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .slide-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         /* Material Slide */
@@ -223,13 +262,53 @@
             font-size: 48px;
             margin: 20px 0;
             color: #F6AE4E;
-        }    
+        }
+
+        /* Slide Navigation */
+        .slide-navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover:not(:disabled) {
+            background: rgba(255,255,255,0.2);
+            border-color: #F6AE4E;
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .slide-counter {
+            color: white;
+            font-weight: 600;
+            min-width: 60px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <div class="challenges-page">
+        <!-- Topic list -->
+        <div class="topic-list" id="topicList"></div>
+        
         <!-- Topic selector -->
-        <div class="topic-selector" id="topicSelector"></div>
+        <div class="topic-selector" id="topicSelector" style="display: none;"></div>
         
         <!-- Slides container -->
         <div class="slides-container" id="slidesContainer"></div>
