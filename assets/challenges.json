@@ -1,0 +1,95 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "Platformer",
+      "slides": {
+        "material": [
+          {
+            "content": "<div class='material-card'><h2>What is JavaScript?</h2><p>JavaScript is a programming language that makes websites interactive.How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? </p><img src='assets/js-logo.png' class='slide-image'></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>What JavaScript?</h2><p>JavaScript is a programming language that makes websites interactive.How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? </p><img src='assets/js-logo.png' class='slide-image'></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>What is?</h2><p>JavaScript is a programming language that makes websites interactive.How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? </p><img src='assets/js-logo.png' class='slide-image'></div>"
+          }
+        ],
+        "quiz": [
+          {
+            "question": "<h3>Which action should happen if you follow the flowchart?</h3> <img src='assets/challenges/platformer/a.png' class='slide-image question'>",
+            "answerA": "<img src='assets/challenges/platformer/1.png' class='slide-image answers'>",
+            "answerB": "<img src='assets/challenges/platformer/2.png' class='slide-image answers'>",
+            "answerC": "<img src='assets/challenges/platformer/3.png' class='slide-image answers'>",
+            "answerD": "<img src='assets/challenges/platformer/4.png' class='slide-image answers'>",
+            "rightAnswer": 2,
+            "explanationRight": "<div class='explanation correct'>✅ Correct! var, let, and const are all used to declare variables in JavaScript.</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Not quite. The correct answer is 'All of the above'. var, let, and const are all variable declarations.</div>"
+          }
+        ],
+        "external": [
+          {
+            "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+            "link": "https://scratch.mit.edu/projects/12345678"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Adventure",
+      "slides": {
+        "material": [
+          {
+            "content": "<div class='material-card'><h2>HTML Structure</h2><p>HTML uses tags to structure content on the web.</p><pre>&lt;div&gt;Hello World&lt;/div&gt;</pre></div>"
+          }
+        ],
+        "quiz": [
+          {
+            "question": "<h3>What part is important for an Adventure type game to be fun to play?</h3>",
+            "answerA": "Story",
+            "answerB": "Gameplay",
+            "answerC": "OSTs",
+            "answerD": "All of aboce",
+            "rightAnswer": 4,
+            "explanationRight": "<div class='explanation correct'>✅ Correct! Everything on the top is as important as the other, because if one is lacking it will be.....</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Not quite. The correct answer is 'All of the above'. because.....</div>"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "Simulation",
+      "slides": {
+        "material": [
+          {
+            "content": "<div class='material-card'><h2>HTML Structure</h2><p>HTML uses tags to structure content on the web.</p><pre>&lt;div&gt;Hello World&lt;/div&gt;</pre></div>"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": "Puzzle",
+      "slides": {
+        "material": [
+          {
+            "content": "<div class='material-card'><h2>HTML Structure</h2><p>HTML uses tags to structure content on the web.</p><pre>&lt;div&gt;Hello World&lt;/div&gt;</pre></div>"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": "Cooking",
+      "slides": {
+        "material": [
+          {
+            "content": "<div class='material-card'><h2>HTML Structure</h2><p>HTML uses tags to structure content on the web.</p><pre>&lt;div&gt;Hello World&lt;/div&gt;</pre></div>"
+          }
+        ]
+      }
+    }
+  ]
+}

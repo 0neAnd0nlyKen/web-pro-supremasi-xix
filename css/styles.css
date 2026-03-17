@@ -23,7 +23,7 @@ html, body {
     gap: 40px;
     position: fixed;
     top: 0;
-    left: -260px; /* Hidden by default */
+    left: -300px; /* Hidden by default */
     bottom: 0;
     z-index: 2000; /* Higher z-index to appear above content */
     overflow-y: auto;

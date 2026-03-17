@@ -10,7 +10,7 @@ class SPARouter {
         // Map routes to HTML files in the pages folder
         this.routes = {
             '/': 'pages/home.html',
-            '/challenges': 'pages/challenges.html',
+            '/challenges': 'pages/challengesTest.html',
             '/profile': 'pages/profile.html',
             '/games': 'pages/games.html',
             '/videos': 'pages/videos.html'
@@ -254,15 +254,268 @@ class SPARouter {
         }
     }
     initChallengesPage() {
-        // Add challenges page specific functionality
-        const categoryItems = document.querySelectorAll('.category-item');
-        categoryItems.forEach(item => {
-            item.addEventListener('click', () => {
-                alert(`Exploring: ${item.textContent}`);
+        const topicList = document.getElementById('topicList');
+        const topicSelector = document.getElementById('topicSelector');
+        const slidesContainer = document.getElementById('slidesContainer');
+        
+        if (!topicList || !topicSelector || !slidesContainer) return;
+
+        // Fetch challenges data
+        fetch('assets/challenges.json')
+            .then(response => response.json())
+            .then(data => {
+                this.challengesData = data;
+                
+                // Render topic list
+                this.renderTopicList(data.topics);
+            })
+            .catch(error => {
+                console.error('Error loading challenges:', error);
+                slidesContainer.innerHTML = '<div class="slide">Failed to load challenges</div>';
             });
+    }
+
+    renderTopicList(topics) {
+        const topicList = document.getElementById('topicList');
+        topicList.innerHTML = '';
+
+        // Small SVG placeholder as a fallback image
+        const placeholderSvg = `data:image/svg+xml;base64,${btoa(`
+            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="240">
+                <rect width="100%" height="100%" fill="#2b2d42" />
+                <text x="50%" y="50%" fill="#edf2f4" font-family="system-ui, sans-serif" font-size="72" text-anchor="middle" dominant-baseline="middle">?</text>
+            </svg>
+        `)}`;
+
+        topics.forEach((topic, index) => {
+            const card = document.createElement('div');
+            card.className = 'topic-card';
+            card.dataset.topicIndex = index;
+
+            const badge = document.createElement('div');
+            badge.className = 'topic-card-badge';
+            badge.textContent = topic.title?.trim()?.[0]?.toUpperCase() || '';
+
+            const img = document.createElement('img');
+            img.alt = `${topic.title} thumbnail`;
+            img.src = `assets/challenges/${topic.title.toLowerCase()}/a.png`;
+            img.onerror = () => {
+                img.src = placeholderSvg;
+            };
+
+            const body = document.createElement('div');
+            body.className = 'topic-card-body';
+
+            const title = document.createElement('div');
+            title.className = 'topic-card-title';
+            title.textContent = topic.title;
+
+            body.appendChild(title);
+            card.appendChild(badge);
+            card.appendChild(img);
+            card.appendChild(body);
+
+            card.addEventListener('click', (e) => {
+                // Hide topic list
+                topicList.style.display = 'none';
+
+                // Show topic selector
+                document.getElementById('topicSelector').style.display = 'flex';
+
+                // Render topic buttons
+                this.renderTopicButtons(topics);
+
+                // Set active button for selected topic
+                const buttons = document.querySelectorAll('.topic-btn');
+                buttons.forEach((btn, i) => {
+                    if (i === index) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+
+                // Render slides for selected topic
+                this.renderSlides(topic);
+            });
+
+            topicList.appendChild(card);
         });
     }
 
+    renderTopicButtons(topics) {
+        const topicSelector = document.getElementById('topicSelector');
+        topicSelector.innerHTML = '';
+        
+        topics.forEach((topic, index) => {
+            const btn = document.createElement('button');
+            btn.className = 'topic-btn';
+            btn.textContent = topic.title;
+            btn.dataset.topicIndex = index;
+            
+            btn.addEventListener('click', (e) => {
+                // Update active button
+                document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                // Render slides for selected topic
+                this.renderSlides(topics[parseInt(e.target.dataset.topicIndex)]);
+            });
+            
+            topicSelector.appendChild(btn);
+        });
+    }
+
+    renderSlides(topic) {
+        const slidesContainer = document.getElementById('slidesContainer');
+        slidesContainer.innerHTML = '';
+        
+        const types = Object.keys(topic.slides);
+        
+        types.forEach((type, typeIndex) => {
+            const slideDiv = document.createElement('div');
+            slideDiv.className = 'slide';
+            slideDiv.dataset.type = type;
+            slideDiv.dataset.typeIndex = typeIndex;
+            
+            const subSlides = topic.slides[type];
+            let currentSubIndex = 0;
+            
+            // Create content container
+            const contentContainer = document.createElement('div');
+            contentContainer.className = 'slide-content';
+            
+            // Create navigation buttons
+            const navDiv = document.createElement('div');
+            navDiv.className = 'slide-navigation';
+            
+            const prevBtn = document.createElement('button');
+            prevBtn.className = 'nav-btn prev-btn';
+            prevBtn.textContent = '← Previous';
+            prevBtn.disabled = currentSubIndex === 0;
+            
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'nav-btn next-btn';
+            nextBtn.textContent = 'Next →';
+            nextBtn.disabled = subSlides.length <= 1;
+            
+            const counter = document.createElement('span');
+            counter.className = 'slide-counter';
+            counter.textContent = `${currentSubIndex + 1} / ${subSlides.length}`;
+            
+            navDiv.appendChild(prevBtn);
+            navDiv.appendChild(counter);
+            navDiv.appendChild(nextBtn);
+            
+            // Function to render current sub-slide
+            const renderCurrentSubSlide = () => {
+                contentContainer.innerHTML = '';
+                const subSlide = subSlides[currentSubIndex];
+                
+                switch(type) {
+                    case 'material':
+                        contentContainer.innerHTML = subSlide.content;
+                        break;
+                        
+                    case 'quiz':
+                        contentContainer.innerHTML = this.renderQuiz(subSlide);
+                        this.attachQuizHandlers(contentContainer, subSlide);
+                        break;
+                        
+                    case 'external':
+                        contentContainer.innerHTML = `
+                            <div class="external-card">
+                                ${subSlide.content}
+                                <a href="${subSlide.link}" target="_blank" class="external-link">Open Project</a>
+                            </div>
+                        `;
+                        break;
+                }
+                
+                counter.textContent = `${currentSubIndex + 1} / ${subSlides.length}`;
+                prevBtn.disabled = currentSubIndex === 0;
+                nextBtn.disabled = currentSubIndex === subSlides.length - 1;
+            };
+            
+            // Attach navigation handlers
+            prevBtn.addEventListener('click', () => {
+                if (currentSubIndex > 0) {
+                    currentSubIndex--;
+                    renderCurrentSubSlide();
+                }
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                if (currentSubIndex < subSlides.length - 1) {
+                    currentSubIndex++;
+                    renderCurrentSubSlide();
+                }
+            });
+            
+            // Initial render
+            renderCurrentSubSlide();
+            
+            slideDiv.appendChild(contentContainer);
+            slideDiv.appendChild(navDiv);
+            slidesContainer.appendChild(slideDiv);
+        });
+    }
+
+    renderQuiz(slide) {
+        return `
+            <div class="quiz-container">
+                <div class="quiz-question">${slide.question}</div>
+                <div class="quiz-answers">
+                    <div class="chooseAnswer" data-answer="1">A. ${slide.answerA}</div>
+                    <div class="chooseAnswer" data-answer="2">B. ${slide.answerB}</div>
+                    <div class="chooseAnswer" data-answer="3">C. ${slide.answerC}</div>
+                    <div class="chooseAnswer" data-answer="4">D. ${slide.answerD}</div>
+                </div>
+                <div class="explanation-box correct" id="correctExplanation">
+                    ${slide.explanationRight}
+                </div>
+                <div class="explanation-box wrong" id="wrongExplanation">
+                    ${slide.explanationWrong}
+                </div>
+            </div>
+        `;
+    }
+
+    attachQuizHandlers(container, slide) {
+        const answers = container.querySelectorAll('.chooseAnswer');
+        const correctBox = container.querySelector('#correctExplanation');
+        const wrongBox = container.querySelector('#wrongExplanation');
+        
+        answers.forEach(answer => {
+            answer.addEventListener('click', (e) => {
+                // Prevent multiple answers
+                if (container.querySelector('.chooseAnswer.correct') || 
+                    container.querySelector('.chooseAnswer.wrong')) {
+                    return;
+                }
+                
+                const selectedAnswer = parseInt(e.target.dataset.answer);
+                const isCorrect = (selectedAnswer === slide.rightAnswer);
+                
+                // Mark selected answer
+                e.target.classList.add(isCorrect ? 'correct' : 'wrong');
+                
+                // Show appropriate explanation
+                if (isCorrect) {
+                    correctBox.classList.add('visible');
+                } else {
+                    wrongBox.classList.add('visible');
+                    
+                    // Also highlight the correct answer
+                    answers.forEach(a => {
+                        if (parseInt(a.dataset.answer) === slide.rightAnswer) {
+                            a.classList.add('correct');
+                        }
+                    });
+                }
+            });
+        });
+    }
     async show404() {
         this.app.innerHTML = `
             <div class="error-page">
