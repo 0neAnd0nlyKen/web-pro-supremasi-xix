@@ -2,8 +2,9 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent body scrolling */
+    overflow-x: hidden;
 }
+
 /* Layout */
 .layout {
     display: flex;
@@ -161,18 +162,15 @@ html, body {
     height: 100%;
 }
 
-
 #app {
-    height: 100vh;
-    overflow: hidden;
-    background: #000;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
 /* Page Styles - Keep existing page styles */
 .page {
-    height: 100%;
+    min-height: 100vh;
     overflow-y: auto;
-    color: white;
 }
 @media (max-width: 768px) {
     .sidebar {
