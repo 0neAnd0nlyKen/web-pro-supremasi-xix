@@ -56,8 +56,7 @@
         "last_30day_views": 433,
         "last_7day_views": 89,
         "screenshot_paths": [
-            "screenshots/homerun_20201126/__ia_thumb.jpg",
-            "screenshots/homerun_20201126/homerun_20201126_screenshot.jpg"
+            "assets/screenshots/homerun_20201126/__ia_thumb.jpg"
         ],
         "swf_file": "homerun.swf",
         "genres": [
@@ -364,37 +363,37 @@
         "last_30day_views": 947,
         "last_7day_views": 225,
         "screenshot_paths": [
-            "screenshots/stick-rpg-complete/00_coverscreenshot.png",
-            "screenshots/stick-rpg-complete/screenshot_15.png",
-            "screenshots/stick-rpg-complete/screenshot_11.png",
-            "screenshots/stick-rpg-complete/screenshot_10.png",
-            "screenshots/stick-rpg-complete/screenshot_26.png",
-            "screenshots/stick-rpg-complete/screenshot_29.png",
-            "screenshots/stick-rpg-complete/screenshot_09.png",
-            "screenshots/stick-rpg-complete/screenshot_21.png",
-            "screenshots/stick-rpg-complete/screenshot_19.png",
-            "screenshots/stick-rpg-complete/screenshot_18.png",
-            "screenshots/stick-rpg-complete/screenshot_03.png",
-            "screenshots/stick-rpg-complete/screenshot_20.png",
-            "screenshots/stick-rpg-complete/screenshot_01.png",
-            "screenshots/stick-rpg-complete/screenshot_04.png",
-            "screenshots/stick-rpg-complete/screenshot_07.png",
-            "screenshots/stick-rpg-complete/screenshot_23.png",
-            "screenshots/stick-rpg-complete/screenshot_16.png",
-            "screenshots/stick-rpg-complete/screenshot_06.png",
-            "screenshots/stick-rpg-complete/screenshot_14.png",
-            "screenshots/stick-rpg-complete/screenshot_17.png",
-            "screenshots/stick-rpg-complete/screenshot_05.png",
-            "screenshots/stick-rpg-complete/screenshot_12.png",
-            "screenshots/stick-rpg-complete/screenshot_22.png",
-            "screenshots/stick-rpg-complete/screenshot_25.png",
-            "screenshots/stick-rpg-complete/screenshot_00.png",
-            "screenshots/stick-rpg-complete/screenshot_02.png",
-            "screenshots/stick-rpg-complete/screenshot_08.png",
-            "screenshots/stick-rpg-complete/screenshot_28.png",
-            "screenshots/stick-rpg-complete/screenshot_24.png",
-            "screenshots/stick-rpg-complete/screenshot_13.png",
-            "screenshots/stick-rpg-complete/screenshot_27.png"
+            "assets/screenshots/stick-rpg-complete/screenshot_11.png",
+            "assets/screenshots/stick-rpg-complete/00_coverscreenshot.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_17.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_09.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_24.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_07.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_05.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_23.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_04.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_18.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_27.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_29.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_10.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_12.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_08.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_26.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_22.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_03.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_15.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_28.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_16.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_20.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_25.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_21.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_13.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_14.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_19.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_02.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_00.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_01.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_06.png"
         ],
         "swf_file": "Stick-RPG-Complete.swf",
         "genres": [
@@ -456,8 +455,7 @@
         "last_30day_views": 363,
         "last_7day_views": 77,
         "screenshot_paths": [
-            "screenshots/cannibals-missioneries/Cannibals_&_Missioneries_screenshot.png",
-            "screenshots/cannibals-missioneries/__ia_thumb.jpg"
+            "assets/screenshots/cannibals-missioneries/__ia_thumb.jpg"
         ],
         "swf_file": "Cannibals_&_Missioneries.swf",
         "genres": [
@@ -577,19 +575,19 @@
         "last_30day_views": 1630,
         "last_7day_views": 358,
         "screenshot_paths": [
-            "screenshots/swords-and-sandals-2/00_coverscreenshot.png",
-            "screenshots/swords-and-sandals-2/screenshot_10.png",
-            "screenshots/swords-and-sandals-2/Swords and Sandals 2.png",
-            "screenshots/swords-and-sandals-2/screenshot_09.png",
-            "screenshots/swords-and-sandals-2/screenshot_03.png",
-            "screenshots/swords-and-sandals-2/screenshot_01.png",
-            "screenshots/swords-and-sandals-2/screenshot_04.png",
-            "screenshots/swords-and-sandals-2/screenshot_07.png",
-            "screenshots/swords-and-sandals-2/screenshot_06.png",
-            "screenshots/swords-and-sandals-2/screenshot_05.png",
-            "screenshots/swords-and-sandals-2/screenshot_00.png",
-            "screenshots/swords-and-sandals-2/screenshot_02.png",
-            "screenshots/swords-and-sandals-2/screenshot_08.png"
+            "assets/screenshots/swords-and-sandals-2/00_coverscreenshot.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_09.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_07.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_05.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_04.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_10.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_08.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_03.png",
+            "assets/screenshots/swords-and-sandals-2/Swords and Sandals 2.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_02.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_00.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_01.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_06.png"
         ],
         "swf_file": "Swords and Sandals 2 (v 2.1.0).swf",
         "genres": [
@@ -719,9 +717,7 @@
         "last_30day_views": 1002,
         "last_7day_views": 192,
         "screenshot_paths": [
-            "screenshots/bloxors/Bloxorz.jpg",
-            "screenshots/bloxors/Bloxorz_thumb.jpg",
-            "screenshots/bloxors/__ia_thumb.jpg"
+            "assets/screenshots/bloxors/__ia_thumb.jpg"
         ],
         "swf_file": "bloxors.swf",
         "genres": [
@@ -1016,8 +1012,7 @@
         "last_30day_views": 824,
         "last_7day_views": 182,
         "screenshot_paths": [
-            "screenshots/candy-bar-adventure-1/00_coverscreenshot.png",
-            "screenshots/candy-bar-adventure-1/screenshot_00.png"
+            "assets/screenshots/candy-bar-adventure-1/00_coverscreenshot.png"
         ],
         "swf_file": "CandyBarAdventure (1).swf",
         "genres": [
@@ -1069,9 +1064,9 @@
         "last_30day_views": 781,
         "last_7day_views": 144,
         "screenshot_paths": [
-            "screenshots/bubble-shooter_swf/00_coverscreenshot.png",
-            "screenshots/bubble-shooter_swf/bandicam 2020-12-13 19-38-34-323.jpg",
-            "screenshots/bubble-shooter_swf/screenshot_00.png"
+            "assets/screenshots/bubble-shooter_swf/00_coverscreenshot.png",
+            "assets/screenshots/bubble-shooter_swf/bandicam 2020-12-13 19-38-34-323.jpg",
+            "assets/screenshots/bubble-shooter_swf/screenshot_00.png"
         ],
         "swf_file": "bubble-shooter.swf",
         "genres": [
@@ -1188,32 +1183,8 @@
         "last_30day_views": 590,
         "last_7day_views": 144,
         "screenshot_paths": [
-            "screenshots/bfdi_swf/00_coverscreenshot.png",
-            "screenshots/bfdi_swf/screenshot_15.png",
-            "screenshots/bfdi_swf/screenshot_11.png",
-            "screenshots/bfdi_swf/screenshot_10.png",
-            "screenshots/bfdi_swf/screenshot_09.png",
-            "screenshots/bfdi_swf/screenshot_21.png",
-            "screenshots/bfdi_swf/screenshot_19.png",
-            "screenshots/bfdi_swf/screenshot_18.png",
-            "screenshots/bfdi_swf/screenshot_03.png",
-            "screenshots/bfdi_swf/screenshot_20.png",
-            "screenshots/bfdi_swf/screenshot_01.png",
-            "screenshots/bfdi_swf/screenshot_04.png",
-            "screenshots/bfdi_swf/screenshot_07.png",
-            "screenshots/bfdi_swf/screenshot_23.png",
-            "screenshots/bfdi_swf/screenshot_16.png",
-            "screenshots/bfdi_swf/screenshot_06.png",
-            "screenshots/bfdi_swf/screenshot_14.png",
-            "screenshots/bfdi_swf/screenshot_17.png",
-            "screenshots/bfdi_swf/screenshot_05.png",
-            "screenshots/bfdi_swf/screenshot_12.png",
-            "screenshots/bfdi_swf/screenshot_22.png",
-            "screenshots/bfdi_swf/screenshot_00.png",
-            "screenshots/bfdi_swf/screenshot_02.png",
-            "screenshots/bfdi_swf/screenshot_08.png",
-            "screenshots/bfdi_swf/bandicam 2020-12-01 12-14-50-427.jpg",
-            "screenshots/bfdi_swf/screenshot_13.png"
+            "assets/screenshots/bfdi_swf/00_coverscreenshot.png",
+            "assets/screenshots/bfdi_swf/bandicam 2020-12-01 12-14-50-427.jpg"
         ],
         "swf_file": "ag-bfdi.swf",
         "genres": [
@@ -1352,8 +1323,8 @@
         "last_30day_views": 567,
         "last_7day_views": 127,
         "screenshot_paths": [
-            "screenshots/robotunicornattack_flash/RobotUnicornAttack_screenshot.jpg",
-            "screenshots/robotunicornattack_flash/__ia_thumb.jpg"
+            "assets/screenshots/robotunicornattack_flash/RobotUnicornAttack_screenshot.jpg",
+            "assets/screenshots/robotunicornattack_flash/__ia_thumb.jpg"
         ],
         "swf_file": "robotunicornattack_flash.swf",
         "genres": [
@@ -1494,31 +1465,10 @@
         "last_30day_views": 712,
         "last_7day_views": 170,
         "screenshot_paths": [
-            "screenshots/a-koopas-revenge-2/00_coverscreenshot.png",
-            "screenshots/a-koopas-revenge-2/screenshot_15.png",
-            "screenshots/a-koopas-revenge-2/screenshot_11.png",
-            "screenshots/a-koopas-revenge-2/screenshot_10.png",
-            "screenshots/a-koopas-revenge-2/screenshot_09.png",
-            "screenshots/a-koopas-revenge-2/screenshot_21.png",
-            "screenshots/a-koopas-revenge-2/screenshot_19.png",
-            "screenshots/a-koopas-revenge-2/screenshot_18.png",
-            "screenshots/a-koopas-revenge-2/screenshot_03.png",
-            "screenshots/a-koopas-revenge-2/screenshot_20.png",
-            "screenshots/a-koopas-revenge-2/screenshot_01.png",
-            "screenshots/a-koopas-revenge-2/screenshot_04.png",
-            "screenshots/a-koopas-revenge-2/screenshot_07.png",
-            "screenshots/a-koopas-revenge-2/screenshot_23.png",
-            "screenshots/a-koopas-revenge-2/screenshot_16.png",
-            "screenshots/a-koopas-revenge-2/screenshot_06.png",
-            "screenshots/a-koopas-revenge-2/screenshot_14.png",
-            "screenshots/a-koopas-revenge-2/screenshot_17.png",
-            "screenshots/a-koopas-revenge-2/screenshot_05.png",
-            "screenshots/a-koopas-revenge-2/screenshot_12.png",
-            "screenshots/a-koopas-revenge-2/screenshot_22.png",
-            "screenshots/a-koopas-revenge-2/screenshot_00.png",
-            "screenshots/a-koopas-revenge-2/screenshot_02.png",
-            "screenshots/a-koopas-revenge-2/screenshot_08.png",
-            "screenshots/a-koopas-revenge-2/screenshot_13.png"
+            "assets/screenshots/a-koopas-revenge-2/00_coverscreenshot.png",
+            "assets/screenshots/a-koopas-revenge-2/screenshot_05.png",
+            "assets/screenshots/a-koopas-revenge-2/screenshot_03.png",
+            "assets/screenshots/a-koopas-revenge-2/screenshot_06.png"
         ],
         "swf_file": "a koopa's revenge 2.swf",
         "genres": [
@@ -1576,30 +1526,7 @@
         "last_30day_views": 530,
         "last_7day_views": 112,
         "screenshot_paths": [
-            "screenshots/big-time-butter-baron/00_coverscreenshot.png",
-            "screenshots/big-time-butter-baron/screenshot_15.png",
-            "screenshots/big-time-butter-baron/screenshot_11.png",
-            "screenshots/big-time-butter-baron/screenshot_10.png",
-            "screenshots/big-time-butter-baron/screenshot_09.png",
-            "screenshots/big-time-butter-baron/screenshot_21.png",
-            "screenshots/big-time-butter-baron/screenshot_19.png",
-            "screenshots/big-time-butter-baron/screenshot_18.png",
-            "screenshots/big-time-butter-baron/screenshot_03.png",
-            "screenshots/big-time-butter-baron/screenshot_20.png",
-            "screenshots/big-time-butter-baron/screenshot_01.png",
-            "screenshots/big-time-butter-baron/screenshot_04.png",
-            "screenshots/big-time-butter-baron/screenshot_07.png",
-            "screenshots/big-time-butter-baron/screenshot_16.png",
-            "screenshots/big-time-butter-baron/screenshot_06.png",
-            "screenshots/big-time-butter-baron/screenshot_14.png",
-            "screenshots/big-time-butter-baron/screenshot_17.png",
-            "screenshots/big-time-butter-baron/screenshot_05.png",
-            "screenshots/big-time-butter-baron/screenshot_12.png",
-            "screenshots/big-time-butter-baron/screenshot_22.png",
-            "screenshots/big-time-butter-baron/screenshot_00.png",
-            "screenshots/big-time-butter-baron/screenshot_02.png",
-            "screenshots/big-time-butter-baron/screenshot_08.png",
-            "screenshots/big-time-butter-baron/screenshot_13.png"
+            "assets/screenshots/big-time-butter-baron/00_coverscreenshot.png"
         ],
         "swf_file": "Big_Time_Butter_Baron.swf",
         "genres": [
@@ -1665,9 +1592,7 @@
         "last_30day_views": 508,
         "last_7day_views": 107,
         "screenshot_paths": [
-            "screenshots/owata/__ia_thumb.jpg",
-            "screenshots/owata/owata.png",
-            "screenshots/owata/owata_thumb.jpg"
+            "assets/screenshots/owata/__ia_thumb.jpg"
         ],
         "swf_file": "owata.swf",
         "genres": [
@@ -1782,8 +1707,8 @@
         "last_30day_views": 809,
         "last_7day_views": 181,
         "screenshot_paths": [
-            "screenshots/super-mario-flash-2/00_coverscreenshot.png",
-            "screenshots/super-mario-flash-2/screenshot_00.png"
+            "assets/screenshots/super-mario-flash-2/00_coverscreenshot.png",
+            "assets/screenshots/super-mario-flash-2/screenshot_00.png"
         ],
         "swf_file": "super-mario-flash-2.swf",
         "genres": [
@@ -1896,28 +1821,7 @@
         "last_30day_views": 1240,
         "last_7day_views": 272,
         "screenshot_paths": [
-            "screenshots/madness-project-nexus-classic/00_coverscreenshot.png",
-            "screenshots/madness-project-nexus-classic/screenshot_15.png",
-            "screenshots/madness-project-nexus-classic/screenshot_11.png",
-            "screenshots/madness-project-nexus-classic/screenshot_10.png",
-            "screenshots/madness-project-nexus-classic/screenshot_09.png",
-            "screenshots/madness-project-nexus-classic/screenshot_19.png",
-            "screenshots/madness-project-nexus-classic/screenshot_18.png",
-            "screenshots/madness-project-nexus-classic/screenshot_03.png",
-            "screenshots/madness-project-nexus-classic/screenshot_20.png",
-            "screenshots/madness-project-nexus-classic/screenshot_01.png",
-            "screenshots/madness-project-nexus-classic/screenshot_04.png",
-            "screenshots/madness-project-nexus-classic/screenshot_07.png",
-            "screenshots/madness-project-nexus-classic/screenshot_16.png",
-            "screenshots/madness-project-nexus-classic/screenshot_06.png",
-            "screenshots/madness-project-nexus-classic/screenshot_14.png",
-            "screenshots/madness-project-nexus-classic/screenshot_17.png",
-            "screenshots/madness-project-nexus-classic/screenshot_05.png",
-            "screenshots/madness-project-nexus-classic/screenshot_12.png",
-            "screenshots/madness-project-nexus-classic/screenshot_00.png",
-            "screenshots/madness-project-nexus-classic/screenshot_02.png",
-            "screenshots/madness-project-nexus-classic/screenshot_08.png",
-            "screenshots/madness-project-nexus-classic/screenshot_13.png"
+            "assets/screenshots/madness-project-nexus-classic/00_coverscreenshot.png"
         ],
         "swf_file": "Madness Project Nexus Classic.swf",
         "genres": [
@@ -2056,7 +1960,7 @@
         "last_30day_views": 645,
         "last_7day_views": 155,
         "screenshot_paths": [
-            "screenshots/supersmashflash_swf/___ia_thumb.png"
+            "assets/screenshots/supersmashflash_swf/___ia_thumb.png"
         ],
         "swf_file": "SuperSmash.swf",
         "genres": [
@@ -2204,9 +2108,7 @@
         "last_30day_views": 608,
         "last_7day_views": 144,
         "screenshot_paths": [
-            "screenshots/etp_20200826/E-T-P.png",
-            "screenshots/etp_20200826/E-T-P_thumb.jpg",
-            "screenshots/etp_20200826/__ia_thumb.jpg"
+            "assets/screenshots/etp_20200826/__ia_thumb.jpg"
         ],
         "swf_file": "533001_PrisonNG.swf",
         "genres": [
@@ -2251,8 +2153,7 @@
         "last_30day_views": 250,
         "last_7day_views": 44,
         "screenshot_paths": [
-            "screenshots/flash_625-sandwich-stacker/__ia_thumb.jpg",
-            "screenshots/flash_625-sandwich-stacker/flash_625-sandwich-stacker_screenshot.jpg"
+            "assets/screenshots/flash_625-sandwich-stacker/__ia_thumb.jpg"
         ],
         "swf_file": "625-sandwich-stacker.swf",
         "genres": [
@@ -2324,10 +2225,10 @@
         "last_30day_views": 624,
         "last_7day_views": 140,
         "screenshot_paths": [
-            "screenshots/tiq2_swf/00_coverscreenshot.png",
-            "screenshots/tiq2_swf/screenshot_01.png",
-            "screenshots/tiq2_swf/bandicam 2020-11-30 08-26-42-138.jpg",
-            "screenshots/tiq2_swf/screenshot_00.png"
+            "assets/screenshots/tiq2_swf/00_coverscreenshot.png",
+            "assets/screenshots/tiq2_swf/bandicam 2020-11-30 08-26-42-138.jpg",
+            "assets/screenshots/tiq2_swf/screenshot_00.png",
+            "assets/screenshots/tiq2_swf/screenshot_01.png"
         ],
         "swf_file": "theimpossiblequiz2.swf",
         "genres": [
@@ -2383,8 +2284,8 @@
         "last_30day_views": 553,
         "last_7day_views": 131,
         "screenshot_paths": [
-            "screenshots/sports_heads_football_championship_flash/__ia_thumb.jpg",
-            "screenshots/sports_heads_football_championship_flash/sports_heads_football_championship_flash_screenshot.png"
+            "assets/screenshots/sports_heads_football_championship_flash/__ia_thumb.jpg",
+            "assets/screenshots/sports_heads_football_championship_flash/sports_heads_football_championship_flash_screenshot.png"
         ],
         "swf_file": "sports_heads_football_championship.swf",
         "genres": [
@@ -2430,7 +2331,7 @@
         "last_30day_views": 260,
         "last_7day_views": 60,
         "screenshot_paths": [
-            "screenshots/resort_empire_/00_A.png"
+            "assets/screenshots/resort_empire_/00_A.png"
         ],
         "swf_file": "resort-empire.swf",
         "genres": [
@@ -2498,8 +2399,7 @@
         "last_30day_views": 401,
         "last_7day_views": 97,
         "screenshot_paths": [
-            "screenshots/qwop_flash/__ia_thumb.jpg",
-            "screenshots/qwop_flash/qwop_flash_screenshot.png"
+            "assets/screenshots/qwop_flash/__ia_thumb.jpg"
         ],
         "swf_file": "qwop.swf",
         "genres": [
@@ -2575,7 +2475,7 @@
         "last_30day_views": 277,
         "last_7day_views": 60,
         "screenshot_paths": [
-            "screenshots/red-ball-2-the-king/00_A.png"
+            "assets/screenshots/red-ball-2-the-king/00_A.png"
         ],
         "swf_file": "redball2_theking.swf",
         "genres": [
@@ -2628,8 +2528,7 @@
         "last_30day_views": 122,
         "last_7day_views": 28,
         "screenshot_paths": [
-            "screenshots/penalty_fever/__ia_thumb.jpg",
-            "screenshots/penalty_fever/penalty_fever_screenshot.jpg"
+            "assets/screenshots/penalty_fever/__ia_thumb.jpg"
         ],
         "swf_file": "penalty_fever.swf",
         "genres": [
@@ -2677,7 +2576,7 @@
         "last_30day_views": 9,
         "last_7day_views": 0,
         "screenshot_paths": [
-            "screenshots/anime_summer_girl_dressup/00_A.png"
+            "assets/screenshots/anime_summer_girl_dressup/00_A.png"
         ],
         "swf_file": "LD22_enhanced.swf",
         "genres": [
@@ -2725,20 +2624,20 @@
         "last_30day_views": 42,
         "last_7day_views": 12,
         "screenshot_paths": [
-            "screenshots/bejeweled-ste/00_coverscreenshot.png",
-            "screenshots/bejeweled-ste/screenshot_11.png",
-            "screenshots/bejeweled-ste/screenshot_10.png",
-            "screenshots/bejeweled-ste/screenshot_09.png",
-            "screenshots/bejeweled-ste/screenshot_03.png",
-            "screenshots/bejeweled-ste/screenshot_01.png",
-            "screenshots/bejeweled-ste/screenshot_04.png",
-            "screenshots/bejeweled-ste/screenshot_07.png",
-            "screenshots/bejeweled-ste/screenshot_06.png",
-            "screenshots/bejeweled-ste/screenshot_05.png",
-            "screenshots/bejeweled-ste/screenshot_12.png",
-            "screenshots/bejeweled-ste/screenshot_00.png",
-            "screenshots/bejeweled-ste/screenshot_02.png",
-            "screenshots/bejeweled-ste/screenshot_08.png"
+            "assets/screenshots/bejeweled-ste/screenshot_11.png",
+            "assets/screenshots/bejeweled-ste/00_coverscreenshot.png",
+            "assets/screenshots/bejeweled-ste/screenshot_09.png",
+            "assets/screenshots/bejeweled-ste/screenshot_07.png",
+            "assets/screenshots/bejeweled-ste/screenshot_05.png",
+            "assets/screenshots/bejeweled-ste/screenshot_04.png",
+            "assets/screenshots/bejeweled-ste/screenshot_10.png",
+            "assets/screenshots/bejeweled-ste/screenshot_12.png",
+            "assets/screenshots/bejeweled-ste/screenshot_08.png",
+            "assets/screenshots/bejeweled-ste/screenshot_03.png",
+            "assets/screenshots/bejeweled-ste/screenshot_02.png",
+            "assets/screenshots/bejeweled-ste/screenshot_00.png",
+            "assets/screenshots/bejeweled-ste/screenshot_01.png",
+            "assets/screenshots/bejeweled-ste/screenshot_06.png"
         ],
         "swf_file": "BejeweledSte.swf",
         "genres": [
@@ -2781,7 +2680,7 @@
         "last_30day_views": 155,
         "last_7day_views": 37,
         "screenshot_paths": [
-            "screenshots/atm-m3-simulator/00_A.png"
+            "assets/screenshots/atm-m3-simulator/00_A.png"
         ],
         "swf_file": "metro_web.swf",
         "genres": [
@@ -2831,11 +2730,9 @@
         "last_30day_views": 33,
         "last_7day_views": 7,
         "screenshot_paths": [
-            "screenshots/princess_bonnie_dressup/00_coverscreenshot.png",
-            "screenshots/princess_bonnie_dressup/screenshot_01.png",
-            "screenshots/princess_bonnie_dressup/pinkurose.jpeg",
-            "screenshots/princess_bonnie_dressup/screenshot_00.png",
-            "screenshots/princess_bonnie_dressup/screenshot_02.png"
+            "assets/screenshots/princess_bonnie_dressup/00_coverscreenshot.png",
+            "assets/screenshots/princess_bonnie_dressup/pinkurose.jpeg",
+            "assets/screenshots/princess_bonnie_dressup/screenshot_00.png"
         ],
         "swf_file": "princess_bonnie_dressup.swf",
         "genres": [
@@ -2885,19 +2782,7 @@
         "last_30day_views": 31,
         "last_7day_views": 1,
         "screenshot_paths": [
-            "screenshots/chibi-maker4/00_coverscreenshot.png",
-            "screenshots/chibi-maker4/screenshot_11.png",
-            "screenshots/chibi-maker4/screenshot_10.png",
-            "screenshots/chibi-maker4/screenshot_09.png",
-            "screenshots/chibi-maker4/screenshot_03.png",
-            "screenshots/chibi-maker4/screenshot_01.png",
-            "screenshots/chibi-maker4/screenshot_04.png",
-            "screenshots/chibi-maker4/screenshot_07.png",
-            "screenshots/chibi-maker4/screenshot_06.png",
-            "screenshots/chibi-maker4/screenshot_05.png",
-            "screenshots/chibi-maker4/screenshot_00.png",
-            "screenshots/chibi-maker4/screenshot_02.png",
-            "screenshots/chibi-maker4/screenshot_08.png"
+            "assets/screenshots/chibi-maker4/00_coverscreenshot.png"
         ],
         "swf_file": "chibi-maker4.swf",
         "genres": [
@@ -2940,7 +2825,7 @@
         "last_30day_views": 21,
         "last_7day_views": 7,
         "screenshot_paths": [
-            "screenshots/polly_pocket_girl_photographer/00_A.png"
+            "assets/screenshots/polly_pocket_girl_photographer/00_A.png"
         ],
         "swf_file": "8253173674.swf",
         "genres": [
@@ -2990,15 +2875,7 @@
         "last_30day_views": 19,
         "last_7day_views": 7,
         "screenshot_paths": [
-            "screenshots/princess_hairstyle/00_coverscreenshot.png",
-            "screenshots/princess_hairstyle/screenshot_03.png",
-            "screenshots/princess_hairstyle/screenshot_01.png",
-            "screenshots/princess_hairstyle/screenshot_04.png",
-            "screenshots/princess_hairstyle/screenshot_06.png",
-            "screenshots/princess_hairstyle/screenshot_05.png",
-            "screenshots/princess_hairstyle/screenshot_00.png",
-            "screenshots/princess_hairstyle/screenshot_02.png",
-            "screenshots/princess_hairstyle/thumbhair.jpeg"
+            "assets/screenshots/princess_hairstyle/thumbhair.jpeg"
         ],
         "swf_file": "princess_hairstyle.swf",
         "genres": [
@@ -3046,7 +2923,7 @@
         "last_30day_views": 263,
         "last_7day_views": 59,
         "screenshot_paths": [
-            "screenshots/earn_to-die/00_A.jpg"
+            "assets/screenshots/earn_to-die/00_A.jpg"
         ],
         "swf_file": "74774.swf",
         "genres": [
@@ -3090,7 +2967,7 @@
         "last_30day_views": 13,
         "last_7day_views": 2,
         "screenshot_paths": [
-            "screenshots/freeway-fury-2/00_A.png"
+            "assets/screenshots/freeway-fury-2/00_A.png"
         ],
         "swf_file": "FF2.swf",
         "genres": [
