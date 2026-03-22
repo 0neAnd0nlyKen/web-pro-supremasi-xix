@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+    <link rel="stylesheet" href="/css/challenges.css">
+    <style>
+        /* Challenges Container */
+        .challenges-page {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            overflow-y: auto;
+        }
+            
+        .topic-selector {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            background: rgba(0,0,0,0.2);
+        }
+
+        .topic-btn {
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.1);
+            border: 2px solid transparent;
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+            white-space: nowrap;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .topic-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .topic-btn.active {
+            background: #F6AE4E;
+            border-color: white;
+        }
+
+        /* Slides Container */
+        .slides-container {
+            height: calc(100% - 80px);
+            overflow-y: auto;
+            scroll-snap-type: y mandatory;
+        }
+
+        .slide {
+            min-height: 100%;
+            scroll-snap-align: start;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.05);
+            border-bottom: 2px solid rgba(255,255,255,0.1);
+        }
+
+        /* Material Slide */
+        .material-card {
+            max-width: 800px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .material-card h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .material-card p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .slide-image {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        pre {
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        /* Quiz Slide */
+        .quiz-container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .quiz-question {
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .quiz-answers {
+            display: grid;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .chooseAnswer {
+            padding: 15px 20px;
+            background: rgba(255,255,255,0.05);
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: white;
+        }
+
+        .chooseAnswer:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: #F6AE4E;
+        }
+
+        .chooseAnswer.correct {
+            background: rgba(40, 167, 69, 0.3);
+            border-color: #28a745;
+            pointer-events: none;
+        }
+
+        .chooseAnswer.wrong {
+            background: rgba(220, 53, 69, 0.3);
+            border-color: #dc3545;
+            pointer-events: none;
+        }
+
+        /* Explanation Boxes */
+        .explanation-box {
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .explanation-box.visible {
+            display: block;
+        }
+
+        .explanation-box.correct {
+            background: rgba(40, 167, 69, 0.2);
+            border: 2px solid #28a745;
+        }
+
+        .explanation-box.wrong {
+            background: rgba(220, 53, 69, 0.2);
+            border: 2px solid #dc3545;
+        }
+
+        /* External Link Slide */
+        .external-card {
+            max-width: 600px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+            text-align: center;
+        }
+
+        .external-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #F6AE4E;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .external-link:hover {
+            background: #e09d3e;
+        }
+
+        /* Textbox and symbol classes */
+        .textbox {
+            background: rgba(255,255,255,0.05);
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .symbol {
+            font-size: 48px;
+            margin: 20px 0;
+            color: #F6AE4E;
+        }    
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <!-- Menu Toggle Button -->
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Sidebar Overlay -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                FLISH FLASH
+            </div>
+
+            <nav class="menu">
+                <a class="menu-item active" data-route="/">
+                    <img src="" alt="Home">
+                    <span>Home</span>
+                </a>
+
+                <a class="menu-item" data-route="/challenges">
+                    <img src="" alt="Challenges">
+                    <span>Challenges</span>
+                </a>
+                
+                <a class="menu-item" data-route="/profile">
+                    <img src="" alt="Profile">
+                    <span>Profile</span>
+                </a>
+                <a class="menu-item" data-route="/games">
+                    <img src="" alt="Games">
+                    <span>Games</span>
+                </a>
+                <a class="menu-item" data-route="/videos">
+                    <img src="" alt="Videos">
+                    <span>Videos</span>
+                </a>
+            </nav>
+        </aside>
+        
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div id="app">
+                <div class="challenges-page">
+                    <!-- Topic selector -->
+                    <div class="topic-selector" id="topicSelector"></div>
+                    
+                    <!-- Slides container -->
+                    <div class="slides-container" id="slidesContainer"></div>
+                
+            </div>
+        </main>
+    </div>
+
+    </div>
+    <script>
+
+            function initChallengesPage() {
+            const topicSelector = document.getElementById('topicSelector');
+            const slidesContainer = document.getElementById('slidesContainer');
+            
+            if (!topicSelector || !slidesContainer) return;
+            
+            // Fetch challenges data
+            fetch('/assets/challenges.json')
+                .then(response => response.json())
+                .then(data => {
+                    window.challengesData = data;
+                    window.currentTopicIndex = 0;
+                    
+                    // Render topic buttons
+                    renderTopicButtons(data.topics);
+                    
+                    // Render first topic's slides
+                    renderSlides(data.topics[0]);
+                })
+                .catch(error => {
+                    console.error('Error loading challenges:', error);
+                    slidesContainer.innerHTML = '<div class="slide">Failed to load challenges</div>';
+                });
+            }
+            
+            function renderTopicButtons(topics) {
+            const topicSelector = document.getElementById('topicSelector');
+            topicSelector.innerHTML = '';
+            
+            topics.forEach((topic, index) => {
+                const btn = document.createElement('button');
+                btn.className = `topic-btn ${index === 0 ? 'active' : ''}`;
+                btn.textContent = topic.title;
+                btn.dataset.topicIndex = index;
+                
+                btn.addEventListener('click', (e) => {
+                    // Update active button
+                    document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+                    
+                    // Render slides for selected topic
+                    renderSlides(topics[parseInt(e.target.dataset.topicIndex)]);
+                });
+                
+                topicSelector.appendChild(btn);
+            });
+            }
+            
+            function renderSlides(topic) {
+            const slidesContainer = document.getElementById('slidesContainer');
+            slidesContainer.innerHTML = '';
+            
+            topic.slides.forEach((slide, index) => {
+                const slideDiv = document.createElement('div');
+                slideDiv.className = 'slide';
+                slideDiv.dataset.slideIndex = index;
+                
+                switch(slide.type) {
+                    case 'material':
+                        slideDiv.innerHTML = slide.content;
+                        break;
+                        
+                    case 'quiz':
+                        slideDiv.innerHTML = renderQuiz(slide);
+                        attachQuizHandlers(slideDiv, slide);
+                        break;
+                        
+                    case 'external':
+                        slideDiv.innerHTML = `
+                            <div class="external-card">
+                                ${slide.content}
+                                <a href="${slide.link}" target="_blank" class="external-link">Open Project</a>
+                            </div>
+                        `;
+                        break;
+                }
+                
+                slidesContainer.appendChild(slideDiv);
+            });
+            }
+            
+            function renderQuiz(slide) {
+            return `
+                <div class="quiz-container">
+                    <div class="quiz-question">${slide.question}</div>
+                    <div class="quiz-answers">
+                        <div class="chooseAnswer" data-answer="1">A. ${slide.answerA}</div>
+                        <div class="chooseAnswer" data-answer="2">B. ${slide.answerB}</div>
+                        <div class="chooseAnswer" data-answer="3">C. ${slide.answerC}</div>
+                        <div class="chooseAnswer" data-answer="4">D. ${slide.answerD}</div>
+                    </div>
+                    <div class="explanation-box correct" id="correctExplanation">
+                        ${slide.explanationRight}
+                    </div>
+                    <div class="explanation-box wrong" id="wrongExplanation">
+                        ${slide.explanationWrong}
+                    </div>
+                </div>
+            `;
+            }
+            
+            function attachQuizHandlers(container, slide) {
+            const answers = container.querySelectorAll('.chooseAnswer');
+            const correctBox = container.querySelector('#correctExplanation');
+            const wrongBox = container.querySelector('#wrongExplanation');
+            
+            answers.forEach(answer => {
+                answer.addEventListener('click', (e) => {
+                    // Prevent multiple answers
+                    if (container.querySelector('.chooseAnswer.correct') || 
+                        container.querySelector('.chooseAnswer.wrong')) {
+                        return;
+                    }
+                    
+                    const selectedAnswer = parseInt(e.target.dataset.answer);
+                    const isCorrect = (selectedAnswer === slide.rightAnswer);
+                    
+                    // Mark selected answer
+                    e.target.classList.add(isCorrect ? 'correct' : 'wrong');
+                    
+                    // Show appropriate explanation
+                    if (isCorrect) {
+                        correctBox.classList.add('visible');
+                    } else {
+                        wrongBox.classList.add('visible');
+                        
+                        // Also highlight the correct answer
+                        answers.forEach(a => {
+                            if (parseInt(a.dataset.answer) === slide.rightAnswer) {
+                                a.classList.add('correct');
+                            }
+                        });
+                    }
+                });
+            });
+            }
+            
+            // Initialize the page after DOM is loaded
+            document.addEventListener('DOMContentLoaded', initChallengesPage);
+       
+    </script>
+</body>
+</html>
+
