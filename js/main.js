@@ -1,3 +1,4 @@
+// SPA Router with HTML File Loading
 class SPARouter {
     constructor() {
         this.app = document.getElementById('app');
@@ -21,6 +22,8 @@ class SPARouter {
         this.menuToggle = document.getElementById('menuToggle');
         this.sidebarOverlay = document.getElementById('sidebarOverlay');
         
+        this.gamesMetadata = null;
+
         this.init();
         this.initSidebar();
     }
@@ -150,6 +153,7 @@ class SPARouter {
                 this.initGamesFeed();
                 break;
             case '/profile':
+                this.initProfilePage();
                 break;
             case '/challenges':
                 this.initChallengesPage();
@@ -158,91 +162,189 @@ class SPARouter {
     }
 
     initGamesFeed() {
-        const gamesFeed = document.getElementById('gamesFeed');
-        if (!gamesFeed) return;
-
-        // Games array
-        const games = [
-            {
-                id: 1,
-                name: 'Billiards 2 Play',
-                swfPath: './assets/games/2_billiards-2-play/2_billiards_2_play.swf',
-                thumbnail: './assets/games/2_billiards-2-play/__ia_thumb.jpg',
-                description: 'Classic 2-player billiards game'
-            },
-            {
-                id: 2,
-                name: 'Sample Game 2',
-                swfPath: './assets/games/2_billiards-2-play/2_billiards_2_play.swf',
-                thumbnail: './assets/games/2_billiards-2-play/__ia_thumb.jpg',
-                description: 'Another exciting game'
-            },
-            {
-                id: 3,
-                name: 'Sample Game 3',
-                swfPath: './assets/games/sample-game3/game.swf',
-                thumbnail: './assets/games/sample-game3/thumb.jpg',
-                description: 'Third sample game'
-            }
+        const gameIds = [
+            'homerun_20201126',
+            // 'stick-rpg-complete',
+            'cannibals-missioneries',
+            // 'swords-and-sandals-2',
+            // 'bloxors',
+            'candy-bar-adventure-1'
         ];
 
-        // Get template
-        const template = document.querySelector('.game-container');
+        const gamesFeed = document.querySelector('.games-feed');
+        if (!gamesFeed) return;
+
+        const template = gamesFeed.querySelector('.game-wrapper');
         if (!template) return;
 
-        // Clear feed
+        // Keep a fresh clone template and clear the base template from DOM
+        const baseTemplate = template.cloneNode(true);
         gamesFeed.innerHTML = '';
 
-        // Create game containers
-        games.forEach((game) => {
-            const gameContainer = template.cloneNode(true);
-            
-            gameContainer.dataset.gameId = game.id;
-            gameContainer.dataset.gameName = game.name;
-            
-            // Set up object tag
-            const objectEl = gameContainer.querySelector('object');
-            if (objectEl) {
-                objectEl.setAttribute('data', game.swfPath);
-                objectEl.setAttribute('type', 'application/x-shockwave-flash');
-            }
-            
-            // Add content to left column
-            const leftCol = gameContainer.querySelector('.col.left');
-            if (leftCol) {
-                leftCol.innerHTML = `
-                    <div style="text-align: center; width: 100%;">
-                        <img src="${game.thumbnail}" 
-                             alt="${game.name}"
-                             style="width: 100%; max-width: 150px; height: auto; border-radius: 8px; margin-bottom: 10px; border: 2px solid rgba(255,255,255,0.2);"
-                             onerror="this.src='assets/games/placeholder.jpg'">
-                        <h3 style="font-size: 18px; margin: 10px 0 5px; color: white;">${game.name}</h3>
-                        <p style="font-size: 14px; opacity: 0.8; margin: 0; color: white;">${game.description}</p>
-                    </div>
-                `;
-            }
-            
-            // Add content to right column
-            const rightCol = gameContainer.querySelector('.col.right');
-            if (rightCol) {
-                rightCol.innerHTML = `
-                    <div style="text-align: center; color: white;">
-                        <button onclick="router.loadGame(${game.id})" 
-                                style="background: #F6AE4E; border: none; color: white; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">
-                            Play
-                        </button>
-                        <div style="font-size: 12px; opacity: 0.6;">
-                            <div>❤️ 123</div>
-                            <div>▶️ ${game.id}K plays</div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            gamesFeed.appendChild(gameContainer);
-        });
+        fetch('/assets/games-metadata.json')
+            .then(response => response.json())
+            .then(data => {
+                this.gamesMetadata = data;
 
-        console.log(`✅ Loaded ${games.length} games`);
+                gameIds.forEach((gameId) => {
+                    const gameInfo = this.gamesMetadata[gameId];
+                    if (!gameInfo) {
+                        console.warn(`Game metadata missing for ${gameId}`);
+                        return;
+                    }
+
+                    const metadata = gameInfo.metadata || {};
+                    const swfFile = gameInfo.swf_file;
+                    const swfPath = `assets/games/${gameId}/${swfFile}`;
+                    // const swfFile = "assets/games/a-koopas-revenge-2/a koopa's revenge 2.swf";
+                    // const swfPath = `https://archive.org/download/${gameId}/${swfFile}`;
+
+                    const gameContainer = baseTemplate.cloneNode(true);
+                    gameContainer.dataset.gameId = gameId;
+                    gameContainer.dataset.gameName = metadata.title || gameId;
+
+                    const objectEl = gameContainer.querySelector('object');
+                    if (objectEl) {
+                        console.log(`Setting SWF path for ${gameId}: ${swfPath}`);
+                        objectEl.setAttribute('data', `${swfPath}`); // "example -> games/homerun.swf"
+                        objectEl.setAttribute('type', 'application/x-shockwave-flash');
+                    }
+
+                    const titleEl = gameContainer.querySelector('.title');
+                    if (titleEl) titleEl.textContent = metadata.title || gameId;
+
+                    const yearEl = gameContainer.querySelector('.year');
+                    if (yearEl && metadata.publicdate) {
+                        let year = metadata.publicdate;
+                        const parsed = new Date(metadata.publicdate);
+                        if (!Number.isNaN(parsed.getTime())) year = parsed.getFullYear();
+                        yearEl.textContent = `Year: ${year}`;
+                    } else if (yearEl) {
+                        yearEl.textContent = '';
+                    }
+
+                    const creatorEl = gameContainer.querySelector('.creator-label');
+                    const creator = metadata.creator || metadata.uploader || 'Unknown creator';
+                    if (creatorEl) creatorEl.textContent = `Created by: ${creator}`;
+
+                    const descriptionEl = gameContainer.querySelector('.description');
+                    if (descriptionEl) descriptionEl.innerHTML = metadata.description || 'No description available.';
+
+                    const genresEl = gameContainer.querySelector('.genres');
+                    const genres = Array.isArray(gameInfo.genres) ? gameInfo.genres : (metadata.subject && Array.isArray(metadata.subject) ? metadata.subject : []);
+                    if (genresEl) genresEl.textContent = `Genres: ${genres.length ? genres.join(', ') : 'N/A'}`;
+
+                    const likesCountEl = gameContainer.querySelector('.likes-count');
+                    if (likesCountEl) likesCountEl.textContent = `Views: ${gameInfo.all_time_views || 0}`;
+
+                    const commentsCountEl = gameContainer.querySelector('.comments-count');
+                    if (commentsCountEl) commentsCountEl.textContent = `${(gameInfo.reviews || []).length} reviews`;
+
+                    const screenshotsContainer = gameContainer.querySelector('.screenshots-container');
+                    if (screenshotsContainer) {
+                        const screenshots = Array.isArray(gameInfo.screenshot_paths) 
+                            ? gameInfo.screenshot_paths.map(src => ({ 
+                                url: src.startsWith('http') ? src : src 
+                              }))
+                            : [];
+                        
+                        screenshotsContainer.innerHTML = '';
+                        
+                        if (screenshots.length) {
+                            const row1 = document.createElement('div');
+                            row1.className = 'screenshots-row';
+                            
+                            const row2 = document.createElement('div');
+                            row2.className = 'screenshots-row';
+                            
+                            const midPoint = Math.ceil(screenshots.length / 2);
+                            const firstRowScreenshots = screenshots.slice(0, midPoint);
+                            const secondRowScreenshots = screenshots.slice(midPoint);
+                            
+                            [firstRowScreenshots, secondRowScreenshots].forEach((rowScreenshots, rowIndex) => {
+                                const row = rowIndex === 0 ? row1 : row2;
+                                
+                                rowScreenshots.forEach((screenshot, index) => {
+                                    const screenshotDiv = document.createElement('div');
+                                    screenshotDiv.className = 'screenshot';
+                                    screenshotDiv.dataset.index = rowIndex === 0 ? index : index + midPoint;
+                                    
+                                    const img = document.createElement('img');
+                                    img.src = screenshot.url;
+                                    img.alt = `${metadata.title || gameId} screenshot ${screenshotDiv.dataset.index + 1}`;
+                                    img.onerror = () => {
+                                        screenshotDiv.innerHTML = '📸';
+                                    };
+                                    
+                                    screenshotDiv.appendChild(img);
+                                    screenshotDiv.addEventListener('click', () => {
+                                        console.log('Open screenshot:', screenshot.url);
+                                    });
+                                    
+                                    row.appendChild(screenshotDiv);
+                                });
+                            });
+                            
+                            if (firstRowScreenshots.length > 0) screenshotsContainer.appendChild(row1);
+                            if (secondRowScreenshots.length > 0) screenshotsContainer.appendChild(row2);
+                        } else {
+                            const screenshotDiv = document.createElement('div');
+                            screenshotDiv.className = 'screenshot';
+                            screenshotDiv.textContent = 'No screenshots available';
+                            screenshotsContainer.appendChild(screenshotDiv);
+                        }
+                    }
+
+                    const commentsList = gameContainer.querySelector('.comments-list');
+                    if (commentsList) {
+                        commentsList.innerHTML = '';
+
+                        const reviewsEl = document.createElement('div');
+                        reviewsEl.className = 'reviews';
+
+                        const reviews = Array.isArray(gameInfo.reviews) ? gameInfo.reviews : [];
+                        reviews.forEach((review) => {
+                            const reviewEl = document.createElement('div');
+                            reviewEl.className = 'review';
+                            reviewEl.innerHTML = `
+                                <strong>${review.reviewtitle || 'Untitled review'}</strong>
+                                <p>${review.reviewbody || ''}</p>
+                                <small>by ${review.reviewer || 'Anonymous'} on ${review.reviewdate || 'unknown date'}</small>
+                            `;
+                            reviewsEl.appendChild(reviewEl);
+                        });
+
+                        if (!reviews.length) {
+                            const emptyReview = document.createElement('div');
+                            emptyReview.className = 'review';
+                            emptyReview.textContent = 'No reviews available.';
+                            reviewsEl.appendChild(emptyReview);
+                        }
+
+                        commentsList.appendChild(reviewsEl);
+
+                        const commentsCount = document.createElement('div');
+                        commentsCount.className = 'comments-count';
+                        commentsCount.textContent = `${reviews.length} reviews`;
+                        commentsList.appendChild(commentsCount);
+
+                        const commentForm = document.createElement('form');
+                        commentForm.innerHTML = `
+                            <input type="text" placeholder="Write a comment..." />
+                            <button type="submit">Post</button>
+                        `;
+                        commentsList.appendChild(commentForm);
+                    }
+
+                    gamesFeed.appendChild(gameContainer);
+                });
+
+                console.log(`✅ Loaded ${gameIds.length} games`);
+            })
+            .catch(error => {
+                console.error('Error loading games metadata:', error);
+                gamesFeed.innerHTML = '<div class="slide">Failed to load games metadata</div>';
+            });
     }
 
     loadGame(gameId) {
@@ -253,6 +355,18 @@ class SPARouter {
             gameContainer.scrollIntoView({ behavior: 'smooth' });
         }
     }
+
+
+    initProfilePage() {
+        // Add profile page specific functionality
+        const editButton = document.querySelector('.edit-profile-btn');
+        if (editButton) {
+            editButton.addEventListener('click', () => {
+                alert('Edit profile functionality would go here!');
+            });
+        }
+    }
+
     initChallengesPage() {
         const topicList = document.getElementById('topicList');
         const topicSelector = document.getElementById('topicSelector');

@@ -1,0 +1,2979 @@
+{
+    "homerun_20201126": {
+        "created": 1774069748,
+        "files_count": 8,
+        "item_last_updated": 1738677293,
+        "item_size": 2141659,
+        "metadata": {
+            "identifier": "homerun_20201126",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "softwarelibrary",
+                "emulation"
+            ],
+            "description": "<div>\u304f\u307e\u306e\u30d7\u30fc\u3055\u3093\u306e\u30db\u30fc\u30e0\u30e9\u30f3\u30c0\u30fc\u30d3\u30fc</div><div>\u30bf\u30a4\u30df\u30f3\u30b0\u3092\u5408\u308f\u305b\u3066\u3001\u30de\u30a6\u30b9\u3067\u30d0\u30c3\u30c8\u3092\u632f\u308d\u3046\uff01</div><div>\u30db\u30fc\u30e0\u30e9\u30f3\u4f55\u672c\u6253\u3066\u308b\u304b\u306a\uff1f</div><div>\u30b8\u30e3\u30f3\u30eb\uff1a\u30b9\u30dd\u30fc\u30c4\u3000\u540d\u4eba\u5411\u3051\u3000\u96e3\u6613\u5ea6\uff1a\u2605\u2605\u2605\u2605\u2605</div><div><br /></div>",
+            "emulator": "ruffle-swf",
+            "language": "jpn",
+            "subject": "Flash",
+            "title": "homerun",
+            "uploader": "ars_0514_igarashi@ago-ningen.xyz",
+            "publicdate": "2020-11-26 10:02:37",
+            "addeddate": "2020-11-26 10:02:37",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "Fun game",
+                "reviewbody": "I like it",
+                "stars": "5",
+                "reviewer": "Donut McCool",
+                "reviewdate": "2021-04-16 01:41:29",
+                "createdate": "2021-04-16 01:41:29",
+                "reviewer_itemname": "@donut_mccool"
+            },
+            {
+                "reviewtitle": "\u3042^~\u3044\u3044\u3063\u3059\u306d\u3047",
+                "reviewbody": "\u30d7\u30cb\u30ad\u306e\u5fa9\u6d3b\u306b\u6d99\u304c\u3067\u3001\u51fa\u307e\u3059\u3088(\u8feb\u771f)",
+                "stars": "5",
+                "reviewer": "negitoro.2007",
+                "reviewdate": "2021-09-02 23:48:43",
+                "createdate": "2021-09-02 23:48:43",
+                "reviewer_itemname": "@user_32119"
+            },
+            {
+                "reviewtitle": "Homerun",
+                "reviewbody": "Did anyone else see Clint beat Christopher Robin?",
+                "stars": "5",
+                "reviewer": "coldsneakybee",
+                "reviewdate": "2022-01-20 00:22:59",
+                "createdate": "2022-01-20 00:22:59",
+                "reviewer_itemname": "@coldsneakybee"
+            }
+        ],
+        "all_time_views": 184056,
+        "last_30day_views": 433,
+        "last_7day_views": 89,
+        "screenshot_paths": [
+            "assets/screenshots/homerun_20201126/__ia_thumb.jpg"
+        ],
+        "swf_file": "homerun.swf",
+        "genres": [
+            "Arcade",
+            "Sports"
+        ],
+        "swf_file_path": "assets/games/homerun.swf"
+    },
+    "stick-rpg-complete": {
+        "created": 1773996348,
+        "files_count": 70,
+        "item_last_updated": 1770371482,
+        "item_size": 5349961,
+        "metadata": {
+            "identifier": "stick-rpg-complete",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "softwarelibrary",
+                "emulation"
+            ],
+            "creator": "XGen Studios",
+            "date": "2003-01-03",
+            "description": "Made by XGen Studios. Play as a stick and get money by working and selling stuff. Contains drug use and fowl language.<br />",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "Stick RPG Complete",
+                "XGen Studios"
+            ],
+            "title": "Stick RPG Complete",
+            "uploader": "ds85698@duluthedison.com",
+            "publicdate": "2021-03-29 11:13:51",
+            "addeddate": "2021-03-29 11:13:51",
+            "curation": "[curator]validator@archive.org[/curator][date]20210329111933[/date][comment]checked for malware[/comment]",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "I LOVE THIS GAME",
+                "reviewbody": "When I find out this I was addicted to it and since this game was a \nmasterpiece thank you for this game without it I be nothing",
+                "stars": "5",
+                "reviewer": "DeAndrei DeGuire",
+                "reviewdate": "2021-12-09 23:35:47",
+                "createdate": "2021-12-09 23:35:47",
+                "reviewer_itemname": "@deandrei_deguire"
+            },
+            {
+                "reviewtitle": "Love it... Uh...",
+                "reviewbody": "Hey, I love this game. It's great, and I am glad that someone was kind enough to upload this with the emulator. But how did you get the emulator to work? I am trying to upload a game, and I need to use an SWF emulator as well...",
+                "stars": "5",
+                "reviewer": "loginagoofmc",
+                "reviewdate": "2022-03-11 18:44:33",
+                "createdate": "2022-03-11 18:44:33",
+                "reviewer_itemname": "@logan_alldredge"
+            },
+            {
+                "reviewtitle": "I have an issue",
+                "reviewbody": "It wont let me in and i have attempted to start this multiple times",
+                "stars": "0",
+                "reviewer": "Leeandkale666",
+                "reviewdate": "2022-05-09 17:31:36",
+                "createdate": "2022-05-09 17:31:36",
+                "reviewer_itemname": "@leeandkale666"
+            },
+            {
+                "reviewtitle": "It's not saving",
+                "reviewbody": "I had the mansion and a lot of money I save it and exited the tab when I go back I had no money and I had the stater house very mad ",
+                "stars": "2",
+                "reviewer": "ndsghdbshadfhxb",
+                "reviewdate": "2023-02-16 21:24:42",
+                "createdate": "2022-08-08 04:42:25",
+                "reviewer_itemname": "@ndsghdbshadfhxb"
+            },
+            {
+                "reviewtitle": "This game is good",
+                "reviewbody": "i love this game Im cant stop playing on the bus to school or at home  5 out of 5\n",
+                "stars": "5",
+                "reviewer": "Cheetah Leader",
+                "reviewdate": "2022-08-17 11:56:46",
+                "createdate": "2022-08-17 11:56:46",
+                "reviewer_itemname": "@cheetah_leader"
+            },
+            {
+                "reviewtitle": "shity",
+                "reviewbody": "game fucking blows, doesnt save at all unless your signed up ",
+                "stars": "0",
+                "reviewer": "jacksonttt",
+                "reviewdate": "2022-08-28 06:19:15",
+                "createdate": "2022-08-28 06:19:15",
+                "reviewer_itemname": "@jacksonttt"
+            },
+            {
+                "reviewtitle": "Game is good",
+                "reviewbody": "Pretty decent game, wish there was more to it though.",
+                "stars": "4",
+                "reviewer": "Eljay Belo",
+                "reviewdate": "2022-09-10 22:14:01",
+                "createdate": "2022-09-10 22:14:01",
+                "reviewer_itemname": "@eljay_belo"
+            },
+            {
+                "reviewtitle": "issue",
+                "reviewbody": "It wont go past the loading emulator part so i cant play",
+                "stars": "1",
+                "reviewer": "Collin Hopkins",
+                "reviewdate": "2022-09-15 15:49:11",
+                "createdate": "2022-09-15 15:49:11",
+                "reviewer_itemname": "@collin_hopkins"
+            },
+            {
+                "reviewtitle": "Stick RPG 2",
+                "reviewbody": "Is it possible for you to try and get stick rpg 2 working on here?",
+                "stars": "0",
+                "reviewer": "Jace Minor",
+                "reviewdate": "2022-09-25 21:41:46",
+                "createdate": "2022-09-25 21:41:46",
+                "reviewer_itemname": "@jace_minor"
+            },
+            {
+                "reviewtitle": "pretty good",
+                "reviewbody": "I have one complaint it used to save no matter what now it doesn't even save",
+                "stars": "4",
+                "reviewer": "Jose Cuevas712",
+                "reviewdate": "2022-10-13 12:54:22",
+                "createdate": "2022-10-13 12:54:22",
+                "reviewer_itemname": "@jose_cuevas712"
+            },
+            {
+                "reviewtitle": "BGE",
+                "reviewbody": "BEST GAME EVER\ud83e\udd29!!!",
+                "stars": "5",
+                "reviewer": "Benjamin Walsh825",
+                "reviewdate": "2022-10-31 16:11:18",
+                "createdate": "2022-10-31 16:11:18",
+                "reviewer_itemname": "@benjamin_walsh825"
+            },
+            {
+                "reviewtitle": "Good time waster.",
+                "reviewbody": "Man this game is so fucking nostalgic.\n",
+                "stars": "5",
+                "reviewer": "Dominick Montano",
+                "reviewdate": "2022-12-25 23:01:08",
+                "createdate": "2022-12-25 23:01:08",
+                "reviewer_itemname": "@dominick_montano"
+            },
+            {
+                "reviewtitle": "does not save",
+                "reviewbody": "I click save but when I shut off  my device to play the next day I came back to have had my game fully reset. I am very mad and will not be playing this game ever again.",
+                "stars": "1",
+                "reviewer": "ETHAN WINN",
+                "reviewdate": "2023-01-08 22:36:24",
+                "createdate": "2023-01-08 22:36:24",
+                "reviewer_itemname": "@ethan_winn"
+            },
+            {
+                "reviewtitle": "u have to sign up to save game",
+                "reviewbody": "good game i recommend u play it",
+                "stars": "5",
+                "reviewer": "Dhe&apos;Zaphyr Tibbs-Reed",
+                "reviewdate": "2023-03-15 23:14:48",
+                "createdate": "2023-03-15 23:14:48",
+                "reviewer_itemname": "@dhe_apos_zaphyr_tibbs-reed"
+            },
+            {
+                "reviewtitle": "Great game Just a few problems",
+                "reviewbody": "I think this game is great i think its just hated because this game has not been updated and a few bugs and also the save dose not work. I think restarting because u already did everything is perfect \n and i think thats fun to restart. Some people dont but i think you guys should fix the bugs , Add more to the game and maybe fix the save (im not  u need to be signed in to save)",
+                "stars": "4",
+                "reviewer": "Ethan Thomas843",
+                "reviewdate": "2023-03-16 16:33:52",
+                "createdate": "2023-03-16 16:33:52",
+                "reviewer_itemname": "@ethan_thomas843"
+            },
+            {
+                "reviewtitle": "save actually works",
+                "reviewbody": "so i was playing the game and i wasnt logged in. then, when i saved ingame and logged back into my account i clicked continue and my game is still there xd. also good game btw",
+                "stars": "5",
+                "reviewer": "Unkelptable",
+                "reviewdate": "2023-05-07 04:02:09",
+                "createdate": "2023-05-07 04:02:09",
+                "reviewer_itemname": "@unkelptable"
+            },
+            {
+                "reviewtitle": "pretty good",
+                "reviewbody": "I like it when the game actually starts",
+                "stars": "3",
+                "reviewer": "PARKER STEWART353",
+                "reviewdate": "2023-10-19 11:40:55",
+                "createdate": "2023-10-19 11:40:55",
+                "reviewer_itemname": "@parker_stewart353"
+            },
+            {
+                "reviewtitle": "Really fun",
+                "reviewbody": "only problem is that i cant snort the cocaine",
+                "stars": "4",
+                "reviewer": "Cheesire",
+                "reviewdate": "2023-11-14 16:25:31",
+                "createdate": "2023-11-13 17:21:28",
+                "reviewer_itemname": "@cheesire"
+            },
+            {
+                "reviewtitle": "stick",
+                "reviewbody": "It has some bugs when i go to a drunk beer fight i Kamehameha and i kill him and it resets me.",
+                "stars": "4",
+                "reviewer": "Adeniran Adegoke",
+                "reviewdate": "2023-12-13 01:44:26",
+                "createdate": "2023-12-13 01:44:26",
+                "reviewer_itemname": "@adeniran_adegoke"
+            },
+            {
+                "reviewtitle": "GG",
+                "reviewbody": "good game",
+                "stars": "5",
+                "reviewer": "Yunsunuub",
+                "reviewdate": "2024-01-13 14:38:55",
+                "createdate": "2024-01-13 14:38:55",
+                "reviewer_itemname": "@yunsunuub"
+            },
+            {
+                "reviewtitle": "by darmaissme",
+                "reviewbody": "100% the game win every gamble 10time  spin the roulet and black jack with all my money and get every type of jackpot in the jackpot game buy everything got to all cities well its kinda 90% still have reach all stats to 500 except intelegents and reach day 1000 thats how my friend told me how to 100% stickman rpg also 3day im winning games of blackjack again                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ",
+                "stars": "5",
+                "reviewer": "rayyanza ziandru",
+                "reviewdate": "2024-02-04 04:11:55",
+                "createdate": "2024-02-02 09:30:18",
+                "reviewer_itemname": "@rayyanza_ziandru"
+            },
+            {
+                "reviewtitle": "help",
+                "reviewbody": "i love it but when i leave it resets me to basic stats",
+                "stars": "5",
+                "reviewer": "Luca Carswell",
+                "reviewdate": "2024-02-05 14:56:35",
+                "createdate": "2024-02-05 14:56:35",
+                "reviewer_itemname": "@luca_carswell"
+            },
+            {
+                "reviewtitle": "Hamburger",
+                "reviewbody": "I see you",
+                "stars": "5",
+                "reviewer": "Evan Rehaume",
+                "reviewdate": "2024-03-05 16:38:59",
+                "createdate": "2024-03-05 16:38:59",
+                "reviewer_itemname": "@evan_rehaume"
+            },
+            {
+                "reviewtitle": "\u200e",
+                "reviewbody": "The only flash game I still come back to sometimes",
+                "stars": "5",
+                "reviewer": "86x",
+                "reviewdate": "2025-07-30 09:36:00",
+                "createdate": "2024-05-09 15:47:41",
+                "reviewer_itemname": "@jeff921"
+            },
+            {
+                "reviewtitle": "does not start emulator",
+                "reviewbody": "game does not start",
+                "stars": "0",
+                "reviewer": "ma4rckus",
+                "reviewdate": "2024-05-30 09:02:49",
+                "createdate": "2024-05-30 09:02:49",
+                "reviewer_itemname": "@ma4rckus"
+            },
+            {
+                "reviewtitle": "Jeez can't believe it's been 20 years now...",
+                "reviewbody": "lmao takes me back to Computers class in 9th grade and \"pretending to learn how to use Microsoft Office, but in reality playing this and Defend the Castle on Coolmathgames whenever the school put an IP ban on Newgrounds lol",
+                "stars": "4",
+                "reviewer": "ThatGuySizzleMac",
+                "reviewdate": "2024-08-06 06:29:24",
+                "createdate": "2024-08-06 06:29:24",
+                "reviewer_itemname": "@thatguysizzlemac"
+            },
+            {
+                "reviewtitle": "blackjack",
+                "reviewbody": "The blackjack in this game is really good, but I would deeply appreciate more if there was a button to place all of your money down at one time, when you have larger amounts of money, it becomes a pain to place down all your money by 500's.",
+                "stars": "4",
+                "reviewer": "Nasir Khawaja",
+                "reviewdate": "2025-05-01 16:57:22",
+                "createdate": "2025-05-01 16:57:22",
+                "reviewer_itemname": "@nasir_khawaja"
+            },
+            {
+                "reviewtitle": "Great but Continure button does not work",
+                "reviewbody": "I love this game but the save option and Continure does not work can you fix it",
+                "stars": "4",
+                "reviewer": "San Juan Perez, Larry A",
+                "reviewdate": "2025-12-10 21:08:31",
+                "createdate": "2025-12-10 21:08:31",
+                "reviewer_itemname": "@san_juan_perez_larry_a"
+            },
+            {
+                "reviewtitle": "Infinite money cheat",
+                "reviewbody": "go to the bank and type \"1E25\" then click deposit",
+                "stars": "5",
+                "reviewer": "SplintahCeyull",
+                "reviewdate": "2026-02-06 09:51:16",
+                "createdate": "2026-02-06 09:51:16",
+                "reviewer_itemname": "@splintahceyull"
+            }
+        ],
+        "all_time_views": 156592,
+        "last_30day_views": 947,
+        "last_7day_views": 225,
+        "screenshot_paths": [
+            "assets/screenshots/stick-rpg-complete/screenshot_11.png",
+            "assets/screenshots/stick-rpg-complete/00_coverscreenshot.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_17.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_09.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_24.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_07.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_05.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_23.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_04.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_18.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_27.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_29.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_10.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_12.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_08.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_26.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_22.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_03.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_15.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_28.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_16.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_20.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_25.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_21.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_13.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_14.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_19.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_02.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_00.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_01.png",
+            "assets/screenshots/stick-rpg-complete/screenshot_06.png"
+        ],
+        "swf_file": "Stick-RPG-Complete.swf",
+        "genres": [
+            "Action"
+        ],
+        "swf_file_path": "assets/games/Stick-RPG-Complete.swf"
+    },
+    "cannibals-missioneries": {
+        "created": 1774053031,
+        "files_count": 8,
+        "item_last_updated": 1728540330,
+        "item_size": 633000,
+        "metadata": {
+            "identifier": "cannibals-missioneries",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Plastelina Logic Games",
+            "date": "2001",
+            "description": "Classic algorithm game",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": "Flash;Flash Games",
+            "title": "Cannibals & Missioneries",
+            "uploader": "joshuabusiness888@gmail.com",
+            "publicdate": "2021-01-10 04:42:34",
+            "addeddate": "2021-01-10 04:42:34",
+            "curation": "[curator]validator@archive.org[/curator][date]20210110044752[/date][comment]checked for malware[/comment]",
+            "year": "2001",
+            "emulator_ext": "swf",
+            "collection_added": "emulation"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "Peak nostalgia",
+                "reviewbody": "well what more can i say ",
+                "stars": "5",
+                "reviewer": "Aaryan2008",
+                "reviewdate": "2024-06-30 18:20:37",
+                "createdate": "2024-06-30 18:20:37",
+                "reviewer_itemname": "@aaryan2008"
+            },
+            {
+                "reviewtitle": "First time",
+                "reviewbody": "It's the first time I've ever played this game, but I first solved this from a book in the 90s. Love this puzzle.",
+                "stars": "5",
+                "reviewer": "R J837",
+                "reviewdate": "2024-07-08 03:38:11",
+                "createdate": "2024-07-08 03:38:11",
+                "reviewer_itemname": "@r_j837"
+            }
+        ],
+        "all_time_views": 117493,
+        "last_30day_views": 363,
+        "last_7day_views": 77,
+        "screenshot_paths": [
+            "assets/screenshots/cannibals-missioneries/__ia_thumb.jpg"
+        ],
+        "swf_file": "Cannibals_&_Missioneries.swf",
+        "genres": [
+            "Puzzle"
+        ],
+        "swf_file_path": "assets/games/Cannibals_&_Missioneries.swf"
+    },
+    "swords-and-sandals-2": {
+        "created": 1773989935,
+        "files_count": 35,
+        "item_last_updated": 1766528265,
+        "item_size": 10537234,
+        "metadata": {
+            "identifier": "swords-and-sandals-2",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary",
+                "emulation",
+                "softwarelibrary_flash"
+            ],
+            "date": "2006",
+            "description": "<div>Swords and Sandals 2 is a classic flash game, launched in 2006. The one uploaded here is version Full 2.1.0. To play the game after the end of flash, you can use Adobe Official Flash Player Projector (adobe.com/support/flashplayer/debug_downloads.html) or other emulator, like Ruffle (ruffle.rs).\n</div>",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": "flash; swords and sandals",
+            "title": "Swords And Sandals 2 (v 2.1.0)",
+            "uploader": "gabrielmoccio@gmail.com",
+            "publicdate": "2022-03-16 21:57:14",
+            "addeddate": "2022-03-16 21:57:14",
+            "curation": "[curator]validator@archive.org[/curator][date]20220316220324[/date][comment]checked for malware[/comment]",
+            "year": "2006",
+            "autoemulator": "true",
+            "emulator": "ruffle-swf",
+            "emulator_ext": "swf",
+            "collection_added": [
+                "softwarelibrary",
+                "emulation",
+                "softwarelibrary_flash"
+            ]
+        },
+        "reviews": [
+            {
+                "reviewtitle": "Great game",
+                "reviewbody": "A internet classic",
+                "stars": "5",
+                "reviewer": "Ivan Martinez352",
+                "reviewdate": "2024-07-11 03:28:14",
+                "createdate": "2024-07-11 03:28:14",
+                "reviewer_itemname": "@ivan_martinez352"
+            },
+            {
+                "reviewtitle": "Help",
+                "reviewbody": "Does anybody know how to download it?",
+                "stars": "5",
+                "reviewer": "MinuteMotion Studios",
+                "reviewdate": "2024-08-25 13:49:03",
+                "createdate": "2024-08-25 13:49:03",
+                "reviewer_itemname": "@minutemotion_studios"
+            },
+            {
+                "reviewtitle": ".",
+                "reviewbody": "Guys btw I found a way to get infininate skill points. while you're in a duel left click so that little menu comes up and then just press play. ",
+                "stars": "5",
+                "reviewer": "8oupIsRotting",
+                "reviewdate": "2024-09-15 16:24:08",
+                "createdate": "2024-09-10 15:08:49",
+                "reviewer_itemname": "@cloude_derosia"
+            },
+            {
+                "reviewtitle": "umm soo?",
+                "reviewbody": "I can't buy anything it just said NaN colds,\nThere's people putting in really bad websites to the point where now my teacher needs to check my Chromebook great job people. This game does even work half the time and nothing works, make a better game.",
+                "stars": "1",
+                "reviewer": "Kendan Silva",
+                "reviewdate": "2024-10-06 15:22:49",
+                "createdate": "2024-10-06 15:22:49",
+                "reviewer_itemname": "@kendan_silva"
+            },
+            {
+                "reviewtitle": "Swords And Sandals 2 (v 2.1.0)",
+                "reviewbody": "<h3><a href=\"https://gist.github.com/zafs77105/a316b14e67f21eda4236af75a91da836\" rel=\"ugc nofollow\">Your Software Here</a></h3>\n.\n.\n.\n..\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.",
+                "stars": "4",
+                "reviewer": "leukhardtfjesethzs.vhi95.1.0@gmail.com",
+                "reviewdate": "2025-02-13 08:16:51",
+                "createdate": "2025-02-13 08:16:51",
+                "reviewer_itemname": "@leukhardtfjesethzs_vhi95_1_0_gmail_com"
+            },
+            {
+                "reviewtitle": "12345",
+                "reviewbody": "Download Crack Link \u2764\u2764\u2764 https://get-downlaod-here.com/   --------   Direct download Link \u2764\u2764\ud83d\udc4d https://get-downlaod-here.com\n.\n.\n..\n.\n.\n..\n.\n.\n.\n.\n.\n.\n.\n.\n.",
+                "stars": "5",
+                "reviewer": "kogay36256",
+                "reviewdate": "2025-08-11 14:45:51",
+                "createdate": "2025-08-11 14:45:51",
+                "reviewer_itemname": "@kogay36256"
+            },
+            {
+                "reviewtitle": "Swords And Sandals 2 (v 2.1.0)",
+                "reviewbody": "Download: https://getfreecrack.mooo.com/download-activated-setup/\n.\nDownload Your File Here Get your file now with just one click. Fast, easy, and free. No hassles, no waiting. Start downloading today.\n.\nSwords and Sandals 2 is a classic flash game, launched in 2006. The one uploaded here is version Full 2.1.0. To play the game after the end of flash, you can use Adobe Official Flash Player Projector (adobe.com/support/flashplayer/debug_downloads.html) or other emulator, like Ruffle (ruffle.rs).\n",
+                "stars": "0",
+                "reviewer": "uykhmtt5",
+                "reviewdate": "2025-08-12 12:21:42",
+                "createdate": "2025-08-12 12:21:42",
+                "reviewer_itemname": "@uykhmtt5"
+            },
+            {
+                "reviewtitle": "Free",
+                "reviewbody": "Download: https://aftv.news/4745858\n",
+                "stars": "0",
+                "reviewer": "xerohib722@arugy.com",
+                "reviewdate": "2025-12-23 22:17:39",
+                "createdate": "2025-12-23 22:17:39",
+                "reviewer_itemname": "@xerohib722_arugy_com"
+            }
+        ],
+        "all_time_views": 100795,
+        "last_30day_views": 1630,
+        "last_7day_views": 358,
+        "screenshot_paths": [
+            "assets/screenshots/swords-and-sandals-2/00_coverscreenshot.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_09.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_07.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_05.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_04.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_10.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_08.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_03.png",
+            "assets/screenshots/swords-and-sandals-2/Swords and Sandals 2.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_02.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_00.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_01.png",
+            "assets/screenshots/swords-and-sandals-2/screenshot_06.png"
+        ],
+        "swf_file": "Swords and Sandals 2 (v 2.1.0).swf",
+        "genres": [
+            "Action"
+        ],
+        "swf_file_path": "assets/games/Swords and Sandals 2 (v 2.1.0).swf"
+    },
+    "bloxors": {
+        "created": 1773996908,
+        "files_count": 9,
+        "item_last_updated": 1749645810,
+        "item_size": 2400173,
+        "metadata": {
+            "identifier": "bloxors",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "softwarelibrary",
+                "emulation"
+            ],
+            "creator": "AddictingGames",
+            "description": "<div class=\"ltr description\" style=\"line-height:22px;background-color:rgb(255,255,255);\"><p style=\"margin:0px 0px 15px;\"><font face=\"Roboto, Arial, sans-serif\"><span style=\"font-size:15px;\"><b>GAME DESCRIPTION</b></span></font></p><p style=\"margin:0px 0px 15px;\"><font face=\"Roboto, Arial, sans-serif\"><span style=\"font-size:15px;\">Bloxorz is a free puzzle game. All that we ask is that you help us maintain order. A square peg into a square hole. It's simple. Geometric shapes and their ability to interlock are the basic building blocks of order. If we can't move them around and drop them into place, we have anarchy. We don't want anarchy. We don't want our shapes walking all willy nilly off the sides of platforms, beyond the edge of the grid, or into the oblivion of the unknown beneath it. There is a certain beauty in order and an undeniable deformity in chaos. An ugly, insidious aesthetic which robs the natural world of its god-given balance and beauty. And all that we ask is that you help us maintain order That you help us keep the world beautiful, that you keep the square pegs snugly in their square holes. This is done for you, for me, and for thee betterment of the world.</span></font></p><p style=\"margin:0px 0px 15px;\"><font face=\"Roboto, Arial, sans-serif\"><span style=\"font-size:15px;\"><br /></span></font></p><p style=\"margin:0px 0px 15px;\"><font face=\"Roboto, Arial, sans-serif\"><span style=\"font-size:15px;\"><b>INSTRUCTIONS</b></span></font></p><p style=\"margin:0px 0px 15px;\"><font face=\"Roboto, Arial, sans-serif\"><span style=\"font-size:15px;\">Use the W,A,S,D pad or the arrow pad to roll and flip the square pegs. Square pegs are meant to fit into square holes. Please navigate them there.</span></font></p></div>",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "title": "Bloxorz",
+            "year": "2007",
+            "uploader": "lambrumunddal@gmail.com",
+            "publicdate": "2020-12-06 13:56:37",
+            "addeddate": "2020-12-06 13:56:37",
+            "curation": "[curator]validator@archive.org[/curator][date]20201206140353[/date][comment]checked for malware[/comment]",
+            "emulator_ext": "swf",
+            "subject": [
+                "Puzzle",
+                "Logic",
+                "Axonometric",
+                "Pre-rendered 3D",
+                "Rolling Block Maze"
+            ],
+            "date": "2007-06-21",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "Classic",
+                "reviewbody": "I used to have a passcode for this written on a sticky note taped to my computer. Never got to resume the game (being a kid, I gave up).",
+                "stars": "5",
+                "reviewer": "devenblake",
+                "reviewdate": "2021-03-22 16:17:32",
+                "createdate": "2021-03-22 16:17:32",
+                "reviewer_itemname": "@randomguydtb"
+            },
+            {
+                "reviewtitle": "Very addictive",
+                "reviewbody": "One of THOSE games. The ones that haver you waste hours and get no work done.\n\nJust one more try, maybe another go, ..............m, that one didn't count, etc, etc, .. oh bugger, is that the time, one more .....\n\nThe wise stay away from this sort of game. But then they miss all the fun & sense of achievement it gives you,.",
+                "stars": "4",
+                "reviewer": "Kimdino",
+                "reviewdate": "2022-05-10 19:09:53",
+                "createdate": "2022-05-10 19:09:53",
+                "reviewer_itemname": "@kimdino"
+            },
+            {
+                "reviewtitle": "This bring back memories!",
+                "reviewbody": "Thank you so much, I used to play this game in my childhood",
+                "stars": "5",
+                "reviewer": "haab2000",
+                "reviewdate": "2022-05-11 00:45:53",
+                "createdate": "2022-05-11 00:45:53",
+                "reviewer_itemname": "@haab2000"
+            },
+            {
+                "reviewtitle": "Bug",
+                "reviewbody": "Works perfectly until level 30: 380351",
+                "stars": "4",
+                "reviewer": "Juan Manuel Dato",
+                "reviewdate": "2022-05-12 12:02:20",
+                "createdate": "2022-05-12 12:02:20",
+                "reviewer_itemname": "@juan_manuel_dato"
+            },
+            {
+                "reviewtitle": "Very addictive!",
+                "reviewbody": "Fine game!",
+                "stars": "5",
+                "reviewer": "KommodoreKat",
+                "reviewdate": "2022-05-15 13:31:27",
+                "createdate": "2022-05-15 13:31:27",
+                "reviewer_itemname": "@kommodorekat"
+            },
+            {
+                "reviewtitle": "Still rolling blocks",
+                "reviewbody": "Just wanted to mention that level 30 is possible.",
+                "stars": "5",
+                "reviewer": "Jack Mathis",
+                "reviewdate": "2022-05-18 14:55:40",
+                "createdate": "2022-05-18 14:55:40",
+                "reviewer_itemname": "@jack_mathis"
+            },
+            {
+                "reviewtitle": "what is this game",
+                "reviewbody": "You basically roll a block around to move it to win puzzles; I couldn't get through Stage 2 because I had a brain issue, not a skill issue.",
+                "stars": "0",
+                "reviewer": "hamzasolom20",
+                "reviewdate": "2023-05-26 11:53:41",
+                "createdate": "2023-05-26 11:53:41",
+                "reviewer_itemname": "@hamzasolom20"
+            },
+            {
+                "reviewtitle": "Terrific!",
+                "reviewbody": "I think this game brings back memories! Thanks for uploading!",
+                "stars": "5",
+                "reviewer": "The Eastern Archivist",
+                "reviewdate": "2024-03-04 00:08:30",
+                "createdate": "2024-03-04 00:08:30",
+                "reviewer_itemname": "@rita_international"
+            },
+            {
+                "reviewtitle": "Memories",
+                "reviewbody": "I love this game.",
+                "stars": "5",
+                "reviewer": "Dominic Hoenigman",
+                "reviewdate": "2024-03-22 14:11:59",
+                "createdate": "2024-03-22 14:11:59",
+                "reviewer_itemname": "@dominic_hoenigman"
+            }
+        ],
+        "all_time_views": 86649,
+        "last_30day_views": 1002,
+        "last_7day_views": 192,
+        "screenshot_paths": [
+            "assets/screenshots/bloxors/__ia_thumb.jpg"
+        ],
+        "swf_file": "bloxors.swf",
+        "genres": [
+            "Puzzle"
+        ],
+        "swf_file_path": "assets/games/bloxors.swf"
+    },
+    "candy-bar-adventure-1": {
+        "created": 1774075413,
+        "files_count": 12,
+        "item_last_updated": 1772262927,
+        "item_size": 438393,
+        "metadata": {
+            "identifier": "candy-bar-adventure-1",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Jacknjellify",
+            "date": "2009-01-15",
+            "description": "As seen on Daemeon Network",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "Firey Couldn't Open the Candy Bar Wrap",
+                "But Match Can Find Us? Game Along and Find Out."
+            ],
+            "title": "Firey's Candy Bar Adventure",
+            "uploader": "daem2040@scdsb.on.ca",
+            "publicdate": "2022-03-10 18:45:07",
+            "addeddate": "2022-03-10 18:45:07",
+            "curation": "[curator]validator@archive.org[/curator][date]20220310185043[/date][comment]checked for malware[/comment]",
+            "year": "2009",
+            "emulator": "ruffle-swf",
+            "eumlator_ext": "swf",
+            "publisher": "Mike Huang & Cary Huang",
+            "notes": "good",
+            "rights": "yes",
+            "contributor": "Jacknjellify",
+            "coverage": "Software",
+            "metadata": "cba_swf",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "Countryball Animation",
+                "reviewbody": "Nice Game",
+                "stars": "5",
+                "reviewer": "Charlene Cenita",
+                "reviewdate": "2022-08-03 09:23:41",
+                "createdate": "2022-08-03 09:23:41",
+                "reviewer_itemname": "@charlene_cenita"
+            },
+            {
+                "reviewtitle": "BFDI!!!",
+                "reviewbody": "Very fun! ;D",
+                "stars": "5",
+                "reviewer": "PinkSparkles221",
+                "reviewdate": "2022-08-27 20:50:13",
+                "createdate": "2022-08-27 20:50:13",
+                "reviewer_itemname": "@pinksparkles221"
+            },
+            {
+                "reviewtitle": "How Fun IS THIS",
+                "reviewbody": "INFINITE FUN IN MAH BRAIN!",
+                "stars": "5",
+                "reviewer": "Andrew Yellott",
+                "reviewdate": "2023-05-13 12:58:30",
+                "createdate": "2023-05-13 12:58:30",
+                "reviewer_itemname": "@andrew_yellott"
+            },
+            {
+                "reviewtitle": "Firey's Candy Bar Adventure",
+                "reviewbody": "i got all endings and it is really fun go play it.",
+                "stars": "5",
+                "reviewer": "Elijah Wayne",
+                "reviewdate": "2023-05-26 21:35:56",
+                "createdate": "2023-05-26 21:35:56",
+                "reviewer_itemname": "@elijah_wayne"
+            },
+            {
+                "reviewtitle": "amazing",
+                "reviewbody": "beautiful ",
+                "stars": "5",
+                "reviewer": "Emily Mejia892",
+                "reviewdate": "2023-06-17 22:56:32",
+                "createdate": "2023-06-17 22:56:32",
+                "reviewer_itemname": "@emily_mejia892"
+            },
+            {
+                "reviewtitle": "Firey",
+                "reviewbody": "HE IS CUTE IN THE 2009 HOW HE SOUNDS LIKE A KITTEN\ud83d\ude2dI LOVED THE GAME A LOT!!!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+                "stars": "5",
+                "reviewer": "Jacelynn Diaz",
+                "reviewdate": "2023-11-05 22:37:10",
+                "createdate": "2023-11-05 22:37:10",
+                "reviewer_itemname": "@jacelynn_diaz"
+            },
+            {
+                "reviewtitle": "Bananacateli628",
+                "reviewbody": "Firey's Candy Bar Adventure\n  ",
+                "stars": "5",
+                "reviewer": "Elias Espada banana cat",
+                "reviewdate": "2024-03-14 05:33:48",
+                "createdate": "2024-01-20 17:54:17",
+                "reviewer_itemname": "@elias_espada_banana_cat"
+            },
+            {
+                "reviewtitle": "epic game",
+                "reviewbody": "for a 2008 game made by a 12 year old is not bad. the animations are good, and very epic. if you are a BFDI fan, you should play it",
+                "stars": "4",
+                "reviewer": "Arthur91284",
+                "reviewdate": "2024-02-03 04:10:01",
+                "createdate": "2024-02-03 04:10:01",
+                "reviewer_itemname": "@arthur91284"
+            },
+            {
+                "reviewtitle": "Bfdi",
+                "reviewbody": "this is nostalgia",
+                "stars": "5",
+                "reviewer": "MrSaul0",
+                "reviewdate": "2024-02-12 22:55:31",
+                "createdate": "2024-02-12 22:55:31",
+                "reviewer_itemname": "@mrsaul0"
+            },
+            {
+                "reviewtitle": "me when",
+                "reviewbody": "me when i am on the run for stealing a pricless luxury island from 20 inanimate objects",
+                "stars": "5",
+                "reviewer": "toastycat :3",
+                "reviewdate": "2024-03-21 01:02:22",
+                "createdate": "2024-03-21 01:02:22",
+                "reviewer_itemname": "@toastycat_3"
+            },
+            {
+                "reviewtitle": "This game is fun!",
+                "reviewbody": "It's so fun that, unlike most people, I recorded getting the helped ending on BANDICAM of all things and posted it on SCRATCH of all websites (was too lazy to animate it or remux it in OBS)",
+                "stars": "5",
+                "reviewer": "Loser BFB/TPOT",
+                "reviewdate": "2024-03-28 12:40:32",
+                "createdate": "2024-03-28 12:40:32",
+                "reviewer_itemname": "@loser_bfb_tpot"
+            },
+            {
+                "reviewtitle": "Hmm",
+                "reviewbody": "Remember that snowball was smarter than firey?",
+                "stars": "5",
+                "reviewer": "D&apos;Angelospencer and SpongeBob Spencer",
+                "reviewdate": "2024-04-25 22:26:25",
+                "createdate": "2024-04-25 22:26:25",
+                "reviewer_itemname": "@d_apos_angelospencer_and_spongebob_spencer"
+            },
+            {
+                "reviewtitle": "3 Stars",
+                "reviewbody": "Welp, it was fun, the only problem is that you have to have a long time for it to load",
+                "stars": "3",
+                "reviewer": "MandoTheNPC",
+                "reviewdate": "2024-05-31 14:47:42",
+                "createdate": "2024-05-31 14:47:42",
+                "reviewer_itemname": "@mandothenpc"
+            },
+            {
+                "reviewtitle": "PERFECT!",
+                "reviewbody": "this game is from maybe 2009, but its awesome to play! of course 5 stars!",
+                "stars": "5",
+                "reviewer": "Manoelgamer20",
+                "reviewdate": "2024-05-31 17:03:25",
+                "createdate": "2024-05-31 17:03:25",
+                "reviewer_itemname": "@adriana_nascimento177"
+            },
+            {
+                "reviewtitle": "Note",
+                "reviewbody": "arruxxa ruined everything by commenting the worst thing in existence.",
+                "stars": "5",
+                "reviewer": "Jesse Allen212",
+                "reviewdate": "2024-08-14 16:45:33",
+                "createdate": "2024-07-12 09:34:40",
+                "reviewer_itemname": "@jesse_allen212"
+            },
+            {
+                "reviewtitle": "e",
+                "reviewbody": "i love this game",
+                "stars": "5",
+                "reviewer": "Sophie Etre",
+                "reviewdate": "2024-08-08 12:28:02",
+                "createdate": "2024-08-08 12:28:02",
+                "reviewer_itemname": "@sophie_etre"
+            },
+            {
+                "reviewtitle": "b eefy",
+                "reviewbody": "i cant believe fario tario character couldnt eat chocolate. im shaking and crying rn.",
+                "stars": "5",
+                "reviewer": "Jude Palmer759",
+                "reviewdate": "2024-08-11 23:28:11",
+                "createdate": "2024-08-11 23:28:11",
+                "reviewer_itemname": "@jude_palmer759"
+            },
+            {
+                "reviewtitle": "LEGENDARY!",
+                "reviewbody": "wow\na 2009 game\nbased on bfdi...wait",
+                "stars": "5",
+                "reviewer": "WindowsGG",
+                "reviewdate": "2024-08-15 02:31:08",
+                "createdate": "2024-08-15 02:31:08",
+                "reviewer_itemname": "@windowsgg"
+            },
+            {
+                "reviewtitle": "Nice game",
+                "reviewbody": "This is my first time playing this and it was decent ",
+                "stars": "4",
+                "reviewer": "Sid Villabroza",
+                "reviewdate": "2024-09-11 04:36:13",
+                "createdate": "2024-09-11 04:36:13",
+                "reviewer_itemname": "@sid_villabroza"
+            },
+            {
+                "reviewtitle": "Very Nice",
+                "reviewbody": "just a basic simple flash game. and i like it for that!",
+                "stars": "5",
+                "reviewer": "Leo848",
+                "reviewdate": "2025-01-23 23:40:29",
+                "createdate": "2025-01-23 23:40:29",
+                "reviewer_itemname": "@leo848"
+            },
+            {
+                "reviewtitle": "To Windows GG",
+                "reviewbody": "@WindowsGG, this was also made by the creators of BFDI",
+                "stars": "5",
+                "reviewer": "Fall Guys Pro",
+                "reviewdate": "2025-02-23 00:26:53",
+                "createdate": "2025-02-23 00:26:53",
+                "reviewer_itemname": "@fall_guys_pro"
+            },
+            {
+                "reviewtitle": "do my eyes deceive me",
+                "reviewbody": "a full version of fcba!!???!? thats probably real!?!?!? yay!!!!",
+                "stars": "0",
+                "reviewer": "WyattRoar08",
+                "reviewdate": "2025-03-01 17:18:19",
+                "createdate": "2025-03-01 17:18:19",
+                "reviewer_itemname": "@wyattroar08"
+            },
+            {
+                "reviewtitle": "I love older BFDI games sm XD",
+                "reviewbody": "so fun 2763/2763",
+                "stars": "5",
+                "reviewer": "sleepy2763",
+                "reviewdate": "2025-07-20 16:25:03",
+                "createdate": "2025-07-20 16:25:03",
+                "reviewer_itemname": "@sleepy2763"
+            },
+            {
+                "reviewtitle": "gy",
+                "reviewbody": "dfe",
+                "stars": "0",
+                "reviewer": "werty5304",
+                "reviewdate": "2025-08-22 16:52:51",
+                "createdate": "2025-08-22 16:52:51",
+                "reviewer_itemname": "@werty5304"
+            },
+            {
+                "reviewtitle": "Very Epic Game",
+                "reviewbody": "Cant Believe it,i also played it in 2023 and its basically not the best bfdi game but the 1st one??????? (I better play Branches And Bfdia 5B)",
+                "stars": "5",
+                "reviewer": "Tuskytusk26",
+                "reviewdate": "2025-08-25 07:48:25",
+                "createdate": "2025-08-25 07:48:25",
+                "reviewer_itemname": "@tuskytusk26"
+            },
+            {
+                "reviewtitle": "Nice",
+                "reviewbody": "SHORT, BUT GOOD GAME",
+                "stars": "4",
+                "reviewer": "Conor586",
+                "reviewdate": "2026-01-22 22:14:06",
+                "createdate": "2026-01-22 22:14:06",
+                "reviewer_itemname": "@conor586"
+            },
+            {
+                "reviewtitle": "beefy die",
+                "reviewbody": "Great gam",
+                "stars": "5",
+                "reviewer": "theleafyfouranddandyfan11111",
+                "reviewdate": "2026-02-28 07:15:23",
+                "createdate": "2026-02-28 07:15:23",
+                "reviewer_itemname": "@bfdiiloveit"
+            }
+        ],
+        "all_time_views": 80109,
+        "last_30day_views": 824,
+        "last_7day_views": 182,
+        "screenshot_paths": [
+            "assets/screenshots/candy-bar-adventure-1/00_coverscreenshot.png"
+        ],
+        "swf_file": "CandyBarAdventure (1).swf",
+        "genres": [
+            "Adventure"
+        ],
+        "swf_file_path": "assets/games/CandyBarAdventure (1).swf"
+    },
+    "bubble-shooter_swf": {
+        "created": 1774053036,
+        "files_count": 16,
+        "item_last_updated": 1732000292,
+        "item_size": 1124284,
+        "metadata": {
+            "identifier": "bubble-shooter_swf",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Ilion Dynamics Ltd",
+            "description": "A popular Puzzle Bobble/Bust-A-Move flash clone.",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "Bubble Shooter",
+                "Flash"
+            ],
+            "title": "Bubble Shooter",
+            "uploader": "jen.waughtal@gmail.com",
+            "publicdate": "2020-12-20 20:36:04",
+            "addeddate": "2020-12-20 20:36:04",
+            "curation": "[curator]validator@archive.org[/curator][date]20201220204155[/date][comment]checked for malware[/comment]",
+            "emulator": "ruffle-swf",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "Nice game",
+                "reviewbody": "I think I played this back in the day. Pretty wild to play it again on my iPhone in 2021 (albeit non-functionally).",
+                "stars": "5",
+                "reviewer": "devenblake",
+                "reviewdate": "2021-03-22 15:50:52",
+                "createdate": "2021-03-22 15:50:52",
+                "reviewer_itemname": "@randomguydtb"
+            }
+        ],
+        "all_time_views": 58643,
+        "last_30day_views": 781,
+        "last_7day_views": 144,
+        "screenshot_paths": [
+            "assets/screenshots/bubble-shooter_swf/00_coverscreenshot.png",
+            "assets/screenshots/bubble-shooter_swf/bandicam 2020-12-13 19-38-34-323.jpg",
+            "assets/screenshots/bubble-shooter_swf/screenshot_00.png"
+        ],
+        "swf_file": "bubble-shooter.swf",
+        "genres": [
+            "Arcade",
+            "Puzzle"
+        ],
+        "swf_file_path": "assets/games/bubble-shooter.swf"
+    },
+    "bfdi_swf": {
+        "created": 1774014340,
+        "files_count": 62,
+        "item_last_updated": 1760366611,
+        "item_size": 1689873,
+        "metadata": {
+            "identifier": "bfdi_swf",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Cary Huang",
+            "description": "<div>(note that while the game is still playable, you can't tell what your score is)<br /></div>A platformer from htwins where you get BFDI Characters as high as you can.",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "Flash",
+                "HTWins",
+                "BFDI"
+            ],
+            "title": "Get to the Top Althrough There is No Top BFDI",
+            "uploader": "jen.waughtal@gmail.com",
+            "publicdate": "2020-12-01 19:46:46",
+            "addeddate": "2020-12-01 19:46:46",
+            "curation": "[curator]validator@archive.org[/curator][date]20201201195403[/date][comment]checked for malware[/comment]",
+            "emulator": "ruffle-swf",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "the start of cary games",
+                "reviewbody": "known as the bfdi/bfb co-creator this game from newgrounds is a epic parody of the orginal ",
+                "stars": "5",
+                "reviewer": "VAPORWAVE_OM",
+                "reviewdate": "2021-06-16 09:08:31",
+                "createdate": "2021-06-16 09:08:31",
+                "reviewer_itemname": "@vaporwave_om"
+            },
+            {
+                "reviewtitle": "It still works in 2024!",
+                "reviewbody": "Yep it still works now in 2024!",
+                "stars": "5",
+                "reviewer": "HinomoriShizuku",
+                "reviewdate": "2024-03-09 04:39:01",
+                "createdate": "2024-03-09 04:39:01",
+                "reviewer_itemname": "@hinomorishizuku"
+            },
+            {
+                "reviewtitle": "farare",
+                "reviewbody": "Despite these undeniable <a href=\"https://2048-cupcakes.io\" rel=\"ugc nofollow\">2048 cupcakes</a>  benefits, it's crucial to acknowledge the importance of responsible gaming practices. ",
+                "stars": "4",
+                "reviewer": "zetisonapi xerian",
+                "reviewdate": "2024-03-13 02:39:44",
+                "createdate": "2024-03-13 02:39:44",
+                "reviewer_itemname": "@zetisonapi_xerian"
+            },
+            {
+                "reviewtitle": "\u200e \u200e",
+                "reviewbody": "very cool game",
+                "stars": "5",
+                "reviewer": "bitforist",
+                "reviewdate": "2024-04-14 08:16:54",
+                "createdate": "2024-04-14 08:16:54",
+                "reviewer_itemname": "@bitforist"
+            },
+            {
+                "reviewtitle": "Awesome Game!",
+                "reviewbody": "That's a awesome game, a little bit bug makes me give 4 stars, that is the score. it's bugged!",
+                "stars": "4",
+                "reviewer": "Adriana Nascimento177",
+                "reviewdate": "2024-05-31 16:56:59",
+                "createdate": "2024-05-31 16:56:59",
+                "reviewer_itemname": "@adriana_nascimento177"
+            },
+            {
+                "reviewtitle": "BFDI",
+                "reviewbody": "OH my godulebygobiedietobetobediddiididiidiooookdkdkdkdkookokookokokmmmkooomomomomomomkmmjjjjjokojkojjjokojkojkjokjkggofdkfrikoekroorekkeokoekfoekfokf ITs A B.F.D.I!!!!",
+                "stars": "5",
+                "reviewer": "QWERTY1234555",
+                "reviewdate": "2024-07-01 16:30:55",
+                "createdate": "2024-07-01 16:30:55",
+                "reviewer_itemname": "@qwerty1234555"
+            },
+            {
+                "reviewtitle": "pikashow apk",
+                "reviewbody": "Get to the top, although there is no top <a href=\"https://pikashowapps.com.co/\" rel=\"ugc nofollow\">pikashow apk</a> classic BFDI vibe. It\u2019s all about the journey, chaos, and creativity. Climb anyway, even if the goal keeps shifting",
+                "stars": "0",
+                "reviewer": "JamesThomas2",
+                "reviewdate": "2025-04-21 14:54:13",
+                "createdate": "2025-04-21 14:54:13",
+                "reviewer_itemname": "@jamesthomas2"
+            },
+            {
+                "reviewtitle": "good!",
+                "reviewbody": "Good at all, but some characters glitch and do something they shouldnt. (e.g. moving on its own)",
+                "stars": "5",
+                "reviewer": "Tedrick Petree",
+                "reviewdate": "2025-10-13 14:43:25",
+                "createdate": "2025-10-13 14:43:25",
+                "reviewer_itemname": "@tedrick_petree"
+            }
+        ],
+        "all_time_views": 58270,
+        "last_30day_views": 590,
+        "last_7day_views": 144,
+        "screenshot_paths": [
+            "assets/screenshots/bfdi_swf/00_coverscreenshot.png",
+            "assets/screenshots/bfdi_swf/bandicam 2020-12-01 12-14-50-427.jpg"
+        ],
+        "swf_file": "ag-bfdi.swf",
+        "genres": [
+            "Action"
+        ],
+        "swf_file_path": "assets/games/ag-bfdi.swf"
+    },
+    "robotunicornattack_flash": {
+        "created": 1774075421,
+        "files_count": 8,
+        "item_last_updated": 1753626768,
+        "item_size": 2527774,
+        "metadata": {
+            "identifier": "robotunicornattack_flash",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "softwarelibrary",
+                "emulation"
+            ],
+            "creator": "Adult Swim",
+            "date": "2010-02-03",
+            "description": "<div>Robot Unicorn Attack is a Flash game developed by Spiritonin Media Games and published by Adult Swim. It's an endless runner where players take control of a robotic unicorn. The goal is to get the highest score, which is obtained by running for as long as possible, collecting pixies, and dashing through crystal stars.<br /></div><div><br /></div><div>Robot Unicorn Attack was ported to iOS and Android, and received several sequels and spinoffs. The most recent was the 2017 mobile-exclusive <i>Robot Unicorn Attack 3</i>. The game's viral fame led to a surge in popularity for the 1994 song <i>Always</i> by the British band Erasure, as it was the game's soundtrack. <br /></div><div><br /></div><div>As of November 2020, it is fully playable in Ruffle with a few graphical bugs.<br /></div>",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "flash",
+                "unicorn",
+                "robot",
+                "adult swim",
+                "runner"
+            ],
+            "title": "Robot Unicorn Attack",
+            "uploader": "a5.alex.b@gmail.com",
+            "publicdate": "2020-11-19 22:32:20",
+            "addeddate": "2020-11-19 22:32:20",
+            "curation": "[curator]validator@archive.org[/curator][date]20201119223749[/date][comment]checked for malware[/comment]",
+            "year": "2010",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "FINALLY",
+                "reviewbody": "I was so worried that I'd have to maintain some archaic vulnerable browser config into 2021 to relish this classic.  Thank you for preserving it!",
+                "stars": "5",
+                "reviewer": "phreakmonkey",
+                "reviewdate": "2020-12-04 18:25:32",
+                "createdate": "2020-12-04 18:25:32",
+                "reviewer_itemname": "@phreakmonkey"
+            },
+            {
+                "reviewtitle": "Thank God!!!!!!!!!",
+                "reviewbody": "Yassssssssssssssssssssssssssss. Robot Unicorn forever.\n\nShame the idiot developers have no sense of love for the past. Like leaving this behind is as bad as leaving pac man behind. You just don't do it. I'd pay 5 bucks again and again to keep playing this on newer phones and my laptop.",
+                "stars": "5",
+                "reviewer": "Nitehawk848",
+                "reviewdate": "2021-01-18 15:15:56",
+                "createdate": "2021-01-18 15:15:56",
+                "reviewer_itemname": "@nitehawk848"
+            },
+            {
+                "reviewtitle": "Thank you so much!",
+                "reviewbody": "This is the most triumphant flash game the internet ever saw. I played it for hours and I am forever grateful to the kind people who worked to preserve this game and other flash content!\n",
+                "stars": "5",
+                "reviewer": "Chandlerklebs",
+                "reviewdate": "2021-05-16 21:03:27",
+                "createdate": "2021-05-16 21:03:27",
+                "reviewer_itemname": "@chandlerklebs"
+            },
+            {
+                "reviewtitle": "yes",
+                "reviewbody": "yes",
+                "stars": "5",
+                "reviewer": "Shaan Mahmood",
+                "reviewdate": "2022-01-13 13:59:44",
+                "createdate": "2022-01-13 13:59:44",
+                "reviewer_itemname": "@shaan_mahmood"
+            },
+            {
+                "reviewtitle": "I love this place",
+                "reviewbody": "This game is my absolute favourite, thank you Internet Archive",
+                "stars": "5",
+                "reviewer": "HiHoGandalfAway",
+                "reviewdate": "2022-08-24 13:41:19",
+                "createdate": "2022-08-24 13:41:19",
+                "reviewer_itemname": "@hihogandalfaway"
+            },
+            {
+                "reviewtitle": "AND MAKE BELIEVE WITH YOU",
+                "reviewbody": "My god, what a flashback! My group was obsessed with this game in high school. We could only play it on a webpage that JUST hosted Robot Unicorn Attack since all the normal sites were blocked. Playing it now and realizing what an incredible sensory overload it is. I don't know how I coped!",
+                "stars": "5",
+                "reviewer": "polterheist",
+                "reviewdate": "2023-04-18 00:43:22",
+                "createdate": "2023-04-18 00:43:22",
+                "reviewer_itemname": "@polterheist"
+            },
+            {
+                "reviewtitle": "Shh..only dreams now.",
+                "reviewbody": "Hush everyone, lest Erasure tries to sue Internet Archive too in a misguided attempt to \"make more money\" (not realizing that letting this game circulate is FREE PUBLICITY-people will buy the track as long as you aren't greedy corporate asshats about it). \nThe greedy corporate asshats are going to take away all of our hopes, dreams, games, books, movies, music...support Internet Archive and encourage their fight against the corporate asshats! ALWAYS!",
+                "stars": "5",
+                "reviewer": "Bebopcola2021",
+                "reviewdate": "2023-08-19 20:28:36",
+                "createdate": "2023-08-19 20:28:36",
+                "reviewer_itemname": "@bebopcola2021"
+            },
+            {
+                "reviewtitle": "reply",
+                "reviewbody": " lol if your gonna be scummy saying that \"no!! your making money off my song!!\" not realizing that internet archive is a NON PROFIT then your making yourself look like the clown here",
+                "stars": "0",
+                "reviewer": "wonderhoy:D",
+                "reviewdate": "2024-09-15 18:40:53",
+                "createdate": "2024-09-15 18:40:53",
+                "reviewer_itemname": "@andrea_hannon"
+            },
+            {
+                "reviewtitle": "How does it work?",
+                "reviewbody": "\nSorry, not feeling too competent...  what am I supposed to do?",
+                "stars": "0",
+                "reviewer": "brewster",
+                "reviewdate": "2025-02-24 21:17:22",
+                "createdate": "2025-02-24 21:17:22",
+                "reviewer_itemname": "@brewster"
+            },
+            {
+                "reviewtitle": "thank u sm!",
+                "reviewbody": "it was my favorite game when i was a kid, it's unreal how i woke up today and suddenly remebered it",
+                "stars": "0",
+                "reviewer": "julixca",
+                "reviewdate": "2025-07-27 14:32:42",
+                "createdate": "2025-07-27 14:32:42",
+                "reviewer_itemname": "@julixca"
+            }
+        ],
+        "all_time_views": 57951,
+        "last_30day_views": 567,
+        "last_7day_views": 127,
+        "screenshot_paths": [
+            "assets/screenshots/robotunicornattack_flash/RobotUnicornAttack_screenshot.jpg",
+            "assets/screenshots/robotunicornattack_flash/__ia_thumb.jpg"
+        ],
+        "swf_file": "robotunicornattack_flash.swf",
+        "genres": [
+            "Arcade",
+            "Platformer"
+        ],
+        "swf_file_path": "assets/games/robotunicornattack_flash.swf"
+    },
+    "a-koopas-revenge-2": {
+        "created": 1774075422,
+        "files_count": 58,
+        "item_last_updated": 1772736894,
+        "item_size": 16799480,
+        "metadata": {
+            "identifier": "a-koopas-revenge-2",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Lambtaco",
+            "description": "<p style=\"margin:2px 0px 1em;color:rgb(201,190,190);font-family:Arial, Helvetica, sans-serif;font-size:14px;\">A Koopa's Revenge 2 is out now!</p><p style=\"margin:1em 0px;color:rgb(201,190,190);font-family:Arial, Helvetica, sans-serif;font-size:14px;\">HOLD DOWN CONTROL TO RUN.</p><p style=\"margin:1em 0px 2px;color:rgb(201,190,190);font-family:Arial, Helvetica, sans-serif;font-size:14px;\">For years the Mario Bros. &amp; company have been stepping on koopas and goombas. Now it's time for one koopa to get revenge. Play through 16 intense levels to achieve your goal of rescuing your goomba friends and getting revenge on Mario.</p>",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": "Mario",
+            "title": "A Koopa's Revenge 2",
+            "uploader": "Kirby1942G@gmail.com",
+            "publicdate": "2021-03-26 23:10:49",
+            "addeddate": "2021-03-26 23:10:49",
+            "curation": "[curator]validator@archive.org[/curator][date]20210326231705[/date][comment]checked for malware[/comment]",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "A Koopa's Revenge is FINALLY UPLOADED!",
+                "reviewbody": "Finally, the prequel is UPLOADED! Check it out on my account!",
+                "stars": "5",
+                "reviewer": "Diego Marin-Sedano",
+                "reviewdate": "2023-07-14 23:16:01",
+                "createdate": "2021-05-13 16:07:00",
+                "reviewer_itemname": "@diego_marin-sedano"
+            },
+            {
+                "reviewtitle": "laggy",
+                "reviewbody": "Really good game but sooo much lag",
+                "stars": "5",
+                "reviewer": "CandyCane1150",
+                "reviewdate": "2022-02-03 02:09:18",
+                "createdate": "2022-02-03 02:09:18",
+                "reviewer_itemname": "@candycane1150"
+            },
+            {
+                "reviewtitle": "fix",
+                "reviewbody": "internate arhcives i am going to say this really nicely pls fix the lag in this game it is killing me littarly when i play a level it make me miss a jump and die when i am pressing the jump button so pls fix this game thank you.",
+                "stars": "4",
+                "reviewer": "Caleb Anderson490",
+                "reviewdate": "2022-02-17 16:33:44",
+                "createdate": "2022-02-17 16:33:44",
+                "reviewer_itemname": "@caleb_anderson490"
+            },
+            {
+                "reviewtitle": "yes",
+                "reviewbody": "yes",
+                "stars": "5",
+                "reviewer": "James Ivie",
+                "reviewdate": "2022-11-21 13:50:44",
+                "createdate": "2022-11-21 13:50:44",
+                "reviewer_itemname": "@james_ivie"
+            },
+            {
+                "reviewtitle": "A Koopa's Revenge 2",
+                "reviewbody": "Can You Please do, A Game online Called: Chip 'n Dale Rescue Rangers 2 (NES) (USA)",
+                "stars": "5",
+                "reviewer": "Michael Almond",
+                "reviewdate": "2023-03-23 13:28:21",
+                "createdate": "2023-03-23 13:28:21",
+                "reviewer_itemname": "@michael_almond"
+            },
+            {
+                "reviewtitle": "how to get 107 percent in a little seconds",
+                "reviewbody": "you gotta import save file then click import in text then you put in giveme107 then your done",
+                "stars": "5",
+                "reviewer": "Elijah Vallette",
+                "reviewdate": "2023-05-31 05:01:21",
+                "createdate": "2023-05-31 05:01:21",
+                "reviewer_itemname": "@elijah_vallette"
+            },
+            {
+                "reviewtitle": "Why is there only one snap dragon flower and one bone flower",
+                "reviewbody": "I find it strange that they only have one snap dragon flower and one bone flower in boss rush mode",
+                "stars": "0",
+                "reviewer": "KaizoBlock1234",
+                "reviewdate": "2024-03-09 20:48:49",
+                "createdate": "2024-03-07 01:32:26",
+                "reviewer_itemname": "@kaizoblock1234"
+            },
+            {
+                "reviewtitle": "I got 107% without that code",
+                "reviewbody": "It's exactly what it sounds like, but I did use the code for reference since I wasn't able to find some secrets. I also had to use a bit of old btg vids and google too.",
+                "stars": "5",
+                "reviewer": "Aldean Brewer",
+                "reviewdate": "2025-10-15 19:50:01",
+                "createdate": "2025-10-15 19:50:01",
+                "reviewer_itemname": "@aldean_brewer"
+            },
+            {
+                "reviewtitle": ".",
+                "reviewbody": "after a month, all of my progress got deleted. pls fix this",
+                "stars": "4",
+                "reviewer": "jadepanther3000",
+                "reviewdate": "2025-10-23 01:27:07",
+                "createdate": "2025-10-23 01:27:07",
+                "reviewer_itemname": "@jadepanther3000"
+            },
+            {
+                "reviewtitle": "a koopas revenge 2",
+                "reviewbody": "best game ever!!",
+                "stars": "5",
+                "reviewer": "Austin Flatt",
+                "reviewdate": "2025-11-22 18:37:42",
+                "createdate": "2025-11-22 18:37:42",
+                "reviewer_itemname": "@austin_flatt"
+            },
+            {
+                "reviewtitle": "a koopa's revenge 2",
+                "reviewbody": "very good game The best flash  game I've played in a while ",
+                "stars": "5",
+                "reviewer": "Benplays456 ",
+                "reviewdate": "2026-03-05 18:54:44",
+                "createdate": "2026-03-04 15:39:19",
+                "reviewer_itemname": "@bentley_sands"
+            }
+        ],
+        "all_time_views": 57551,
+        "last_30day_views": 712,
+        "last_7day_views": 170,
+        "screenshot_paths": [
+            "assets/screenshots/a-koopas-revenge-2/00_coverscreenshot.png",
+            "assets/screenshots/a-koopas-revenge-2/screenshot_05.png",
+            "assets/screenshots/a-koopas-revenge-2/screenshot_03.png",
+            "assets/screenshots/a-koopas-revenge-2/screenshot_06.png"
+        ],
+        "swf_file": "a koopa's revenge 2.swf",
+        "genres": [
+            "Action",
+            "Platformer"
+        ],
+        "swf_file_path": "assets/games/a koopa's revenge 2.swf"
+    },
+    "big-time-butter-baron": {
+        "created": 1774064943,
+        "files_count": 56,
+        "item_last_updated": 1760416943,
+        "item_size": 6191223,
+        "metadata": {
+            "identifier": "big-time-butter-baron",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Megadev",
+            "date": "2012-05-22",
+            "description": "A.P. Butterworth needs YOU! Clock in at the butter factory and slot together those butter shapes ready for delivery in this creamily-smooth puzzler!",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+            "subject": [
+                "big time butter baron",
+                "puzzle",
+                "strategy",
+                "tetris",
+                "blocks"
+            ],
+            "title": "Big Time Butter Baron",
+            "uploader": "purplethesplat@gmail.com",
+            "publicdate": "2024-01-20 04:35:03",
+            "addeddate": "2024-01-20 04:35:03",
+            "curation": "[curator]validator@archive.org[/curator][date]20240120044021[/date][comment]checked for malware[/comment]",
+            "year": "2012",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "I LOVE BIG TIME BUTTER BARON",
+                "reviewbody": "I LOVE BIG TIME BUTTER BARON",
+                "stars": "5",
+                "reviewer": "stinkbug4",
+                "reviewdate": "2025-10-14 04:42:17",
+                "createdate": "2025-10-14 04:42:17",
+                "reviewer_itemname": "@stinkbug4"
+            }
+        ],
+        "all_time_views": 14444,
+        "last_30day_views": 530,
+        "last_7day_views": 112,
+        "screenshot_paths": [
+            "assets/screenshots/big-time-butter-baron/00_coverscreenshot.png"
+        ],
+        "swf_file": "Big_Time_Butter_Baron.swf",
+        "genres": [
+            "Arcade",
+            "Puzzle"
+        ],
+        "swf_file_path": "assets/games/Big_Time_Butter_Baron.swf"
+    },
+    "owata": {
+        "created": 1774071689,
+        "files_count": 9,
+        "item_last_updated": 1740454204,
+        "item_size": 3139206,
+        "metadata": {
+            "identifier": "owata",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "King Soukutu ",
+            "description": "<div>How to play/\u64cd\u4f5c\u8aac\u660e:</div><div><br /></div><div><br /><b><b>\u2190\u2191\u2193\u2192 | </b></b>movement<b><b>/</b></b>\u79fb\u52d5</div><div><br /></div><div>Z | Jump/\u30b8\u30e3\u30f3\u30d7</div><div><br /></div><div>X | Shoot/\u30aa\u30ef\u30bf\u30d0\u30b9\u30bf\u30fc</div><div><br /></div><div>R | Reset/\u30ea\u30c8\u30e9\u30a4</div><div><br /></div><div>ESC | Self-explosion/\u81ea\u7206</div><div><br /></div><div>Others | Variety/\u3044\u308d\u3044\u308d</div>",
+            "language": [
+                "jpn",
+                "eng"
+            ],
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "The Big Adventure of Owata's Life",
+                "The Big Adventure of Owatas Life",
+                "Flash",
+                "Flash Game",
+                "\u30b2\u30fc\u30e0"
+            ],
+            "title": "The Big Adventure of Owata's Life | \u4eba\u751f\u30aa\u30ef\u30bf\u306e\u5927\u5192\u967a",
+            "uploader": "MITYFRESH@protonmail.ch",
+            "publicdate": "2020-12-25 13:59:46",
+            "addeddate": "2020-12-25 13:59:46",
+            "curation": "[curator]validator@archive.org[/curator][date]20201225140510[/date][comment]checked for malware[/comment]",
+            "rights": "KING75",
+            "genre": [
+                "strategy",
+                "platformer"
+            ],
+            "emulator": "ruffle-swf",
+            "emulator_ext": "swf",
+            "collection_added": "emulation"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "game",
+                "reviewbody": "game",
+                "stars": "5",
+                "reviewer": "Retronyaical \u201c:3\u201d",
+                "reviewdate": "2025-02-25 03:30:00",
+                "createdate": "2025-02-25 03:30:00",
+                "reviewer_itemname": "@retronyaical_3_"
+            }
+        ],
+        "all_time_views": 54325,
+        "last_30day_views": 508,
+        "last_7day_views": 107,
+        "screenshot_paths": [
+            "assets/screenshots/owata/__ia_thumb.jpg"
+        ],
+        "swf_file": "owata.swf",
+        "genres": [
+            "Platformer"
+        ],
+        "swf_file_path": "assets/games/owata.swf"
+    },
+    "super-mario-flash-2": {
+        "created": 1774001825,
+        "files_count": 12,
+        "item_last_updated": 1759377478,
+        "item_size": 4328692,
+        "metadata": {
+            "identifier": "super-mario-flash-2",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "softwarelibrary",
+                "emulation"
+            ],
+            "creator": "Pouetpu Games",
+            "date": "2012",
+            "description": "<span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">Super Mario Flash 2, sequel of Super Mario Flash, is what a sequel</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">should be, the same with more stuff :D. Now based on Super Mario World,</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">the game include : vertical scrolling, two layers of tiles,</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">Auto-scrolling levels, Movable layer 2 (screenshot 5) and Water Mode</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">level.</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">SMF2 contain more types of collisions than SMF : ledges, water tiles</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">and different kind of slopes. Mario has also more moves, he can :</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">swim, slide, climb on vines, walk on walls and fly using his magic cape</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">(feather). Mario can carry objects like a koopa shell, a springboard or</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">the pow switch.</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">Yoshi is also present to help Mario to deal with way more types of</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">monsters than the first game. The world map is back with a SMW look, you</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">can</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">unlock the four hidden switch palace. Super Mario Flash 2, of course,</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">also includes an in-game level editor which allows you to create your</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">own levels</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">with powers ups, tiles, monsters and platforms. Note: you can save and</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">share your levels using level codes generated by the game. The game also</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">use the</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">flash player to run into your browser, so make sure you have the latest</span><br style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\" /><span style=\"color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);\">version installed.</span>",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": "nintendo",
+            "title": "Super Mario Flash 2",
+            "uploader": "Kirby1942G@gmail.com",
+            "publicdate": "2021-03-25 17:06:09",
+            "addeddate": "2021-03-25 17:06:09",
+            "curation": "[curator]validator@archive.org[/curator][date]20210325171155[/date][comment]checked for malware[/comment]",
+            "year": "2012",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "AMAZING",
+                "reviewbody": "This Game Is My Entire Childhood",
+                "stars": "5",
+                "reviewer": "Eli3278",
+                "reviewdate": "2021-09-29 01:44:31",
+                "createdate": "2021-09-29 01:44:31",
+                "reviewer_itemname": "@eli3278"
+            },
+            {
+                "reviewtitle": "Glitches galore",
+                "reviewbody": "It's clear Ruffle needs to support actionscript 3 and make flash games run better. It is not working for a majority of these games :(",
+                "stars": "0",
+                "reviewer": "AnonymousGamer",
+                "reviewdate": "2022-01-12 22:10:22",
+                "createdate": "2022-01-12 22:10:22",
+                "reviewer_itemname": "@anonymousgamer"
+            },
+            {
+                "reviewtitle": "mario",
+                "reviewbody": "i love this game this game make my childhood, but when i want play i cant move can somebody can tell me why?",
+                "stars": "5",
+                "reviewer": "\u0141ukasz Kowalik",
+                "reviewdate": "2022-04-19 13:24:54",
+                "createdate": "2022-04-19 13:24:54",
+                "reviewer_itemname": "@_ukasz_kowalik"
+            },
+            {
+                "reviewtitle": "Needs to be fixed",
+                "reviewbody": "This used to be my childhood go to computer game but on this website it is completely broken. Can't even use a mushroom without 1000 marios appearing. ",
+                "stars": "1",
+                "reviewer": "Mason Chabot",
+                "reviewdate": "2022-11-15 22:32:46",
+                "createdate": "2022-11-15 22:32:46",
+                "reviewer_itemname": "@mason_chabot"
+            },
+            {
+                "reviewtitle": "Thank you",
+                "reviewbody": "Thank you for reviving this piece of history when i was a kid, i still have emails of many world codes from back then.",
+                "stars": "5",
+                "reviewer": "CyborgCat98",
+                "reviewdate": "2023-04-12 14:54:58",
+                "createdate": "2023-04-12 14:54:58",
+                "reviewer_itemname": "@cyborgcat98"
+            },
+            {
+                "reviewtitle": "Nostalgia Kicking In",
+                "reviewbody": "Thanks for reviving this! Idk if anyone I knew still comes back to this game, but I was x-canyonXD on the old forum. I hadn't been active since 2014 and I came back to Pouetpu-Games only to find it shut down. :( Glad to see it's here. I still have my old level codes on my google drive and Level Palace, so i'm happy to see a place I can still play them!",
+                "stars": "5",
+                "reviewer": "Talat Hakim",
+                "reviewdate": "2023-05-02 22:44:02",
+                "createdate": "2023-05-02 22:44:02",
+                "reviewer_itemname": "@talat_hakim"
+            },
+            {
+                "reviewtitle": "fr",
+                "reviewbody": "any pony here 2024\n",
+                "stars": "5",
+                "reviewer": "Christopher Ian Perez",
+                "reviewdate": "2024-08-20 00:40:26",
+                "createdate": "2024-08-20 00:40:13",
+                "reviewer_itemname": "@chris_perez225"
+            },
+            {
+                "reviewtitle": "\u3081\u3063\u3061\u3083\u826f\u304b\u3063\u305f",
+                "reviewbody": "\u8098\u6253\u3061\u3059\u308b\u307b\u3069\u826f\u304b\u3063\u305f\u3068\u601d\u3046",
+                "stars": "5",
+                "reviewer": "\u5ddd\u7530\u304b\u306a\u82b1\udb40\udd02",
+                "reviewdate": "2025-10-02 03:57:51",
+                "createdate": "2025-10-02 03:57:51",
+                "reviewer_itemname": "@user225659"
+            }
+        ],
+        "all_time_views": 51623,
+        "last_30day_views": 809,
+        "last_7day_views": 181,
+        "screenshot_paths": [
+            "assets/screenshots/super-mario-flash-2/00_coverscreenshot.png",
+            "assets/screenshots/super-mario-flash-2/screenshot_00.png"
+        ],
+        "swf_file": "super-mario-flash-2.swf",
+        "genres": [
+            "Arcade",
+            "Action",
+            "Platformer"
+        ],
+        "swf_file_path": "assets/games/super-mario-flash-2.swf"
+    },
+    "madness-project-nexus-classic": {
+        "created": 1774060122,
+        "files_count": 52,
+        "item_last_updated": 1772298579,
+        "item_size": 18410278,
+        "metadata": {
+            "identifier": "madness-project-nexus-classic",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Krinkles",
+            "description": "Experience the original flash version of Madness Combat: Project Nexus<div><br /></div><div>WARNING: The game may try to send you to newgrounds when loads up, to avoid this when you load up the swf, turn off the internet connection on your computer. Afterwards when the game boots up you'll just have to press the launch button and play!</div>",
+            "emulator": "ruffle-swf",
+            "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+            "subject": "Newground;Flash;Flash Games;Madness;Madness Combat;Madness: Project Nexus",
+            "title": "Madness: Project Nexus Classic",
+            "uploader": "mlgsanic456@gmail.com",
+            "publicdate": "2023-03-14 19:57:40",
+            "addeddate": "2023-03-14 19:57:40",
+            "curation": "[curator]validator@archive.org[/curator][date]20230314200343[/date][comment]checked for malware[/comment]",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "Review",
+                "reviewbody": "Good game but it has the same problem as newgrounds arena works which is good but you can't see the words.",
+                "stars": "4",
+                "reviewer": "Tricky Phase ????",
+                "reviewdate": "2023-03-21 15:22:37",
+                "createdate": "2023-03-21 15:22:37",
+                "reviewer_itemname": "@tricky_phase_"
+            },
+            {
+                "reviewtitle": "to the tricky person",
+                "reviewbody": "its way better to use the standalone ruffle app which allows hardware acceleration and more support which i use, too",
+                "stars": "0",
+                "reviewer": "MacUser2",
+                "reviewdate": "2024-06-21 15:33:28",
+                "createdate": "2024-06-21 15:33:28",
+                "reviewer_itemname": "@ehanmmmzet"
+            },
+            {
+                "reviewtitle": "Bink.",
+                "reviewbody": "pretty cool game, krinkles epic.",
+                "stars": "5",
+                "reviewer": "Skrozzy",
+                "reviewdate": "2025-01-14 15:07:39",
+                "createdate": "2025-01-14 15:07:39",
+                "reviewer_itemname": "@skrozzy"
+            },
+            {
+                "reviewtitle": "good stuff",
+                "reviewbody": "good stuff",
+                "stars": "5",
+                "reviewer": "AshtonCorp06",
+                "reviewdate": "2025-08-17 09:32:15",
+                "createdate": "2025-08-14 11:38:23",
+                "reviewer_itemname": "@ashtoncorp06"
+            },
+            {
+                "reviewtitle": "the game durr",
+                "reviewbody": "Somewhere in Nevada\u2026",
+                "stars": "5",
+                "reviewer": "Anthony Jones661",
+                "reviewdate": "2025-08-27 12:42:51",
+                "createdate": "2025-08-27 12:42:51",
+                "reviewer_itemname": "@anthony_jones661"
+            },
+            {
+                "reviewtitle": "abselute madness",
+                "reviewbody": "i didnt play the download version yet but i played it on newgrounds and its so fun",
+                "stars": "5",
+                "reviewer": "Rnalover Glpo",
+                "reviewdate": "2025-11-02 00:26:34",
+                "createdate": "2025-11-02 00:26:34",
+                "reviewer_itemname": "@rnalover_glpo"
+            },
+            {
+                "reviewtitle": "move not work",
+                "reviewbody": "\u3164\u3164\u3164\u3164\u3164\u3164\u3164\u3164",
+                "stars": "1",
+                "reviewer": "\u3164\u3164\u3164\u3164 \u3164\u3164\u3164\u3164",
+                "reviewdate": "2025-11-09 10:29:50",
+                "createdate": "2025-11-09 10:29:50",
+                "reviewer_itemname": "@user841963"
+            },
+            {
+                "reviewtitle": "goated game",
+                "reviewbody": "really fun but a bit slow on my low end laptop",
+                "stars": "5",
+                "reviewer": "uhh someone",
+                "reviewdate": "2026-02-28 17:09:33",
+                "createdate": "2026-02-28 17:09:33",
+                "reviewer_itemname": "@gonzalez_isaac"
+            }
+        ],
+        "all_time_views": 44050,
+        "last_30day_views": 1240,
+        "last_7day_views": 272,
+        "screenshot_paths": [
+            "assets/screenshots/madness-project-nexus-classic/00_coverscreenshot.png"
+        ],
+        "swf_file": "Madness Project Nexus Classic.swf",
+        "genres": [
+            "Action"
+        ],
+        "swf_file_path": "assets/games/Madness Project Nexus Classic.swf"
+    },
+    "supersmashflash_swf": {
+        "created": 1774075429,
+        "files_count": 10,
+        "item_last_updated": 1759971810,
+        "item_size": 8984149,
+        "metadata": {
+            "identifier": "supersmashflash_swf",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "McLeodGaming",
+            "date": "2006-07-21",
+            "description": "Choose your characters and options and battle it out with 28 different \ncharacters in the original title that started it all \u2013 Super Smash \nFlash!<br />\nThis award-winning Super Smash Bros. fangame is complete with Classic \nMode, Adventure Mode, and all of the things that make Smash Bros. feel \nlike Smash Bros, with characters and content you\u2019d never expect \nsprinkled about. Have fun!",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "super smash flash",
+                "super smash bros",
+                "flash",
+                "nintendo",
+                "fangame"
+            ],
+            "title": "Super Smash Flash",
+            "uploader": "francescorosi27@gmail.com",
+            "publicdate": "2020-12-26 17:10:13",
+            "addeddate": "2020-12-26 17:10:13",
+            "curation": "[curator]validator@archive.org[/curator][date]20201226171543[/date][comment]checked for malware[/comment]",
+            "year": "2006",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "controls",
+                "reviewbody": "I don't know how to attack or jump so I can't play the flash game.",
+                "stars": "3",
+                "reviewer": "Sonic is the best",
+                "reviewdate": "2021-02-04 02:46:28",
+                "createdate": "2021-02-04 02:46:28",
+                "reviewer_itemname": "@sonic_is_the_best"
+            },
+            {
+                "reviewtitle": "Controls",
+                "reviewbody": "Move: Arrow keys\nJump: O\nAttack: P",
+                "stars": "5",
+                "reviewer": "ShanuJackal",
+                "reviewdate": "2021-03-18 11:47:45",
+                "createdate": "2021-03-18 11:47:45",
+                "reviewer_itemname": "@brockjellydonuts"
+            },
+            {
+                "reviewtitle": "Eh.",
+                "reviewbody": "It's decent, but no Smash Flash 2. I hope that one gets uploaded soon!",
+                "stars": "3",
+                "reviewer": "Hardhittin'",
+                "reviewdate": "2021-03-19 15:04:29",
+                "createdate": "2021-03-19 15:04:29",
+                "reviewer_itemname": "@hardhittin_"
+            },
+            {
+                "reviewtitle": "how",
+                "reviewbody": "How do I embed this?",
+                "stars": "4",
+                "reviewer": "[MG] WorldPeace",
+                "reviewdate": "2021-04-08 14:58:16",
+                "createdate": "2021-04-08 14:58:16",
+                "reviewer_itemname": "@_mg_worldpeace"
+            },
+            {
+                "reviewtitle": "Flash",
+                "reviewbody": "Hardhitting, flash ended since Janurary.",
+                "stars": "5",
+                "reviewer": "AlexToucanYT",
+                "reviewdate": "2021-09-24 02:54:54",
+                "createdate": "2021-09-24 02:54:54",
+                "reviewer_itemname": "@alextoucanyt"
+            },
+            {
+                "reviewtitle": "it will not work",
+                "reviewbody": "I can't get it to work, I am always getting stuck on the launching screen",
+                "stars": "1",
+                "reviewer": "Elyse Lentz",
+                "reviewdate": "2022-12-06 19:49:22",
+                "createdate": "2022-12-06 19:49:22",
+                "reviewer_itemname": "@elyse_lentz"
+            },
+            {
+                "reviewtitle": ".",
+                "reviewbody": "is not hacked \nobs: l founded his in other site.",
+                "stars": "1",
+                "reviewer": "sponeg",
+                "reviewdate": "2023-02-01 17:24:52",
+                "createdate": "2023-02-01 17:24:52",
+                "reviewer_itemname": "@sponeg"
+            },
+            {
+                "reviewtitle": "Legend",
+                "reviewbody": "A legend was born. I remember this game when I used to play it since 2019!",
+                "stars": "4",
+                "reviewer": "The Eastern Archivist",
+                "reviewdate": "2024-03-27 21:21:26",
+                "createdate": "2024-03-27 21:21:26",
+                "reviewer_itemname": "@rita_international"
+            },
+            {
+                "reviewtitle": "Welcome to Squidward Community College! The Right Choice.",
+                "reviewbody": "Enroll in a world-class institution with Squidward Community College where you learn the skills you need to succeed in the workplace and have the future you deserve.",
+                "stars": "5",
+                "reviewer": "TRent0n",
+                "reviewdate": "2025-03-19 19:04:18",
+                "createdate": "2025-03-19 19:04:18",
+                "reviewer_itemname": "@trenton_nagy"
+            },
+            {
+                "reviewtitle": "Strange knockback.",
+                "reviewbody": "For some reason if you slide as Kirby or Mario and hit them twice with one slide it knocks them far away. Still a fun game though.",
+                "stars": "4",
+                "reviewer": "GS - 04BK 975582 Dixie PS",
+                "reviewdate": "2025-10-09 01:03:22",
+                "createdate": "2025-10-09 01:03:22",
+                "reviewer_itemname": "@gs_-_04bk_975582_dixie_ps"
+            }
+        ],
+        "all_time_views": 43985,
+        "last_30day_views": 645,
+        "last_7day_views": 155,
+        "screenshot_paths": [
+            "assets/screenshots/supersmashflash_swf/___ia_thumb.png"
+        ],
+        "swf_file": "SuperSmash.swf",
+        "genres": [
+            "Arcade",
+            "Action",
+            "Platformer"
+        ],
+        "swf_file_path": "assets/games/SuperSmash.swf"
+    },
+    "etp_20200826": {
+        "created": 1774075430,
+        "files_count": 9,
+        "item_last_updated": 1766057197,
+        "item_size": 9873852,
+        "metadata": {
+            "identifier": "etp_20200826",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "softwarelibrary",
+                "emulation"
+            ],
+            "creator": "PuffballsUnited",
+            "date": "2010-04-11",
+            "description": "<span style=\"background-color:rgb(255,255,255);\"><font color=\"#333333\" face=\"Helvetica Neue, Helvetica, Arial, sans-serif\"><span style=\"font-size:14px;\">Escaping the Prison\u00a0is the second game from the Henry Stickmin series, this is the original version NOT the remastered version. You need Adobe Flash Player or similar to run the .swf file (if you use\u00a0 an old adobe flash player version, right-click and then PLAY button if the game don't load)</span></font></span>",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "PuffballsUnited",
+                "Henry Stickmin",
+                "Flash"
+            ],
+            "title": "Escaping the Prison",
+            "uploader": "raymanmago1265@gmail.com",
+            "publicdate": "2020-08-26 17:16:44",
+            "addeddate": "2020-08-26 17:16:44",
+            "curation": "[curator]validator@archive.org[/curator][date]20200826172214[/date][comment]checked for malware[/comment]",
+            "year": "2010",
+            "emulator_ext": "swf",
+            "emulator": "ruffle-swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "epic",
+                "reviewbody": " coolio",
+                "stars": "5",
+                "reviewer": "boombox515",
+                "reviewdate": "2021-07-24 04:06:11",
+                "createdate": "2021-07-24 04:06:11",
+                "reviewer_itemname": "@boombox515"
+            },
+            {
+                "reviewtitle": "woww",
+                "reviewbody": "the best games",
+                "stars": "5",
+                "reviewer": "ham za152",
+                "reviewdate": "2021-08-21 00:21:43",
+                "createdate": "2021-08-21 00:21:43",
+                "reviewer_itemname": "@ham_za152"
+            },
+            {
+                "reviewtitle": "This gives me nostalgia",
+                "reviewbody": "This is so nostalgic!\n\nyeah,",
+                "stars": "5",
+                "reviewer": "FlashGamesLover",
+                "reviewdate": "2022-01-03 20:00:57",
+                "createdate": "2022-01-03 20:00:57",
+                "reviewer_itemname": "@flashgameslover"
+            },
+            {
+                "reviewtitle": "great game",
+                "reviewbody": "It's excellent. ",
+                "stars": "5",
+                "reviewer": "Samuel3150",
+                "reviewdate": "2022-01-04 16:40:29",
+                "createdate": "2022-01-04 16:40:29",
+                "reviewer_itemname": "@samuel_skolnik"
+            },
+            {
+                "reviewtitle": "nostalgia",
+                "reviewbody": "I missed this game so much!",
+                "stars": "5",
+                "reviewer": "Armsbj",
+                "reviewdate": "2022-02-21 00:48:07",
+                "createdate": "2022-02-21 00:48:07",
+                "reviewer_itemname": "@armsbj"
+            },
+            {
+                "reviewtitle": "Hilarious!",
+                "reviewbody": "It is so funny and I love it!",
+                "stars": "5",
+                "reviewer": "Brayden Jacobs",
+                "reviewdate": "2022-05-06 15:11:20",
+                "createdate": "2022-05-06 15:11:20",
+                "reviewer_itemname": "@brayden_jacobs"
+            },
+            {
+                "reviewtitle": "game cool",
+                "reviewbody": "game good",
+                "stars": "5",
+                "reviewer": "Kyle Mitchell345",
+                "reviewdate": "2022-11-09 15:43:39",
+                "createdate": "2022-11-09 15:43:39",
+                "reviewer_itemname": "@kyle_mitchell345"
+            },
+            {
+                "reviewtitle": "Good game",
+                "reviewbody": "Henry is very old game",
+                "stars": "5",
+                "reviewer": "okujassu",
+                "reviewdate": "2022-11-21 15:18:55",
+                "createdate": "2022-11-21 15:18:55",
+                "reviewer_itemname": "@okujassu"
+            },
+            {
+                "reviewtitle": "cool",
+                "reviewbody": "play it at school\n",
+                "stars": "5",
+                "reviewer": "Iziah Washington295",
+                "reviewdate": "2024-10-04 16:45:27",
+                "createdate": "2024-10-04 16:45:12",
+                "reviewer_itemname": "@iziah_washington295"
+            },
+            {
+                "reviewtitle": "Awsome",
+                "reviewbody": "This is a really great for its time",
+                "stars": "5",
+                "reviewer": "Blake,Jake,&Jack",
+                "reviewdate": "2025-01-07 04:51:41",
+                "createdate": "2025-01-07 04:51:41",
+                "reviewer_itemname": "@blake_jake_jack"
+            },
+            {
+                "reviewtitle": "Still holds up",
+                "reviewbody": "great!",
+                "stars": "4",
+                "reviewer": "SplintahCeyull",
+                "reviewdate": "2025-12-18 11:26:33",
+                "createdate": "2025-12-18 11:12:08",
+                "reviewer_itemname": "@splintahceyull"
+            }
+        ],
+        "all_time_views": 42739,
+        "last_30day_views": 608,
+        "last_7day_views": 144,
+        "screenshot_paths": [
+            "assets/screenshots/etp_20200826/__ia_thumb.jpg"
+        ],
+        "swf_file": "533001_PrisonNG.swf",
+        "genres": [
+            "Adventure"
+        ],
+        "swf_file_path": "assets/games/533001_PrisonNG.swf"
+    },
+    "flash_625-sandwich-stacker": {
+        "created": 1774056272,
+        "files_count": 7,
+        "item_last_updated": 1728431890,
+        "item_size": 249790,
+        "metadata": {
+            "identifier": "flash_625-sandwich-stacker",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "The Walt Disney Company",
+            "description": "<div>In this game based on the <i>Lilo & Stitch</i> franchise, help Reuben, also known as Experiment 625, build sandwiches while avoiding rotten ingredients!<br /><br /></div><div>Originally found on Disney.com in the first decade of the 2000's.<br /></div><div><br /></div><div>Submitting one's score at the end of the game does not currently work, likely due to a deactivated server.<br /><br /></div>",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "Lilo and Stitch",
+                "flash game",
+                "video game",
+                "arcade game"
+            ],
+            "title": "625 Sandwich Stacker",
+            "uploader": "crocojim18@gmail.com",
+            "publicdate": "2020-12-02 05:18:54",
+            "addeddate": "2020-12-02 05:18:54",
+            "curation": "[curator]validator@archive.org[/curator][date]20201202052728[/date][comment]checked for malware[/comment]",
+            "emulator_ext": "swf"
+        },
+        "reviews": [],
+        "all_time_views": 42503,
+        "last_30day_views": 250,
+        "last_7day_views": 44,
+        "screenshot_paths": [
+            "assets/screenshots/flash_625-sandwich-stacker/__ia_thumb.jpg"
+        ],
+        "swf_file": "625-sandwich-stacker.swf",
+        "genres": [
+            "Arcade"
+        ],
+        "swf_file_path": "assets/games/625-sandwich-stacker.swf"
+    },
+    "tiq2_swf": {
+        "created": 1774074729,
+        "files_count": 18,
+        "item_last_updated": 1747074062,
+        "item_size": 10331079,
+        "metadata": {
+            "identifier": "tiq2_swf",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "softwarelibrary",
+                "emulation"
+            ],
+            "creator": "Splapp-Me-Do",
+            "date": "2007-08-30",
+            "description": "<div>(NOTE: due to the size of this game, it might take a bit to load)</div>The game contains a total of 120 questions, some of which even have several variations of themselves, as well as two different Power-ups, which you will definitely want to have at your disposal: the Skip, making a return as an actually usable Power-up (this time, you don't have to save them for the final question), and a brand new Power-up called the Fusestopper, a small purple one-eyed creature that will let you disintegrate the also returning bombs of the game (on most of the cases, at least). Make your way to the end of the Quiz in one take, with only 5 lives and no checkpoints. Additional new features of the game include the implementation of questions that require you to use your keyboard to proceed, the implementation of grades (which you will receive according to your performance through the game) and a new screen that will pop up if you happen to use the Tab key during any of the questions. It's still prohibited, though. The success of both The Impossible Quiz and The Impossible Quiz 2 eventually led them into being recreated as mobile applications that were released exclusively for iOS-powered devices. At the time, there wasn't going to be a third entry in the Impossible Quiz series at all, though after being contacted and paid by E4 Games, Splapp-Me-Do started working on an episodic sequel to the second Quiz, which eventually received the name of The Impossible Quiz Book, consisting of three Chapters with 50 questions each, released in different years.",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "Flash",
+                "The Impossible Quiz"
+            ],
+            "title": "The Impossible Quiz 2",
+            "uploader": "jen.waughtal@gmail.com",
+            "publicdate": "2020-11-30 15:07:27",
+            "addeddate": "2020-11-30 15:07:27",
+            "curation": "[curator]validator@archive.org[/curator][date]20201130151450[/date][comment]checked for malware[/comment]",
+            "year": "2007",
+            "emulator": "ruffle-swf",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "it does not work",
+                "reviewbody": "it does not work",
+                "stars": "1",
+                "reviewer": "Khiwan Edwards",
+                "reviewdate": "2023-10-01 18:44:02",
+                "createdate": "2023-10-01 18:44:02",
+                "reviewer_itemname": "@khiwan_edwards"
+            },
+            {
+                "reviewtitle": "all answers if you get stuck",
+                "reviewbody": "1. up his sleevies\n2. paint\n3. earth\n4. american\n5. do what frank says\n6. 8\n7. press the right key on your keyboard\n8. 10 letters in\n9. repeatedly click the fish, there is a skip if you click the bubble\n10. drag on the words 'A penguin'\n11. complete the maze by clicking and dragging the key  to the lock\n12. fine\n13. lederhosen\n14. click the question number twice\n15. q backwords dog\n16. chris\n17. hover your mouse over the brown ballon\n18. fly sandwiches\n19. fusestopper\n20. click the switch and pop all the pimples, there is a fusestopper hidden in the ear\n21. 30\n22. pink clouds\n23. drag the circle from the question number to the bottom middle square\n24. space\n25. when it's a jar\n26. you run. you run so far away\n27. press the '1' key on your keyboard\n28. this is sparta\n29. drag all the bombs you find under the tap, the way out is by clicking the green gem hidden on the right side of the screen by the tap, hidden skip under the letter R, and let it explode for a skip\n30. click the '0' in 30\n31. drive down the m4\n32. click the finger\n33. click the question number\n34. click the button\n35. aim for the face\n36. tequila \n37. hover your mouse off the screen\n38. mash any key on your keyboard\n39. do another maze\n40. toucan\n41. if you wait long enough one of the circles will shrink, hidden fusestopper in the bottom right\n42. drag the hand into the other worm\n43. random iq1 question\n44. what you say!!\n45. click the letters e, i, e, i, o in the answers\n46. around Orion's waist\n47. universal serial bus\n48. USB ports\n49. do what Frank says\n50. start by spamming click on any part of the dog, then pet him by moving your cursor up and down\n51. hover over 'came last' in the question\n52. rub the lamp\n53. click above the g\n54. drag the mouse from the bottom right to the button\n55. pokemon \n56. to the right of the leg\n57. four\n58. click the space bar\n59. drag the r in varnish to make it vanish\n60. drag the cat down\n61. to get to the other side\n62. edam\n63. press the quality button next to the skips, press the key q on your keyboard for the last skip\n64. find all 6 differences, its to hard to list them here\n65. goat's blood\n66. click all the leaves, the last fusestopper is the flower on his neck\n67. do the maze\n68. checkpoints are for the weak and mentally challenged\n69.  wait for the bomb to say 2, and click it\n70. click, and keep track of how many times chris gets hit\n71. 28.8kbps modem\n72. violence\n73. repetedally click the bush\n74. no\n75. how many times did chris get hit?\n76. aids\n77. a fat bloke\n78. make a circle around the handle\n79. drag the word on from dragon to the circle\n80. a corpse's bra\n81. second to last box\n82. wait for the timer to hit 1-3 second(s), then click obvious\n83. drag in the middle and click the arrow\n84. blue red blue yellow\n85. nevar!\n86. type 'u'\n87. click the egg the arrow points to\n88. wait for the timer to run out\n89. I'd thought one of them would have ducked\n90. tl;dr\n91. click when the symbol is on the screen\n92. none - I'm on question 92 of the impossible quiz 2 :(\n93. click the odd one out\n94. silence\n95. click the numbers in ascending order\n96. click your life count\n97. click the 'k' in black\n98. 5\n99. hover over 99 red balloons, don't hover over anything else\n100. 8275\n101.type the alphebet\n102. drag all the stuff away from the middle\n103. red\n104. rub your sponge to clean all the windows\n105. top left\n106. drag the blue eye out of the way, then put the eye in the other worm's hand in the eye socket\n107. this one?\n108. do the maze\n109. graphite\n110. click the red squares\n111. type 'tebahpla eht'\n112. drag the can to the can opener, then make a circle, then drag the can over to the bowl\n113. 4th one in on the 3rd row\n114. go left and right with your arrow keys \n115. caturday\n116. put all the parts into the correct spots\n117. a random question from the impossible quiz demo\n118. do nothing\n119. type 'horse' then 'peanut' then 'chihuahua'\n120! click the question number that corresponds to the question.\nphew that took a long time to write, i hope this helps anyone who reads this, enjoy!\n\n\n\n\n",
+                "stars": "5",
+                "reviewer": "RYAN ELLINGFORD",
+                "reviewdate": "2023-10-14 03:02:01",
+                "createdate": "2023-10-14 03:02:01",
+                "reviewer_itemname": "@ryan_ellingford"
+            },
+            {
+                "reviewtitle": "grr",
+                "reviewbody": "my computer doesn't have the delete key \ud83d\ude29",
+                "stars": "3",
+                "reviewer": "Ian Stanley116",
+                "reviewdate": "2025-05-12 18:20:54",
+                "createdate": "2025-05-12 18:20:54",
+                "reviewer_itemname": "@ian_stanley116"
+            }
+        ],
+        "all_time_views": 41584,
+        "last_30day_views": 624,
+        "last_7day_views": 140,
+        "screenshot_paths": [
+            "assets/screenshots/tiq2_swf/00_coverscreenshot.png",
+            "assets/screenshots/tiq2_swf/bandicam 2020-11-30 08-26-42-138.jpg",
+            "assets/screenshots/tiq2_swf/screenshot_00.png",
+            "assets/screenshots/tiq2_swf/screenshot_01.png"
+        ],
+        "swf_file": "theimpossiblequiz2.swf",
+        "genres": [
+            "Puzzle"
+        ],
+        "swf_file_path": "assets/games/theimpossiblequiz2.swf"
+    },
+    "sports_heads_football_championship_flash": {
+        "created": 1774045663,
+        "files_count": 8,
+        "item_last_updated": 1731978544,
+        "item_size": 1482389,
+        "metadata": {
+            "identifier": "sports_heads_football_championship_flash",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Mousebreaker",
+            "description": "A 2 player soccer game",
+            "emulator": "ruffle-swf",
+            "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+            "subject": [
+                "Arcade",
+                "Physics",
+                "Sports",
+                "Soccer",
+                "Flash",
+                "Adobe Flash",
+                "SWF"
+            ],
+            "title": "Sports Heads: Football Championship",
+            "uploader": "forschoolflashgames@gmail.com",
+            "publicdate": "2023-10-18 12:14:25",
+            "addeddate": "2023-10-18 12:14:25",
+            "curation": "[curator]validator@archive.org[/curator][date]20231018122334[/date][comment]checked for malware[/comment]",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "Best game",
+                "reviewbody": "Best game to play in class, always fun!",
+                "stars": "5",
+                "reviewer": "ImCedric",
+                "reviewdate": "2024-09-23 07:24:07",
+                "createdate": "2024-09-23 07:24:07",
+                "reviewer_itemname": "@imcedric"
+            }
+        ],
+        "all_time_views": 19553,
+        "last_30day_views": 553,
+        "last_7day_views": 131,
+        "screenshot_paths": [
+            "assets/screenshots/sports_heads_football_championship_flash/__ia_thumb.jpg",
+            "assets/screenshots/sports_heads_football_championship_flash/sports_heads_football_championship_flash_screenshot.png"
+        ],
+        "swf_file": "sports_heads_football_championship.swf",
+        "genres": [
+            "Arcade",
+            "Sports"
+        ],
+        "swf_file_path": "assets/games/sports_heads_football_championship.swf"
+    },
+    "resort_empire_": {
+        "created": 1774075437,
+        "files_count": 10,
+        "item_last_updated": 1728431971,
+        "item_size": 2978086,
+        "metadata": {
+            "identifier": "resort_empire_",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "LittleGiantWorld",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+            "subject": [
+                "Simulation",
+                "Tycoon",
+                "Axonometric",
+                "Pixel"
+            ],
+            "title": "Resort Empire",
+            "uploader": "ruffle9972@hotmail.com",
+            "publicdate": "2023-09-29 14:42:11",
+            "addeddate": "2023-09-29 14:42:11",
+            "curation": "[curator]validator@archive.org[/curator][date]20230929144741[/date][comment]checked for malware[/comment]",
+            "emulator_ext": "swf",
+            "version": "1.1",
+            "description": "<b>Source:</b> 9o3o\u00a0<a href=\"https://ooooooooo.ooo/static/?eb7f4a4e-d31c-e1f6-e32c-6a4517eda96f\" rel=\"nofollow\">Resort Empire</a>"
+        },
+        "reviews": [],
+        "all_time_views": 9008,
+        "last_30day_views": 260,
+        "last_7day_views": 60,
+        "screenshot_paths": [
+            "assets/screenshots/resort_empire_/00_A.png"
+        ],
+        "swf_file": "resort-empire.swf",
+        "genres": [
+            "Simulation"
+        ],
+        "swf_file_path": "assets/games/resort-empire.swf"
+    },
+    "qwop_flash": {
+        "created": 1774071376,
+        "files_count": 8,
+        "item_last_updated": 1772240053,
+        "item_size": 218627,
+        "metadata": {
+            "identifier": "qwop_flash",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Bennett Foddy",
+            "date": "2008-11-12",
+            "description": "A classic Flash game made by Bennett Foddy in 2008. Run down a 100M track without falling over.",
+            "emulator": "ruffle-swf",
+            "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+            "subject": [
+                "Arcade",
+                "Athletics",
+                "Ragdoll",
+                "Sports",
+                "Intentionally Infuriating",
+                "Flash",
+                "Adobe Flash",
+                "SWF"
+            ],
+            "title": "QWOP",
+            "uploader": "forschoolflashgames@gmail.com",
+            "publicdate": "2024-01-20 16:23:51",
+            "addeddate": "2024-01-20 16:23:51",
+            "curation": "[curator]validator@archive.org[/curator][date]20240120162910[/date][comment]checked for malware[/comment]",
+            "year": "2008",
+            "emulator_ext": "swf"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "walky",
+                "reviewbody": "STUPID ASS GAME MADE ME DROP MY CORN DOG ",
+                "stars": "5",
+                "reviewer": "Victor Hasty",
+                "reviewdate": "2026-02-04 13:47:07",
+                "createdate": "2026-02-04 13:47:07",
+                "reviewer_itemname": "@victor_hasty"
+            },
+            {
+                "reviewtitle": "Souls like",
+                "reviewbody": "Without a doubt, it's one of the games that has ever existed. ",
+                "stars": "5",
+                "reviewer": "Brian Write",
+                "reviewdate": "2026-02-28 00:54:07",
+                "createdate": "2026-02-28 00:54:07",
+                "reviewer_itemname": "@brian_write"
+            }
+        ],
+        "all_time_views": 9791,
+        "last_30day_views": 401,
+        "last_7day_views": 97,
+        "screenshot_paths": [
+            "assets/screenshots/qwop_flash/__ia_thumb.jpg"
+        ],
+        "swf_file": "qwop.swf",
+        "genres": [
+            "Arcade",
+            "Sports"
+        ],
+        "swf_file_path": "assets/games/qwop.swf"
+    },
+    "red-ball-2-the-king": {
+        "created": 1774073901,
+        "files_count": 11,
+        "item_last_updated": 1766546171,
+        "item_size": 4948932,
+        "metadata": {
+            "identifier": "red-ball-2-the-king",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Evgeniy Fedoseev",
+            "date": "2009-10-08",
+            "description": "Bigger, better, stronger, cuter...and more lost than ever. Red Ball 2 is here, and he has lost his beloved crown. Help him play through puzzles, cannons, water, pins, toxic waste, invisible platforms, boats and much, much more on his quest to find the crown. Features 20 action-packed levels, one golden crown, and a Red Ball on a mission to find it.",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+            "subject": [
+                "Physics",
+                "Platformer",
+                "Box2D"
+            ],
+            "title": "Red Ball 2: The King",
+            "uploader": "ruffle9972@hotmail.com",
+            "publicdate": "2023-11-14 17:08:58",
+            "addeddate": "2023-11-14 17:08:58",
+            "year": "2009",
+            "emulator_ext": "swf",
+            "curation": "[curator]validator@archive.org[/curator][date]20231114172147[/date][comment]checked for malware[/comment]",
+            "publisher": "King.com",
+            "series": "Red Ball"
+        },
+        "reviews": [
+            {
+                "reviewtitle": "sdsdd",
+                "reviewbody": "dsd",
+                "stars": "5",
+                "reviewer": "Adrian234 bollenos",
+                "reviewdate": "2025-07-29 16:40:08",
+                "createdate": "2025-07-29 16:40:08",
+                "reviewer_itemname": "@adrian234_bollenos"
+            },
+            {
+                "reviewtitle": "great",
+                "reviewbody": "Love it but can't get past 17",
+                "stars": "5",
+                "reviewer": "PrOgAmErHi",
+                "reviewdate": "2025-12-03 15:51:03",
+                "createdate": "2025-12-03 15:51:03",
+                "reviewer_itemname": "@progamerhi"
+            },
+            {
+                "reviewtitle": "Gameplay",
+                "reviewbody": "Good for experienced players, but not great for starters.",
+                "stars": "3",
+                "reviewer": "Yeonjeong Kim",
+                "reviewdate": "2025-12-24 03:16:06",
+                "createdate": "2025-12-24 03:16:06",
+                "reviewer_itemname": "@yeonjeong_kim"
+            }
+        ],
+        "all_time_views": 8746,
+        "last_30day_views": 277,
+        "last_7day_views": 60,
+        "screenshot_paths": [
+            "assets/screenshots/red-ball-2-the-king/00_A.png"
+        ],
+        "swf_file": "redball2_theking.swf",
+        "genres": [
+            "Platformer"
+        ],
+        "swf_file_path": "assets/games/redball2_theking.swf"
+    },
+    "penalty_fever": {
+        "created": 1774075440,
+        "files_count": 7,
+        "item_last_updated": 1728431693,
+        "item_size": 487396,
+        "metadata": {
+            "identifier": "penalty_fever",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Flashfooty.com",
+            "date": "2007",
+            "description": "This is the online game \"Penalty Fever\", its a game of site called \"Flashfooty.com\"\u00a0",
+            "language": "eng",
+            "licenseurl": "https://creativecommons.org/licenses/by-nd/4.0/",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "Football",
+                "Soccer",
+                "Penalty",
+                "Fever",
+                "Penalty Fever",
+                "Futebol",
+                "Ball",
+                "Sports"
+            ],
+            "title": "Penalty Fever Game Web Flash",
+            "uploader": "gabrielmr557@gmail.com",
+            "publicdate": "2020-11-13 22:54:36",
+            "addeddate": "2020-11-13 22:54:36",
+            "curation": "[curator]validator@archive.org[/curator][date]20201113225949[/date][comment]checked for malware[/comment]",
+            "emulator": "ruffle-swf",
+            "emulator_ext": "swf",
+            "year": "2007",
+            "collection_added": "emulation"
+        },
+        "reviews": [],
+        "all_time_views": 6254,
+        "last_30day_views": 122,
+        "last_7day_views": 28,
+        "screenshot_paths": [
+            "assets/screenshots/penalty_fever/__ia_thumb.jpg"
+        ],
+        "swf_file": "penalty_fever.swf",
+        "genres": [
+            "Sports"
+        ],
+        "swf_file_path": "assets/games/penalty_fever.swf"
+    },
+    "anime_summer_girl_dressup": {
+        "created": 1774075442,
+        "files_count": 10,
+        "item_last_updated": 1728431950,
+        "item_size": 2308391,
+        "metadata": {
+            "identifier": "anime_summer_girl_dressup",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "date": "2011-12-21",
+            "description": "You like to be alone, but this bodyguard won't let you breathe... Escape and enjoy your quiet moments.",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "title": "/follow",
+            "uploader": "lambrumunddal@gmail.com",
+            "publicdate": "2021-02-06 19:59:15",
+            "addeddate": "2021-02-06 19:59:15",
+            "curation": "[curator]kaplan@archive.org[/curator][date]20230503070653[/date][state]un-dark[/state][comment]ace[/comment]",
+            "year": "2011",
+            "emulator_ext": "swf",
+            "creator": "01101101",
+            "subject": [
+                "Adventure",
+                "Point and Click",
+                "Puzzle",
+                "Pixel"
+            ],
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "notes": "Made for Ludum Dare 22 - Theme: Alone\n\nThe enhanced version of /follow was released a few days after the \"release version\" and includes a preloader, an alternative ending, and credits - all of which could not be included in the \"release\" version of the game.\n\nThe release version of /follow was made for Ludum Dare 21 and contains some bugs, less polish, and an ending that doesn't appear in the \"enhanced version\".",
+            "version": "Enhanced"
+        },
+        "reviews": [],
+        "all_time_views": 3921,
+        "last_30day_views": 9,
+        "last_7day_views": 0,
+        "screenshot_paths": [
+            "assets/screenshots/anime_summer_girl_dressup/00_A.png"
+        ],
+        "swf_file": "LD22_enhanced.swf",
+        "genres": [
+            "Puzzle",
+            "Adventure"
+        ],
+        "swf_file_path": "assets/games/LD22_enhanced.swf"
+    },
+    "bejeweled-ste": {
+        "created": 1774075443,
+        "files_count": 35,
+        "item_last_updated": 1652758333,
+        "item_size": 2318994,
+        "metadata": {
+            "identifier": "bejeweled-ste",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "description": "Match-three or more gems in the classic Bejeweled game as time permits!\u00a0 It is based on another game of the same name.",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "Bejeweled",
+                "match-three",
+                "puzzle",
+                "gems",
+                "Flash",
+                "flash game",
+                "flash"
+            ],
+            "title": "Bejeweled ",
+            "uploader": "henblight@yahoo.com",
+            "publicdate": "2021-01-15 04:38:56",
+            "addeddate": "2021-01-15 04:38:56",
+            "curation": "[curator]validator@archive.org[/curator][date]20210115044413[/date][comment]checked for malware[/comment]",
+            "notes": "This is a Flash game.",
+            "emulator": "ruffle-swf",
+            "emulator_ext": "swf"
+        },
+        "reviews": [],
+        "all_time_views": 2490,
+        "last_30day_views": 42,
+        "last_7day_views": 12,
+        "screenshot_paths": [
+            "assets/screenshots/bejeweled-ste/screenshot_11.png",
+            "assets/screenshots/bejeweled-ste/00_coverscreenshot.png",
+            "assets/screenshots/bejeweled-ste/screenshot_09.png",
+            "assets/screenshots/bejeweled-ste/screenshot_07.png",
+            "assets/screenshots/bejeweled-ste/screenshot_05.png",
+            "assets/screenshots/bejeweled-ste/screenshot_04.png",
+            "assets/screenshots/bejeweled-ste/screenshot_10.png",
+            "assets/screenshots/bejeweled-ste/screenshot_12.png",
+            "assets/screenshots/bejeweled-ste/screenshot_08.png",
+            "assets/screenshots/bejeweled-ste/screenshot_03.png",
+            "assets/screenshots/bejeweled-ste/screenshot_02.png",
+            "assets/screenshots/bejeweled-ste/screenshot_00.png",
+            "assets/screenshots/bejeweled-ste/screenshot_01.png",
+            "assets/screenshots/bejeweled-ste/screenshot_06.png"
+        ],
+        "swf_file": "BejeweledSte.swf",
+        "genres": [
+            "Arcade",
+            "Puzzle"
+        ],
+        "swf_file_path": "assets/games/BejeweledSte.swf"
+    },
+    "atm-m3-simulator": {
+        "created": 1774075444,
+        "files_count": 10,
+        "item_last_updated": 1720294481,
+        "item_size": 1826379,
+        "metadata": {
+            "identifier": "atm-m3-simulator",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "ATM",
+            "emulator": "ruffle-swf",
+            "language": "ita",
+            "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+            "subject": [
+                "Driving",
+                "Simulation",
+                "Train"
+            ],
+            "title": "ATM M3 Simulator",
+            "uploader": "ruffle9972@hotmail.com",
+            "publicdate": "2023-10-01 12:57:17",
+            "addeddate": "2023-10-01 12:57:17",
+            "curation": "[curator]validator@archive.org[/curator][date]20231001130236[/date][comment]checked for malware[/comment]",
+            "emulator_ext": "swf"
+        },
+        "reviews": [],
+        "all_time_views": 4485,
+        "last_30day_views": 155,
+        "last_7day_views": 37,
+        "screenshot_paths": [
+            "assets/screenshots/atm-m3-simulator/00_A.png"
+        ],
+        "swf_file": "metro_web.swf",
+        "genres": [
+            "Driving",
+            "Simulation"
+        ],
+        "swf_file_path": "assets/games/metro_web.swf"
+    },
+    "princess_bonnie_dressup": {
+        "created": 1774075446,
+        "files_count": 17,
+        "item_last_updated": 1721624577,
+        "item_size": 6574655,
+        "metadata": {
+            "identifier": "princess_bonnie_dressup",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Bonniegames",
+            "description": "dress up bonnie in princess clothes",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "Flash",
+                "Swf",
+                "Games",
+                "Dress up games"
+            ],
+            "title": "Princess Bonnie dressup",
+            "uploader": "khadija.iman.ali@gmail.com",
+            "publicdate": "2022-03-05 01:41:53",
+            "addeddate": "2022-03-05 01:41:53",
+            "curation": "[curator]validator@archive.org[/curator][date]20220305014719[/date][comment]checked for malware[/comment]",
+            "autoemulator": "true",
+            "emulator_ext": "swf",
+            "emulator": "ruffle-swf",
+            "collection_added": [
+                "softwarelibrary",
+                "emulation",
+                "softwarelibrary_flash"
+            ]
+        },
+        "reviews": [],
+        "all_time_views": 832,
+        "last_30day_views": 33,
+        "last_7day_views": 7,
+        "screenshot_paths": [
+            "assets/screenshots/princess_bonnie_dressup/00_coverscreenshot.png",
+            "assets/screenshots/princess_bonnie_dressup/pinkurose.jpeg",
+            "assets/screenshots/princess_bonnie_dressup/screenshot_00.png"
+        ],
+        "swf_file": "princess_bonnie_dressup.swf",
+        "genres": [
+            "Dress up games"
+        ],
+        "swf_file_path": "assets/games/princess_bonnie_dressup.swf"
+    },
+    "chibi-maker4": {
+        "created": 1774075447,
+        "files_count": 36,
+        "item_last_updated": 1721617883,
+        "item_size": 3249215,
+        "metadata": {
+            "identifier": "chibi-maker4",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Gen8",
+            "description": "Flash game",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "Flash",
+                "Swf",
+                "Games",
+                "Dress up games"
+            ],
+            "title": "Chibi maker",
+            "uploader": "khadija.iman.ali@gmail.com",
+            "publicdate": "2022-03-13 16:19:54",
+            "addeddate": "2022-03-13 16:19:54",
+            "curation": "[curator]validator@archive.org[/curator][date]20220313162604[/date][comment]checked for malware[/comment]",
+            "emulator": "ruffle-swf",
+            "autoemulator": "true",
+            "emulator_ext": "swf",
+            "collection_added": [
+                "softwarelibrary",
+                "emulation",
+                "softwarelibrary_flash"
+            ]
+        },
+        "reviews": [],
+        "all_time_views": 823,
+        "last_30day_views": 31,
+        "last_7day_views": 1,
+        "screenshot_paths": [
+            "assets/screenshots/chibi-maker4/00_coverscreenshot.png"
+        ],
+        "swf_file": "chibi-maker4.swf",
+        "genres": [
+            "Dress up games"
+        ],
+        "swf_file_path": "assets/games/chibi-maker4.swf"
+    },
+    "polly_pocket_girl_photographer": {
+        "created": 1774073114,
+        "files_count": 10,
+        "item_last_updated": 1771776341,
+        "item_size": 3045747,
+        "metadata": {
+            "identifier": "polly_pocket_girl_photographer",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "title": "Winning Formula",
+            "uploader": "lambrumunddal@gmail.com",
+            "publicdate": "2021-05-04 16:01:25",
+            "addeddate": "2021-05-04 16:01:25",
+            "curation": "[curator]validator@archive.org[/curator][date]20210504160706[/date][comment]checked for malware[/comment]",
+            "emulator_ext": "swf",
+            "creator": "101CarGames",
+            "subject": [
+                "Racing",
+                "Sports",
+                "Top-Down"
+            ],
+            "publisher": "101CarGames"
+        },
+        "reviews": [],
+        "all_time_views": 736,
+        "last_30day_views": 21,
+        "last_7day_views": 7,
+        "screenshot_paths": [
+            "assets/screenshots/polly_pocket_girl_photographer/00_A.png"
+        ],
+        "swf_file": "8253173674.swf",
+        "genres": [
+            "Sports"
+        ],
+        "swf_file_path": "assets/games/8253173674.swf"
+    },
+    "princess_hairstyle": {
+        "created": 1774075450,
+        "files_count": 25,
+        "item_last_updated": 1721624580,
+        "item_size": 6286135,
+        "metadata": {
+            "identifier": "princess_hairstyle",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Girlsgogames",
+            "description": "Do the hair of 5 princesses",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+            "subject": [
+                "Flash",
+                "Swf",
+                "Games",
+                "Dress up games"
+            ],
+            "title": "Princess hairstyle",
+            "uploader": "khadija.iman.ali@gmail.com",
+            "publicdate": "2022-03-05 01:27:16",
+            "addeddate": "2022-03-05 01:27:16",
+            "curation": "[curator]validator@archive.org[/curator][date]20220305013326[/date][comment]checked for malware[/comment]",
+            "autoemulator": "true",
+            "emulator_ext": "swf",
+            "emulator": "ruffle-swf",
+            "collection_added": [
+                "softwarelibrary",
+                "emulation",
+                "softwarelibrary_flash"
+            ]
+        },
+        "reviews": [],
+        "all_time_views": 607,
+        "last_30day_views": 19,
+        "last_7day_views": 7,
+        "screenshot_paths": [
+            "assets/screenshots/princess_hairstyle/thumbhair.jpeg"
+        ],
+        "swf_file": "princess_hairstyle.swf",
+        "genres": [
+            "Dress up games"
+        ],
+        "swf_file_path": "assets/games/princess_hairstyle.swf"
+    },
+    "earn_to-die": {
+        "created": 1774075451,
+        "files_count": 10,
+        "item_last_updated": 1710161248,
+        "item_size": 4237738,
+        "metadata": {
+            "identifier": "earn_to-die",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Toffee Games",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+            "subject": [
+                "Action",
+                "Driving",
+                "Zombie",
+                "Upgrade"
+            ],
+            "title": "Earn to Die",
+            "uploader": "ruffle9972@hotmail.com",
+            "publicdate": "2023-10-01 11:47:02",
+            "addeddate": "2023-10-01 11:47:02",
+            "curation": "[curator]validator@archive.org[/curator][date]20231001115227[/date][comment]checked for malware[/comment]",
+            "emulator_ext": "swf",
+            "series": "Earn to Die",
+            "description": "<div>Upgrade your car and drive your way through hordes of zombies in order to reach your destination - alive.</div>",
+            "date": "2011-11-17",
+            "year": "2011",
+            "publisher": "Not Doppler"
+        },
+        "reviews": [],
+        "all_time_views": 5116,
+        "last_30day_views": 263,
+        "last_7day_views": 59,
+        "screenshot_paths": [
+            "assets/screenshots/earn_to-die/00_A.jpg"
+        ],
+        "swf_file": "74774.swf",
+        "genres": [
+            "Action",
+            "Driving"
+        ],
+        "swf_file_path": "assets/games/74774.swf"
+    },
+    "freeway-fury-2": {
+        "created": 1774075452,
+        "files_count": 10,
+        "item_last_updated": 1689386389,
+        "item_size": 10287443,
+        "metadata": {
+            "identifier": "freeway-fury-2",
+            "mediatype": "software",
+            "collection": [
+                "softwarelibrary_flash_games",
+                "softwarelibrary_flash",
+                "emulation"
+            ],
+            "creator": "Serius Games",
+            "description": "<div>Don't you sometimes wish you could just jump over traffic somehow? In Freeway Fury you can!</div><div><br /></div><div>Quickly switch vehicles to get ahead faster, or to avoid bursting into flames. Crazy stunts award you with points and nitro boost! Can you reach the finish line before time runs out?</div><div><br /></div><div>Reach all 7 different endings for the final BOSS battle! Or try FREE RIDE mode with lots of fun modifications to the game! Release your fury!!!</div>",
+            "emulator": "ruffle-swf",
+            "language": "eng",
+            "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+            "subject": [
+                "Arcade",
+                "Driving",
+                "Flixel"
+            ],
+            "title": "Freeway Fury 2",
+            "uploader": "ruffle9972@hotmail.com",
+            "publicdate": "2023-06-19 10:15:07",
+            "addeddate": "2023-06-19 10:15:07",
+            "curation": "[curator]validator@archive.org[/curator][date]20230619102221[/date][comment]checked for malware[/comment]",
+            "emulator_ext": "swf"
+        },
+        "reviews": [],
+        "all_time_views": 1726,
+        "last_30day_views": 13,
+        "last_7day_views": 2,
+        "screenshot_paths": [
+            "assets/screenshots/freeway-fury-2/00_A.png"
+        ],
+        "swf_file": "FF2.swf",
+        "genres": [
+            "Arcade",
+            "Driving"
+        ],
+        "swf_file_path": "assets/games/FF2.swf"
+    }
+}

@@ -5,123 +5,254 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games Feed - Ruffle Player</title>
     
-
     <style>
-        .games-page {
-            height: 100vh;
-            overflow-y: scroll; /* Enable scrolling on games-page */
-            scroll-snap-type: y mandatory; /* Enable snap scrolling */
-            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-            /* 
-            height: 100%;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea, #764ba2); */
-        }
-
-        /* Games feed container */
-        #gamesFeed {
-            display: flex;
-            flex-direction: column;
-            /* gap: 20px;
-            padding: 20px 0; */
-        }
-
-        /* Game container - don't set height to 100% */
-        .game-container {
-            display: flex;
-            /* must fill window */
-            height: 100vh; /* Full viewport height */
-            scroll-snap-align: start;
-            scroll-snap-stop: always; /* Prevent skipping containers */
-            /* gap: 20px;
-            margin-bottom: 30px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            padding: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2); */
-        }
-
-        /* Ensure columns don't force height */
-        .col {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* border-radius: 10px; */
-        }
-
-        .left, .right {
-            /* background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+        body {
+            margin: 0;
+            font-family: 'Mulish', sans-serif;
+            background: #121212;
             color: white;
-            padding: 20px;
-            min-height: 350px; */
         }
 
-        .middle {
-            /* background: rgba(0, 0, 0, 0.3);
-            min-height: 350px; */
+        .games-feed {
+            height: 100vh;
+            overflow-y: auto;
+            scroll-snap-type: y mandatory;
         }
 
         .game-wrapper {
-            width: 100%;
-            height: 100%;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            scroll-snap-align: start;
+        }
+
+        /* ===== CONTAINER ===== */
+        .game-container {
+            display: flex;
+            width: 90%;
+            height: 90%;
+            gap: 20px;
+            padding: 20px;
+            border-radius: 30px;
+            border: 6px solid #FFAE4E;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .middle {
+            flex: 1.5;
+        }
+
+        .left {
+            gap: 10px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .year {
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        .creator-label {
+            font-size: 13px;
+            opacity: 0.6;
+        }
+
+        .description {
+            font-size: 15px;
+            line-height: 1.5;
+            max-height: 120px;
+            overflow-y: auto;
+        }
+
+        .genres {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .genres span {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .game-player {
+            background: #1e1e1e;
+            border-radius: 15px;
             overflow: hidden;
-            /* border-radius: 8px;
-            background: #2a2a2a; */
         }
 
         object, ruffle-player {
             width: 100%;
-            height: 300px;
+            height: 350px;
+        }
+
+        .act-btn-panel {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .likes-btn, .comments-btn {
             border: none;
-        }        
+            background: #FF4E4E;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .likes-btn:hover,
+        .comments-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .right {
+            gap: 12px;
+        }
+
+        .screenshots-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .screenshots-row {
+            display: flex;
+            gap: 8px;
+        }
+
+        .screenshot {
+            width: 120px;
+            height: 80px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .screenshot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .comments-list {
+            background: rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 10px;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        .comment {
+            padding: 5px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            font-size: 13px;
+        }
+
+        .challenges-container {
+            padding: 15px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #FFAE4E, #ff7a18);
+            text-align: center;
+        }
+
+        .challenges-container a {
+            display: inline-block;
+            margin-top: 10px;
+            background: white;
+            color: black;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .game-container:hover {
+            transform: scale(1.01);
+            transition: 0.3s;
+        }
     </style>
 </head>
 <body>
     <div class="games-page">
         <div class="container-fluid">
             <h1 style="color: white; margin-bottom: 30px; font-size: 32px;">🎮 Flash Games</h1>
-            <div id="gamesFeed">
-                <!-- Template game container -->
-                <div class="game-container">
-                    <!-- Left column -->
-                    <div class="col left">
-                        <!-- Thumbnail and info will be injected here by JS -->
-                    </div>
-                    
-                    <!-- Middle column with Flash/Ruffle player -->
-                    <div class="col middle">
-                        <div class="game-wrapper">
-                            <object 
-                                type="application/x-shockwave-flash" 
-                                data=""  
-                                width="100%" 
-                                height="100%"
-                            >
-                                <param name="quality" value="high">
-                                <param name="wmode" value="transparent">
-                                <p>Flash content not supported. 
-                                   <a href="https://ruffle.rs" style="color: #F6AE4E;">Get Ruffle</a>
-                                </p>
-                            </object>
+            <div class="games-feed">
+                <div class="game-wrapper">
+                    <div class="game-container">
+                         <div class="col left">
+                            <div class="title"></div>
+                            <div class="year"></div>
+                            <div class="creator-label">Created by:</div>
+                            <div class="description"></div>
+                            <div class="genres"></div>
                         </div>
-                    </div>
                     
-                    <!-- Right column -->
-                    <div class="col right">
-                        <!-- Additional controls will be injected here by JS -->
+                        <div class="col middle">
+                            <div class="game-player">
+                                <object 
+                                    type="application/x-shockwave-flash" 
+                                    data=""  
+                                    >
+                                    <param name="quality" value="high">
+                                    <param name="wmode" value="transparent">
+                                    <p>Flash content not supported. 
+                                        <a href="https://ruffle.rs" style="color: #F6AE4E;">Get Ruffle</a>
+                                    </p>
+                                </object>
+                            </div>
+                            <div class="act-btn-panel">
+                                <div>
+                                    <button class="likes-btn">❤️</button>
+                                    <div class="likes-count">20.2K</div>
+                                </div>
+                                <div class="comments-btn-wrapper">
+                                    <button class="comments-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col right">
+                            <div class="screenshots-container"> 
+                                <div class="screenshots-row">
+                                    <div class="screenshot"></div>                                    
+                                </div>
+                                <div class="screenshots-row">
+                                    <div class="screenshot"></div>
+                                </div>
+                            </div>
+                            <div class="comments-list">
+                                <div class="comment"></div>
+                                <div class="comments-count"></div>
+                                <form action="">
+                                    <input type="text" placeholder="Write a comment..." />
+                                    <button type="submit">Post</button>
+                                </form>
+                            </div>
+                            <div class="challenges-container">
+                                <p>Ikuti challenge untuk meningkatkan skill kamu 🚀</p>
+                                <a href="/challenges">Join Now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Ruffle CDN -->
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </body>
 </html>
