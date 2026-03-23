@@ -529,10 +529,18 @@ class SPARouter {
                 switch(type) {
                     case 'material':
                         contentContainer.innerHTML = subSlide.content;
+                        const materialCard = contentContainer.querySelector('.material-card');
+                        if (materialCard) {
+                            materialCard.appendChild(navDiv);
+                        }
                         break;
                         
                     case 'quiz':
                         contentContainer.innerHTML = this.renderQuiz(subSlide);
+                        const quizContainer = contentContainer.querySelector('.quiz-container');
+                        if (quizContainer) {
+                            quizContainer.appendChild(navDiv);
+                        }
                         this.attachQuizHandlers(contentContainer, subSlide);
                         break;
                         
@@ -543,6 +551,10 @@ class SPARouter {
                                 <a href="${subSlide.link}" target="_blank" class="external-link">Open Project</a>
                             </div>
                         `;
+                        const externalCard = contentContainer.querySelector('.external-card');
+                        if (externalCard) {
+                            externalCard.appendChild(navDiv);
+                        }
                         break;
                 }
                 
@@ -570,7 +582,6 @@ class SPARouter {
             renderCurrentSubSlide();
             
             slideDiv.appendChild(contentContainer);
-            slideDiv.appendChild(navDiv);
             slidesContainer.appendChild(slideDiv);
         });
     }
