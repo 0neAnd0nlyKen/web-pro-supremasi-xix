@@ -24,6 +24,7 @@ class SPARouter {
         
         this.gamesMetadata = null;
 
+        this.likes = [];
         this.init();
         this.initSidebar();
     }
@@ -235,7 +236,33 @@ class SPARouter {
                     if (genresEl) genresEl.textContent = `Genres: ${genres.length ? genres.join(', ') : 'N/A'}`;
 
                     const likesCountEl = gameContainer.querySelector('.likes-count');
-                    if (likesCountEl) likesCountEl.textContent = `Views: ${gameInfo.all_time_views || 0}`;
+                    const likesBtn = gameContainer.querySelector('.likes-btn');
+
+                    let totalLikes = (gameInfo.all_time_views || 0);
+
+                    if (likesBtn) {
+                        likesBtn.addEventListener('click', () => {
+                            if (!this.likes.includes(gameId)) {
+                                this.likes.push(gameId);
+                                likesBtn.classList.add('liked');
+                                likesCountEl.textContent = `${totalLikes + 1}`;
+                            } else {
+                                this.likes.splice(this.likes.indexOf(gameId), 1);
+                                likesBtn.classList.remove('liked');
+                                likesCountEl.textContent = `${totalLikes}`;
+                            }
+                            console.log('Liked games:', this.likes);
+                        });
+                    }
+                    
+                    if (this.likes.includes(gameId)) {
+                        if (likesBtn) likesBtn.classList.add('liked');
+                        if (likesCountEl) likesCountEl.textContent = `${totalLikes + 1}`;
+                    } else {
+                        if (likesCountEl) likesCountEl.textContent = `${totalLikes}`;
+
+                    }
+
 
                     const commentsCountEl = gameContainer.querySelector('.comments-count');
                     if (commentsCountEl) commentsCountEl.textContent = `${(gameInfo.reviews || []).length} reviews`;
