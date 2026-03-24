@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+       body {
             margin: 0;
-            background: #f5f5f5;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: rgba(255,255,255,0.9);
         }
 
         .container {
@@ -23,33 +31,98 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
+        .hero {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* BACKGROUND IMAGE */
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+            z-index: 1;
+        }
+
+        .hero-bg-mask {
+            mask-image: linear-gradient(to bottom, 
+                rgba(0,0,0,1) 0%, 
+                rgba(0,0,0,1) 60%,
+                rgba(0,0,0,0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, 
+                rgba(0,0,0,1) 0%, 
+                rgba(0,0,0,1) 60%,
+                rgba(0,0,0,0) 100%);
+        }
+
+        /* CONTENT ON TOP */
+        .hero-content {
+            position: absolute;
+            z-index: 3;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .hero-logo {
+            width: 220px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }        
+
         .section {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            line-height: 1.6;
+            opacity: 0.9;
         }
 
         .card {
-            background: white;
-            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.9); 
+            color: #333;
+            border-radius: 18px;
             overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .card-body {
+            padding: 20px;
         }
 
         .card-dark {
-            background: #1e1e1e;
+            background: rgba(0, 0, 0, 0.6); 
             color: white;
-            padding: 20px;
+            padding: 18px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
-        .image-wrapper {
-            position: relative;
-        }
-
+        
         .image-wrapper img {
             width: 100%;
-            height: 420px;
+            height: 350px;
             object-fit: cover;
         }
 
@@ -59,140 +132,117 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 50%;
-            padding: 20px;
+            padding: 16px;
             background: white;
             border: none;
-            font-size: 20px;
+            font-size: 18px;
             cursor: pointer;
-        }
-
-        .btn-like {
-            background: red;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 999px;
-            cursor: pointer;
-        }
-
-        .grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .grid-3 > div {
-            flex: 1 1 calc(33.333% - 20px);
-        }
-
-        .grid-4 > div {
-            flex: 1 1 calc(25% - 20px);
-        }
-
-        .grid-2 > div {
-            flex: 1 1 calc(50% - 20px);
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .small {
-            font-size: 14px;
-            color: #666;
-        }
-
-        .card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-
-        .card-body {
-            padding: 20px;
-        }
-
-        .card {
-            transition: all 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-        }
-
-        .image-wrapper img,
-        .card img {
-            transition: transform 0.4s ease;
-        }
-
-        .card:hover img {
-            transform: scale(1.08);
-        }
-
-        .play-btn {
-            transition: all 0.3s ease;
+            transition: 0.3s;
         }
 
         .play-btn:hover {
-            transform: translate(-50%, -50%) scale(1.2);
             background: #ff4757;
             color: white;
         }
 
         .btn-like {
-            transition: all 0.3s ease;
+            background: #ff4757;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 999px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
         }
 
         .btn-like:hover {
-            background: #ff2e2e;
             transform: scale(1.1);
         }
 
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .grid-4 {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
         .grid-4 div {
-            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.15);
+            border-radius: 15px;
+            padding: 20px;
         }
 
         .grid-4 div:hover {
-            transform: translateY(-8px);
+            transform: translateY(-5px);
         }
 
-        .grid-4 h3 {
-            transition: transform 0.3s ease;
+        .small {
+            opacity: 0.6;
         }
 
-        .grid-4 div:hover h3 {
-            transform: scale(1.3) rotate(5deg);
-        }
-
-        h2, h4, h5, h6 {
-            transition: color 0.3s ease;
-        }
-
-        .card:hover h5,
-        .card:hover h4 {
-            color: #ff4757;
+        ol {
+            padding-left: 20px;
         }
 
         ol li {
-            transition: all 0.3s ease;
+            margin-bottom: 10px;
+            opacity: 0.9;
         }
 
-        ol li:hover {
-            transform: translateX(10px);
-            color: #ff4757;
+        .btn-challenge {
+            background: linear-gradient(45deg, #ff4757, #ff7f50);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-challenge:hover {
+            transform: scale(1.1);
+        }
+
+        .ParafCard{
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .image-wrapper img {
+                height: 250px;
+            }
         }
     </style>
 </head>
 <body>
+    <section class="hero">
+        <img src="/assets/hero-bg.png" class="hero-bg hero-bg-mask">
+    
+        <div class="hero-content">
+            <img src="/assets/hero-logo.png" class="hero-logo">
+            <h1>LEARN FROM GAMING</h1>
+        </div>
+    </section>
+
     <div class="container">
 
         <section class="section">
     
-            <div class="card">
+            <div class="card clickable" onclick="router.navigateTo('/games')">
     
                 <div class="image-wrapper">
-                    <img src="images/game.jpg">
+                    <img src="https://dummyimage.com/800x400/000/fff&text=Good+Game">
     
                     <button class="play-btn">▶</button>
                 </div>
@@ -200,7 +250,7 @@
                 <div class="card-dark">
     
                     <div>
-                        <h4>Totol Game</h4>
+                        <h4>Good Game</h4>
                         <p>Game edukasi yang seru untuk dimainkan.</p>
                     </div>
     
@@ -241,7 +291,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5>Platform Web</h5>
-                        <p>
+                        <p class="ParafCard">
                             Sistem dikembangkan menggunakan HTML, CSS,
                             JavaScript, dan Bootstrap untuk menghasilkan
                             tampilan yang responsif dan modern.
@@ -252,7 +302,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5>Game Flash Engine</h5>
-                        <p>
+                        <p class="ParafCard">
                             Sistem menggunakan teknologi Ruffle Emulator
                             untuk menjalankan game Flash langsung pada
                             browser modern tanpa plugin tambahan.
@@ -263,7 +313,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5>Single Page Application</h5>
-                        <p>
+                        <p class="ParafCard">
                             Website ini menggunakan konsep SPA sehingga
                             navigasi halaman dapat dilakukan dengan cepat
                             tanpa perlu reload halaman.
@@ -335,10 +385,10 @@
     
             <h2>Game Lainnya</h2>
     
-            <div class="grid grid-3">
+            <div class="grid grid-3" onclick="router.navigateTo('/games')">
     
                 <div class="card">
-                    <img src="images/game.jpg">
+                    <img src="https://dummyimage.com/800x400/000/fff&text=Adventure+Game">
                     <div class="card-body">
                         <h5>Adventure Game</h5>
                         <p class="small">Game petualangan yang menantang.</p>
@@ -346,7 +396,7 @@
                 </div>
     
                 <div class="card">
-                    <img src="images/game.jpg">
+                    <img src="https://dummyimage.com/800x400/000/fff&text=Puzzle+Game">
                     <div class="card-body">
                         <h5>Puzzle Game</h5>
                         <p class="small">Latih otakmu dengan puzzle seru.</p>
@@ -354,7 +404,7 @@
                 </div>
     
                 <div class="card">
-                    <img src="images/game.jpg">
+                    <img src="https://dummyimage.com/800x400/000/fff&text=Arcade+Game">
                     <div class="card-body">
                         <h5>Arcade Game</h5>
                         <p class="small">Game arcade klasik yang menyenangkan.</p>
@@ -364,6 +414,12 @@
             </div>
     
         </section>
+
+    <div style="text-align:center; margin-top: 30px;">
+        <button class="btn-challenge" onclick="router.navigateTo('/challenges')">
+            🚀 Ikuti Challenge Sekarang
+        </button>
+    </div>
     
     </div>
 </body>
