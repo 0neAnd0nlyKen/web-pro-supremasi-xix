@@ -6,13 +6,13 @@
       "slides": {
         "material": [
           {
-            "content": "<div class='material-card'><h2>What is a Platformer Game?</h2><p>Platformer adalah genre game yang berfokus pada lompatan, timing, dan navigasi rintangan. Inti dari platformer adalah kontrol karakter yang responsif, desain level yang menarik, serta tantangan yang menguji ketepatan pemain. Genre ini berkembang sejak era klasik seperti Mario, Mega Man, hingga platformer modern dengan fisika realistis. Platformer mengajarkan fundamental game design seperti movement, collision, pacing, dan reward sistem.</p><img src='assets/platformer1.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>What is a Platformer Game?</h2><p>Platformer adalah genre game yang berfokus pada lompatan, timing, dan navigasi rintangan. Inti dari platformer adalah kontrol karakter yang responsif, desain level yang menarik, serta tantangan yang menguji ketepatan pemain. Genre ini berkembang sejak era klasik seperti Mario, Mega Man, hingga platformer modern dengan fisika realistis. Platformer mengajarkan fundamental game design seperti movement, collision, pacing, dan reward sistem.</p></div>"
           },
           {
-            "content": "<div class='material-card'><h2>Core Mechanics in Platformer</h2><p>Mekanik inti platformer meliputi movement, jump, double jump, dash, wall slide, hingga grappling hook. Movement yang baik menentukan feel keseluruhan game. Pembuatan mekanik harus memperhatikan gravity, acceleration, friction, dan jump curve. Semakin baik mekanik dasar dirancang, semakin seru pengalaman pemain. Desainer harus menguji setiap gerak hingga terasa natural dan fun.</p><img src='assets/platformer2.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>Core Mechanics in Platformer</h2><p>Mekanik inti platformer meliputi movement, jump, double jump, dash, wall slide, hingga grappling hook. Movement yang baik menentukan feel keseluruhan game. Pembuatan mekanik harus memperhatikan gravity, acceleration, friction, dan jump curve. Semakin baik mekanik dasar dirancang, semakin seru pengalaman pemain. Desainer harus menguji setiap gerak hingga terasa natural dan fun.</p></div>"
           },
           {
-            "content": "<div class='material-card'><h2>Level Design Principles</h2><p>Pembuatan level platformer melibatkan flow, pacing, tantangan bertahap, dan penempatan rintangan yang adil. Level harus memperkenalkan mekanik baru secara bertahap, memberi ruang eksplorasi, serta menghadirkan tantangan tanpa membuat pemain frustrasi. Teknik seperti teaser, safe zone, reward path, dan hidden area membantu menciptakan pengalaman yang seimbang dan memuaskan.</p><img src='assets/platformer3.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>Level Design Principles</h2><p>Pembuatan level platformer melibatkan flow, pacing, tantangan bertahap, dan penempatan rintangan yang adil. Level harus memperkenalkan mekanik baru secara bertahap, memberi ruang eksplorasi, serta menghadirkan tantangan tanpa membuat pemain frustrasi. Teknik seperti teaser, safe zone, reward path, dan hidden area membantu menciptakan pengalaman yang seimbang dan memuaskan.</p></div>"
           }
         ],
         "quiz": [
@@ -23,8 +23,8 @@
             "answerC": "<img src='assets/challenges/platformer/3.png' class='slide-image answers'>",
             "answerD": "<img src='assets/challenges/platformer/4.png' class='slide-image answers'>",
             "rightAnswer": 2,
-            "explanationRight": "<div class='explanation correct'>✅ Correct! var, let, and const are all used to declare variables in JavaScript.</div>",
-            "explanationWrong": "<div class='explanation wrong'>❌ Not quite. The correct answer is 'All of the above'. var, let, and const are all variable declarations.</div>"
+            "explanationRight": "<div class='explanation correct'>✅ Correct!</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Not quite.</div>"
           },
           {
             "question": "<h3>Apa faktor terbesar yang memengaruhi feel movement karakter?</h3>",
@@ -49,7 +49,7 @@
         ],
         "external": [
           {
-            "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+            "content": "<div class='external-card'><h3>Scratch Project: Platformer Basic</h3><img src='assets/challenges/platformer/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
             "link": "https://scratch.mit.edu/projects/12345678"
           }
         ]
@@ -61,17 +61,27 @@
       "slides": {
         "material": [
           {
-            "content": "<div class='material-card'><h2>What is an Adventure Game?</h2><p>Adventure adalah genre yang menekankan eksplorasi, narasi, serta interaksi dengan dunia game. Pemain diajak menjelajah lingkungan yang luas, menemukan rahasia, berinteraksi dengan NPC, dan mengikuti alur cerita yang kuat. Fokus utama genre ini adalah pengalaman emosional dan rasa ingin tahu pemain terhadap dunia yang dibangun.</p><img src='assets/adventure1.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>What is an Adventure Game?</h2><p>Adventure adalah genre yang menekankan eksplorasi, narasi, serta interaksi dengan dunia game. Pemain diajak menjelajah lingkungan yang luas, menemukan rahasia, berinteraksi dengan NPC, dan mengikuti alur cerita yang kuat. Fokus utama genre ini adalah pengalaman emosional dan rasa ingin tahu pemain terhadap dunia yang dibangun.</p></div>"
           },
           {
-            "content": "<div class='material-card'><h2>Worldbuilding in Adventure Games</h2><p>Worldbuilding menjadi fondasi penting dalam game adventure. Dunia harus terasa hidup: mulai dari lore, budaya, lokasi, sejarah, hingga karakter yang mengisinya. Detail kecil seperti suara lingkungan, desain bangunan, dan interaksi NPC memperkuat imersi pemain. Semakin kaya dunianya, semakin dalam pengalaman pemain dalam berpetualang.</p><img src='assets/adventure2.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>Worldbuilding in Adventure Games</h2><p>Worldbuilding menjadi fondasi penting dalam game adventure. Dunia harus terasa hidup: mulai dari lore, budaya, lokasi, sejarah, hingga karakter yang mengisinya. Detail kecil seperti suara lingkungan, desain bangunan, dan interaksi NPC memperkuat imersi pemain. Semakin kaya dunianya, semakin dalam pengalaman pemain dalam berpetualang.</p></div>"
           },
           {
-            "content": "<div class='material-card'><h2>Quest and Exploration Design</h2><p>Quest dalam game adventure dibagi menjadi main quest dan side quest yang membantu memperluas cerita dunia. Desain quest harus relevan, memiliki tujuan jelas, namun tetap memberi ruang pilihan pemain. Eksplorasi didorong melalui discovery points, puzzles, hidden items, serta dialog NPC yang memberikan petunjuk atau lore tambahan.</p><img src='assets/adventure3.png' class='slide-image'></div>"
-          }
+            "content": "<div class='material-card'><h2>Quest and Exploration Design</h2><p>Quest dalam game adventure dibagi menjadi main quest dan side quest yang membantu memperluas cerita dunia. Desain quest harus relevan, memiliki tujuan jelas, namun tetap memberi ruang pilihan pemain. Eksplorasi didorong melalui discovery points, puzzles, hidden items, serta dialog NPC yang memberikan petunjuk atau lore tambahan.</p></div>"
+          } 
         ],
         "quiz": [
-        {
+          {
+            "question": "<h3>Apa yang akan terjadi ketika program pada gambar tersebut dijalankan?</h3> <img src='assets/challenges/adventure/c.png' class='slide-image question'>",
+            "answerA": "<img src='assets/challenges/adventure/1.png' class='slide-image answers'>",
+            "answerB": "<img src='assets/challenges/adventure/2.png' class='slide-image answers'>",
+            "answerC": "<img src='assets/challenges/adventure/3.png' class='slide-image answers'>",
+            "answerD": "<img src='assets/challenges/adventure/4.png' class='slide-image answers'>",
+            "rightAnswer": 2,
+            "explanationRight": "<div class='explanation correct'>✅ Correct!</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Not quite.</div>"
+          },
+          {
           "question": "<h3>Apa yang membuat game adventure menarik?</h3>",
           "answerA": "Banyak menu",
           "answerB": "Dunia yang kaya dan eksploratif",
@@ -101,6 +111,12 @@
           "explanationRight": "<div class='explanation correct'>✅ Correct! NPC memorable punya karakter dan peran khas.</div>",
           "explanationWrong": "<div class='explanation wrong'>❌ Jawaban yang benar adalah NPC dengan kepribadian dan peran yang kuat.</div>"
         }
+        ],
+        "external": [
+          {
+            "content": "<div class='external-card'><h3>Scratch Project: Adventure Quest</h3><img src='assets/challenges/adventure/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
+            "link": "https://scratch.mit.edu/projects/1294925357/"
+          }
         ]
       }
     },
@@ -110,13 +126,13 @@
       "slides": {
         "material": [
           {
-            "content": "<div class='material-card'><h2>What is a Simulation Game?</h2><p>Simulation adalah genre game yang meniru sistem kehidupan nyata, seperti ekonomi, ekosistem, pertanian, bisnis, hingga hubungan sosial. Tujuan utamanya adalah menciptakan dunia yang berjalan dengan logika dan aturan yang konsisten. Pemain mengelola sumber daya, mengambil keputusan, dan melihat hasilnya dalam jangka waktu tertentu.</p><img src='assets/simulation1.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>What is a Simulation Game?</h2><p>Simulation adalah genre game yang meniru sistem kehidupan nyata, seperti ekonomi, ekosistem, pertanian, bisnis, hingga hubungan sosial. Tujuan utamanya adalah menciptakan dunia yang berjalan dengan logika dan aturan yang konsisten. Pemain mengelola sumber daya, mengambil keputusan, dan melihat hasilnya dalam jangka waktu tertentu.</p></div>"
           },
           {
-            "content": "<div class='material-card'><h2>Systems and Mechanics in Simulation</h2><p>Setiap game simulasi dibangun dari sistem yang saling terhubung, seperti sistem ekonomi, AI agent, growth system, fatigue system, dan environmental conditions. Kekuatan genre ini ada pada kedalaman mekanik dan keseimbangan sistem. Pemain harus memahami hubungan sebab-akibat dan memanfaatkan mekanik untuk mencapai tujuan.</p><img src='assets/simulation2.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>Systems and Mechanics in Simulation</h2><p>Setiap game simulasi dibangun dari sistem yang saling terhubung, seperti sistem ekonomi, AI agent, growth system, fatigue system, dan environmental conditions. Kekuatan genre ini ada pada kedalaman mekanik dan keseimbangan sistem. Pemain harus memahami hubungan sebab-akibat dan memanfaatkan mekanik untuk mencapai tujuan.</p></div>"
           },
           {
-            "content": "<div class='material-card'><h2>Emergent Gameplay in Simulation</h2><p>Salah satu keunikan simulasi adalah munculnya perilaku atau kejadian yang tidak dirancang secara langsung oleh developer, disebut emergent gameplay. Ini terjadi ketika sistem interaktif menghasilkan situasi baru secara alami. Semakin kompleks sistemnya, semakin banyak kejadian unik yang dialami pemain, sehingga membuat game terasa hidup dan dinamis.</p><img src='assets/simulation3.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>Emergent Gameplay in Simulation</h2><p>Salah satu keunikan simulasi adalah munculnya perilaku atau kejadian yang tidak dirancang secara langsung oleh developer, disebut emergent gameplay. Ini terjadi ketika sistem interaktif menghasilkan situasi baru secara alami. Semakin kompleks sistemnya, semakin banyak kejadian unik yang dialami pemain, sehingga membuat game terasa hidup dan dinamis.</p></div>"
           }
         ],
         "quiz":[
@@ -140,6 +156,12 @@
             "explanationRight": "<div class='explanation correct'>✅ Correct! Event acak memberi dinamika pada simulasi.</div>",
             "explanationWrong": "<div class='explanation wrong'>❌ Agar tidak membosankan, tambahkan event acak, bukan menghapus fitur.</div>"
           }
+        ],
+        "external": [
+          {
+            "content": "<div class='external-card'><h3>Scratch Project: Simulation World</h3><img src='assets/challenges/simulation/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
+            "link": "To be continued"
+          }
         ]
       }
     },
@@ -149,16 +171,26 @@
       "slides": {
         "material": [
           {
-            "content": "<div class='material-card'><h2>What is a Puzzle Game?</h2><p>Puzzle adalah genre game yang menantang logika, pola pikir, dan keterampilan pemecahan masalah pemain. Tujuannya adalah menyelesaikan teka-teki yang membutuhkan strategi, analisis, atau observasi. Genre puzzle dapat bersifat santai, kompetitif, atau bahkan berfokus pada narasi.</p><img src='assets/puzzle1.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>What is a Puzzle Game?</h2><p>Puzzle adalah genre game yang menantang logika, pola pikir, dan keterampilan pemecahan masalah pemain. Tujuannya adalah menyelesaikan teka-teki yang membutuhkan strategi, analisis, atau observasi. Genre puzzle dapat bersifat santai, kompetitif, atau bahkan berfokus pada narasi.</p></div>"
           },
           {
-            "content": "<div class='material-card'><h2>Puzzle Mechanics and Design</h2><p>Game puzzle dibangun dari mekanik inti seperti matching, pattern recognition, physics interaction, atau logic sequence. Desain puzzle harus memiliki tingkat kesulitan yang bertahap, memiliki solusi yang adil, serta memberi pemain pengalaman aha-moment ketika menemukan jawabannya.</p><img src='assets/puzzle2.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>Puzzle Mechanics and Design</h2><p>Game puzzle dibangun dari mekanik inti seperti matching, pattern recognition, physics interaction, atau logic sequence. Desain puzzle harus memiliki tingkat kesulitan yang bertahap, memiliki solusi yang adil, serta memberi pemain pengalaman aha-moment ketika menemukan jawabannya.</p></div>"
           },
           {
-            "content": "<div class='material-card'><h2>Balancing Difficulty in Puzzle Games</h2><p>Tantangan terbesar puzzle adalah menyeimbangkan tingkat kesulitan. Jika terlalu mudah, pemain bosan; terlalu sulit, pemain frustrasi. Teknik seperti hint bertahap, level tutorial, visual cues, dan puzzle layering membantu mengontrol pacing dan membuat pengalaman pemain tetap menyenangkan.</p><img src='assets/puzzle3.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>Balancing Difficulty in Puzzle Games</h2><p>Tantangan terbesar puzzle adalah menyeimbangkan tingkat kesulitan. Jika terlalu mudah, pemain bosan; terlalu sulit, pemain frustrasi. Teknik seperti hint bertahap, level tutorial, visual cues, dan puzzle layering membantu mengontrol pacing dan membuat pengalaman pemain tetap menyenangkan.</p></div>"
           }
         ],
         "quiz":[
+          {
+            "question":"<h3>Sebaiknya menjadi sprite mana kalau sekarang giliran X ?</h3> <img src='assets/challenges/puzzle/c.png' class='slide-image question'>",
+          "answerA": "Switch to cotsume 1",
+          "answerB": "Switch to costume 2",
+          "answerC": "Switch to costume 3",
+          "answerD": "Switch to costume 4",
+          "rightAnswer": 2,
+          "explanationRight": "<div class='explanation correct'>✅ Correct!</div>",
+          "explanationWrong": "<div class='explanation wrong'>❌ Not quite.</div>"
+          },
           {
             "question": "<h3>Puzzle yang baik harus...</h3>",
             "answerA": "Membuat frustrasi",
@@ -179,6 +211,12 @@
             "explanationRight": "<div class='explanation correct'>✅ Correct! Hint bertahap membantu tanpa mengorbankan tantangan.</div>",
             "explanationWrong": "<div class='explanation wrong'>❌ Solusi terbaik adalah memberi hint, bukan membuat puzzle lebih sulit.</div>"
           }
+        ],
+        "external": [
+          {
+            "content": "<div class='external-card'><h3>Scratch Project: Puzzle Challenge</h3><img src='assets/challenges/puzzle/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
+            "link": "https://scratch.mit.edu/projects/1294998818/"
+          }
         ]
       }
     },
@@ -188,13 +226,13 @@
       "slides": {
         "material": [
           {
-            "content": "<div class='material-card'><h2>What is a Cooking Game?</h2><p>Cooking adalah genre game yang berfokus pada aktivitas memasak, menyajikan makanan, dan mengelola dapur atau restoran. Pemain harus mengatur waktu, memilih bahan yang tepat, dan menyelesaikan pesanan pelanggan. Genre ini menggabungkan kecepatan, akurasi, dan kreativitas dalam satu paket.</p><img src='assets/cooking1.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>What is a Cooking Game?</h2><p>Cooking adalah genre game yang berfokus pada aktivitas memasak, menyajikan makanan, dan mengelola dapur atau restoran. Pemain harus mengatur waktu, memilih bahan yang tepat, dan menyelesaikan pesanan pelanggan. Genre ini menggabungkan kecepatan, akurasi, dan kreativitas dalam satu paket.</p></div>"
           },
           {
-            "content": "<div class='material-card'><h2>Cooking Mechanics and Recipes</h2><p>Mekanik inti meliputi chopping, mixing, frying, boiling, dan plating. Pemain harus mengikuti resep, namun juga diberi ruang untuk bereksperimen menciptakan hidangan baru. Semakin kompleks proses memasak, semakin tinggi nilai strategis dan kepuasan pemain.</p><img src='assets/cooking2.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>Cooking Mechanics and Recipes</h2><p>Mekanik inti meliputi chopping, mixing, frying, boiling, dan plating. Pemain harus mengikuti resep, namun juga diberi ruang untuk bereksperimen menciptakan hidangan baru. Semakin kompleks proses memasak, semakin tinggi nilai strategis dan kepuasan pemain.</p></div>"
           },
           {
-            "content": "<div class='material-card'><h2>Restaurant and Customer Management</h2><p>Selain memasak, banyak cooking game menambahkan elemen manajemen restoran: mengatur pelanggan, meningkatkan peralatan, dan mengelola staf. Pelanggan memiliki preferensi, kesabaran, dan kepribadian yang berbeda. Semakin Anda memahami pelanggan, semakin mudah mencapai rating tinggi dan memperbesar usaha kuliner dalam game.</p><img src='assets/cooking3.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>Restaurant and Customer Management</h2><p>Selain memasak, banyak cooking game menambahkan elemen manajemen restoran: mengatur pelanggan, meningkatkan peralatan, dan mengelola staf. Pelanggan memiliki preferensi, kesabaran, dan kepribadian yang berbeda. Semakin Anda memahami pelanggan, semakin mudah mencapai rating tinggi dan memperbesar usaha kuliner dalam game.</p></div>"
           }
         ],
         "quiz":[
@@ -228,8 +266,288 @@
             "explanationRight": "<div class='explanation correct'>✅ Correct! Resep acak memberikan pengalaman baru setiap kali bermain, meningkatkan replayability.</div>",
             "explanationWrong": "<div class='explanation wrong'>❌ Resep acak adalah elemen utama yang meningkatkan replayability, bukan grafik atau musik.</div>"
           }
-        ] 
+        ],
+          "external": [
+            {
+              "content": "<div class='external-card'><h3>Scratch Project: Cooking Challenge</h3><img src='assets/challenges/cooking/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
+              "link": "To be continued"
+            }
+          ] 
       }
-    }
+    },
+      {
+          "id": 6,
+          "title": "Racing",
+          "slides": {
+            "material": [
+              {
+                "content": "<div class='material-card'><h2>What is a Racing Game?</h2><p>Racing adalah genre game yang berfokus pada balapan kendaraan seperti mobil, motor, pesawat, atau bahkan kendaraan futuristik. Pemain berlomba mencapai garis finis lebih cepat dari lawan sambil menguasai mekanik kontrol dan kecepatan. Genre ini telah berkembang dari arcade racer sederhana menjadi simulasi realistis dan game arcade yang penuh aksi. Esensi dari game racing adalah kombinasi sempurna antara kontrol responsif, tantangan kompetitif, dan kepuasan mencapai waktu terbaik.</p></div>"
+              },
+              {
+                "content": "<div class='material-card'><h2>Core Racing Mechanics</h2><p>Mekanik inti meliputi handling, drifting, nitro boosting, akselerasi, dan braking. Pemain harus mempelajari kapan mempercepat, memperlambat, atau mengambil tikungan dengan tepat untuk mendapatkan keunggulan. Handling yang baik mempertimbangkan berat kendaraan, traksi, dan responsivitas setir. Drifting adalah teknik lanjutan yang memungkinkan pemain berbelok tajam sambil mempertahankan kecepatan. Setiap faktor fisika harus diseimbangkan agar gameplay terasa menantang namun tetap adil dan menghibur.</p></div>"
+              },
+              {
+                "content": "<div class='material-card'><h2>Track Design and Progression</h2><p>Desain trek sangat penting dalam game racing. Tikungan tajam, rintangan, elevasi, dan shortcut memberikan variasi tantangan. Selain itu, sistem progression seperti unlock mobil, peningkatan engine, dan level kompetisi meningkatkan pengalaman pemain. Trek harus dirancang dengan visual yang jelas agar pemain dapat merencanakan jalur optimal. Penempatan kurva, bump, dan item power-up harus strategis untuk mendorong berbagai gaya bermain.</p></div>"
+              },
+              {
+                "content": "<div class='material-card'><h2>Vehicle Customization & Upgrades</h2><p>Sistem upgrade kendaraan membuat pemain merasa berkembang. Pemain dapat meningkatkan akselerasi, top speed, handling, atau durability sesuai preferensi. Customization visual seperti warna, decals, dan wheels menambah personal connection dengan kendaraan pilihan. Sistem ini juga mendorong pemain mencoba berbagai kombinasi setup untuk berbagai trek.</p></div>"
+              },
+              {
+                "content": "<div class='material-card'><h2>Multiplayer & Competitive Features</h2><p>Mode multiplayer membawa dimensi baru dengan persaingan real-time melawan pemain lain. Fitur seperti leaderboard, seasonal ranking, dan tournament menciptakan kompetisi berkelanjutan. Matchmaking yang adil memastikan pemain bertemu lawan setara untuk pengalaman yang lebih memuaskan. Ghost racing juga populer, memungkinkan pemain bersaing dengan rekor pribadi atau kompetitor lain tanpa koneksi langsung.</p></div>"
+              }
+            ],
+            "quiz": [
+              {
+                "question": "<h3>Blok di atas menunjukkan perintah if – then yang akan menjalankan aksi tertentu.Apa fungsi utama dari blok ini?</h3> <img src='assets/challenges/racing/c.png' class='slide-image question'>",
+                "answerA": "Memutar sprite tanpa syarat hingga 15 derajat",
+                "answerB": "Memutar sprite 15 derajat hanya jika kondisi terpenuhi",
+                "answerC": "Mengubah warna sprite saat kondisi benar",
+                "answerD": "Menjalankan script lain secara otomatis",
+                "rightAnswer": 2,
+                "explanationRight": "<div class='explanation correct'>✅ Correct!</div>",
+                "explanationWrong": "<div class='explanation wrong'>❌ Not quite.</div>"
+              },
+              {
+                "question": "<h3>Apa faktor terpenting dalam desain trek racing?</h3>",
+                "answerA": "Jumlah musuh",
+                "answerB": "Variasi tikungan dan rintangan",
+                "answerC": "Ukuran karakter",
+                "answerD": "Banyaknya dialog",
+                "rightAnswer": 2,
+                "explanationRight": "<div class='explanation correct'>✅ Benar! Variasi tikungan, rintangan, dan jalur adalah inti desain trek racing.</div>",
+                "explanationWrong": "<div class='explanation wrong'>❌ Trek racing membutuhkan variasi tikungan dan rintangan untuk menciptakan tantangan menarik.</div>"
+              },
+              {
+                "question": "<h3>Mekanik apa yang umum digunakan untuk menambah kecepatan?</h3>",
+                "answerA": "Gliding",
+                "answerB": "Double jump",
+                "answerC": "Nitro boost",
+                "answerD": "Inventory drop",
+                "rightAnswer": 3,
+                "explanationRight": "<div class='explanation correct'>✅ Nitro boost adalah mekanik standar dalam game racing untuk menambah kecepatan secara signifikan.</div>",
+                "explanationWrong": "<div class='explanation wrong'>❌ Mekanik yang benar adalah nitro boost.</div>"
+              },
+              {
+                "question": "<h3>Apa cara terbaik meningkatkan skill pemain di game racing?</h3>",
+                "answerA": "Menaikkan difficulty secara otomatis",
+                "answerB": "Memberikan feedback pada timing braking & drifting",
+                "answerC": "Mengurangi kecepatan mobil",
+                "answerD": "Menghapus lawan",
+                "rightAnswer": 2,
+                "explanationRight": "<div class='explanation correct'>✅ Memberikan feedback membantu pemain memahami kapan harus braking dan drifting.</div>",
+                "explanationWrong": "<div class='explanation wrong'>❌ Memberikan feedback teknis adalah cara terbaik untuk meningkatkan skill pemain.</div>"
+              }
+            ],
+              "external": [
+                {
+                  "content": "<div class='external-card'><h3>Scratch Project: Racing Championship</h3><img src='assets/challenges/racing/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
+                  "link": "https://scratch.mit.edu/projects/1294957058/"
+                }
+              ]
+          }
+        },
+      {
+        "id": 7,
+        "title": "Action",
+        "slides": {
+          "material": [
+            {
+              "content": "<div class='material-card'><h2>What is an Action Game?</h2><p>Action adalah genre game yang menekankan kecepatan, reaksi cepat, dan gameplay intens. Pemain biasanya harus menghindar, menyerang, dan mengelola sumber daya saat menghadapi berbagai tantangan secara real-time. Genre action mencakup banyak sub-genre seperti beat-em-up, hack-and-slash, shooter, dan fighting games. Inti dari action game adalah kepuasan mekanik yang responsif, tantangan yang terus meningkat, dan sense of progression yang jelas.</p></div>"
+            },
+            {
+              "content": "<div class='material-card'><h2>Core Action Mechanics</h2><p>Mekanik inti meliputi combat, dodge, combo attack, stamina management, dan arena movement. Ritme permainan biasanya cepat untuk menjaga adrenalin pemain tetap tinggi. Sistem combo memungkinkan pemain menghubungkan serangan berurutan untuk damage maksimal. Dodge dan i-frame (invincibility frame) memberikan pemain kesempatan menghindari damage. Stamina management memaksa pemain membuat keputusan strategis: apakah melanjutkan attack agresif atau bermain defensif untuk recovery.</p></div>"
+            },
+            {
+              "content": "<div class='material-card'><h2>Enemy Design & Difficulty</h2><p>Musuh dalam game action memiliki pola serangan, kelemahan, dan AI yang harus dipelajari pemain. Desain difficulty mempengaruhi bagaimana pemain berkembang dan menguasai mekanik gameplay. Musuh dengan pola unik mendorong pemain belajar timing yang tepat. Varian musuh yang berbeda menciptakan strategi baru: beberapa rapuh terhadap tertentu attack, sementara yang lain memerlukan pendekatan berbeda.</p></div>"
+            },
+            {
+              "content": "<div class='material-card'><h2>Feedback & Responsiveness</h2><p>Feedback visual dan audio sangat krusial dalam action game untuk memberikan sensation bahwa serangan 'benar-benar' mengenai. Screen shake, hit pause, sound effects, dan visual effects menandakan dampak serangan kepada pemain. Responsiveness kontrol harus minimal latency untuk menciptakan connection antara input pemain dan aksi karakter di layar.</p></div>"
+            },
+            {
+              "content": "<div class='material-card'><h2>Progression & Skill Growth</h2><p>Sistem progression dapat berupa unlocking abilities baru, upgrading stats, atau mendapatkan equipment lebih kuat. Namun action game juga memerlukan skill mastery: semakin banyak pemain bermain, semakin baik timing dan prediksi mereka. Balance antara character progression dan player skill development menciptakan curva pembelajaran yang memuaskan tanpa membuat pemain baru merasa ketertinggalan.</p></div>"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "<h3>Apa yang akan terjadi jika script ini dijalankan?</h3> <img src='assets/challenges/action/c.png' class='slide-image question'>",
+              "answerA": "<img src='assets/challenges/action/1.png' class='slide-image answers'>",
+              "answerB": "<img src='assets/challenges/action/2.png' class='slide-image answers'>",
+              "answerC": "<img src='assets/challenges/action/3.png' class='slide-image answers'>",
+              "answerD": "<img src='assets/challenges/action/4.png' class='slide-image answers'>",
+              "rightAnswer": 1,
+              "explanationRight": "<div class='explanation correct'>✅ Correct!</div>",
+              "explanationWrong": "<div class='explanation wrong'>❌ Not quite.</div>"
+            },
+            {
+              "question": "<h3>Apa yang paling menentukan kualitas game action?</h3>",
+              "answerA": "Kecepatan internet",
+              "answerB": "Responsivitas kontrol",
+              "answerC": "Ukuran karakter",
+              "answerD": "Jumlah cutscene",
+              "rightAnswer": 2,
+              "explanationRight": "<div class='explanation correct'>✅ Kontrol yang responsif sangat penting dalam game action.</div>",
+              "explanationWrong": "<div class='explanation wrong'>❌ Yang terpenting adalah kontrol yang responsif.</div>"
+            },
+            {
+              "question": "<h3>Musuh dalam game action biasanya dirancang dengan...</h3>",
+              "answerA": "Pola serangan dan kelemahan",
+              "answerB": "Sistem memasak",
+              "answerC": "Mini games acak",
+              "answerD": "Dialog panjang",
+              "rightAnswer": 1,
+              "explanationRight": "<div class='explanation correct'>✅ Betul! Musuh memiliki attack pattern yang harus dipelajari.</div>",
+              "explanationWrong": "<div class='explanation wrong'>❌ Musuh biasanya memiliki pola serangan dan kelemahan.</div>"
+            },
+            {
+              "question": "<h3>Mengapa stamina bar sering digunakan dalam game action?</h3>",
+              "answerA": "Agar pemain tidak bisa menggunakan serangan terus-menerus",
+              "answerB": "Untuk dekorasi UI",
+              "answerC": "Untuk mengatur warna karakter",
+              "answerD": "Supaya game lebih lambat",
+              "rightAnswer": 1,
+              "explanationRight": "<div class='explanation correct'>✅ Benar! Stamina bar membatasi aksi pemain dan menambah strategi.</div>",
+              "explanationWrong": "<div class='explanation wrong'>❌ Stamina bar membatasi aksi agar gameplay lebih strategis.</div>"
+            }
+          ],
+            "external": [
+              {
+                "content": "<div class='external-card'><h3>Scratch Project: Action Hero</h3><img src='assets/challenges/action/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
+                "link": "https://scratch.mit.edu/projects/1294929270/"
+              }
+            ]
+        }
+      },
+      {
+      "id": 8,
+      "title": "Dress-Up",
+      "slides": {
+        "material": [
+          {
+            "content": "<div class='material-card'><h2>What is a Dress-Up Game?</h2><p>Dress-up adalah genre game yang memungkinkan pemain mengganti pakaian, aksesori, tema, dan gaya karakter untuk mengekspresikan kreativitas. Genre ini sangat populer di kalangan pemain casual, terutama anak-anak dan remaja perempuan. Fokus utamanya adalah eksplorasi estetika, self-expression, dan kepuasan menciptakan tampilan unik. Game dress-up mendorong kreativitas tanpa tekanan kompetitif, menjadikannya genre yang inklusif dan menyenangkan.</p></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>Outfit & Style Mechanics</h2><p>Mekanik utama meliputi pemilihan warna, mix & match, layering pakaian, serta kategori fashion seperti casual, formal, atau fantasy. Sistem poin rating atau feedback (misalnya: 'harmonious colors') memberikan guidance tentang pilihan fashion. Color palette yang seimbang penting untuk membuat kombinasi outfit menarik. Layering pakaian memberikan fleksibilitas: inner wear, outer wear, accessories setiap bisa dikombinasikan berbeda untuk hasil variety maksimal.</p></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>Character & Theme Customization</h2><p>Pemain dapat mengganti rambut, makeup, latar belakang, dan mood karakter. Fitur ini menciptakan kebebasan eksplorasi visual yang sesuai selera pemain. Makeup system bisa simple (pre-designed makeup styles) atau complex (sliders untuk warna lips, eyeshadow intensity, etc.). Berbagai hairstyle memberikan dimensi baru dalam styling. Background themes menciptakan context untuk outfit sehingga pemain bisa membayangkan karakter dalam situasi berbeda.</p></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>Item Collection & Unlocking System</h2><p>Sistem unlock membuat game lebih engaging dengan memberikan target kepada pemain. Items dapat di-unlock melalui: level baru dalam story, achievement tertentu, seasonal events, atau premium currency. Limited edition items atau seasonal collection mendorong pemain kembali bermain untuk mendapatkan exclusive pieces. Rarity system (common, rare, legendary) menambah excitement saat mendapat item spesial.</p></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>Social & Sharing Features</h2><p>Banyak game dress-up memiliki fitur sosial seperti showcase outfit ke teman, voting outfit terbaik, atau challenge teman membuat outfit tema tertentu. Screenshots dan kemampuan share di social media memperpanjang engagement. Fitur kolaborasi seperti berpakaian couple atau matching style dengan karakter lain menambah fun factor. Leaderboard berdasarkan kreativitas atau popularity juga bisa membuat kompetisi sehat antar pemain.</p></div>"
+          }
+        ],
+        "quiz": [
+          {
+            "question": "<h3>Apa yang akan terjadi jika script ini dijalankan?</h3> <img src='assets/challenges/dress-up/c.png' class='slide-image question'>",
+            "answerA": "<img src='assets/challenges/dress-up/1.png' class='slide-image answers'>",
+            "answerB": "<img src='assets/challenges/dress-up/2.png' class='slide-image answers'>",
+            "answerC": "<img src='assets/challenges/dress-up/3.png' class='slide-image answers'>",
+            "answerD": "<img src='assets/challenges/dress-up/4.png' class='slide-image answers'>",
+            "rightAnswer": 3,
+            "explanationRight": "<div class='explanation correct'>✅ Correct!</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Not quite.</div>"
+          },
+          {
+            "question": "<h3>Apa elemen terpenting dalam game dress-up?</h3>",
+            "answerA": "Senjata besar",
+            "answerB": "Pilihan pakaian & variasi style",
+            "answerC": "Balapan cepat",
+            "answerD": "Jump scare",
+            "rightAnswer": 2,
+            "explanationRight": "<div class='explanation correct'>✅ Betul! Variasi pakaian adalah inti utama game dress-up.</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Elemen utama dress-up adalah pilihan pakaian dan variasinya.</div>"
+          },
+          {
+            "question": "<h3>Mengapa layering penting dalam dress-up game?</h3>",
+            "answerA": "Untuk menambah kebebasan styling",
+            "answerB": "Agar karakter bisa berlari lebih cepat",
+            "answerC": "Untuk meningkatkan damage",
+            "answerD": "Supaya game lebih sulit",
+            "rightAnswer": 1,
+            "explanationRight": "<div class='explanation correct'>✅ Layering memberi pemain kebebasan kombinasi fashion yang lebih luas.</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Layering digunakan untuk menambah variasi styling.</div>"
+          },
+          {
+            "question": "<h3>Apa yang meningkatkan kreativitas pemain?</h3>",
+            "answerA": "Pilihan tema, rambut, dan makeup",
+            "answerB": "Mode PvP",
+            "answerC": "Map besar",
+            "answerD": "Sistem balapan",
+            "rightAnswer": 1,
+            "explanationRight": "<div class='explanation correct'>✅ Fitur tema dan makeup sangat penting untuk kreativitas dalam dress-up.</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Tema dan makeup adalah elemen utama penunjang kreativitas.</div>"
+          }
+        ],
+          "external": [
+            {
+              "content": "<div class='external-card'><h3>Scratch Project: Fashion Designer</h3><img src='assets/challenges/dress-up/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
+              "link": "https://scratch.mit.edu/projects/1294986450/"
+            }
+          ]
+      }
+    },
+      {
+        "id": 9,
+        "title": "Arcade",
+        "slides": {
+          "material": [
+            {
+              "content": "<div class='material-card'><h2>What is an Arcade Game?</h2><p>Arcade adalah genre yang menawarkan gameplay cepat, sederhana, dan menantang. Fokus utamanya adalah refleks, skor tinggi, dan aksi berulang yang memacu pemain. Genre arcade berasal dari era mesin arcade fisik di arcade hall, yang dirancang untuk memberikan bite-sized experience yang intensif. Dalam era digital, arcade tetap populer dengan mechanics yang straightforward namun skill-demanding, menciptakan addictive loop mendapatkan skor tertinggi.</p></div>"
+            },
+            {
+              "content": "<div class='material-card'><h2>Arcade Mechanics</h2><p>Mekanik inti meliputi dodge, shoot, jump timing, item pickup, dan score multiplier. Tantangan dibuat melalui kecepatan musuh atau rintangan yang meningkat. Dodge mechanic memerlukan timing presisi dan spatial awareness. Shooting mechanics harus responsif dan memberikan immediate feedback (visual & audio). Item pickup seperti shield, extra life, atau bonus points menambah strategi dalam gameplay. Score multiplier mendorong aggressive play dan combo chaining untuk reward lebih besar.</p></div>"
+            },
+            {
+              "content": "<div class='material-card'><h2>Score & Difficulty Scaling</h2><p>Game arcade sering menggunakan level difficulty yang bertambah seiring waktu, seperti musuh lebih cepat, rintangan lebih padat, dan skor bonus lebih sulit didapat. Scaling harus smooth agar pemain tidak sudden spike kesulitan. Difficulty dapat juga bergantung action pemain: semakin banyak musuh dikalahkan, semakin banyak yang muncul. Ini menciptakan risk-reward: bisakah pemain tahan dalam kondisi lebih chaos untuk skor lebih tinggi?</p></div>"
+            },
+            {
+              "content": "<div class='material-card'><h2>Power-ups & Temporary Buffs</h2><p>Power-ups adalah elemen penting dalam arcade game untuk memberikan momentary advantage atau break dari tekanan. Shield protection dari damage, rapid fire untuk damage burst, atau time slow memberi pemain kesempatan recovery. Durasi power-up harus pendek untuk memastikan gameplay tetap challenging. Placement power-up strategis dapat mendorong pemain mengambil risiko untuk posisi suboptimal namun reward lebih besar.</p></div>"
+            },
+            {
+              "content": "<div class='material-card'><h2>Game Over & Retry Loop</h2><p>Arcade game umumnya menggunakan lives atau one-strike mechanics. Kematian harus terasa fair dan jelas penyebabnya agar pemain termotivasi retry. Quick restart adalah kunci arcade experience: pemain harus bisa mulai game baru atau masuk retry dalam hitungan detik. Leaderboard lokal (high score personal) atau global mendorong compulsive replay untuk beat record sendiri atau kompetitor. Progression persisten (star, achievement) juga membuat long-term engagement walaupun core game loop tetap sama.</p></div>"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "<h3>Apa yang menjadi ciri utama game arcade?</h3>",
+              "answerA": "Cerita panjang",
+              "answerB": "Refleks cepat & skor tinggi",
+              "answerC": "Crafting kompleks",
+              "answerD": "Realistis seperti simulasi",
+              "rightAnswer": 2,
+              "explanationRight": "<div class='explanation correct'>✅ Benar! Arcade berfokus pada skor tinggi dan refleks cepat.</div>",
+              "explanationWrong": "<div class='explanation wrong'>❌ Arcade menekankan refleks cepat dan pencapaian skor tinggi.</div>"
+            },
+            {
+              "question": "<h3>Gameplay arcade biasanya...</h3>",
+              "answerA": "Lambat dan penuh dialog",
+              "answerB": "Cepat dan berulang",
+              "answerC": "Berfokus pada memasak",
+              "answerD": "Memiliki sistem open world besar",
+              "rightAnswer": 2,
+              "explanationRight": "<div class='explanation correct'>✅ Gameplay arcade terkenal cepat dan repetitif.</div>",
+              "explanationWrong": "<div class='explanation wrong'>❌ Arcade memiliki gameplay cepat dan berulang.</div>"
+            },
+            {
+              "question": "<h3>Untuk meningkatkan replayability pada arcade game, apa yang paling efektif?</h3>",
+              "answerA": "Score multiplier & difficulty scaling",
+              "answerB": "Menambah cutscene",
+              "answerC": "Mengurangi musuh",
+              "answerD": "Menambah dialog panjang",
+              "rightAnswer": 1,
+              "explanationRight": "<div class='explanation correct'>✅ Betul! Score multiplier dan peningkatan difficulty memberi tantangan berulang.</div>",
+              "explanationWrong": "<div class='explanation wrong'>❌ Replayability arcade biasanya ditingkatkan melalui multiplier dan scaling.</div>"
+            }
+          ],
+            "external": [
+              {
+                "content": "<div class='external-card'><h3>Scratch Project: Arcade Master</h3><img src='assets/challenges/arcade/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
+                "link": "https://scratch.mit.edu/projects/1294932057/"
+              }
+             ]
+        }
+      }
   ]
 }
