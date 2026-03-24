@@ -31,6 +31,56 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
+        .hero {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* BACKGROUND IMAGE */
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+            z-index: 1;
+        }
+
+        .hero-bg-mask {
+            mask-image: linear-gradient(to bottom, 
+                rgba(0,0,0,1) 0%, 
+                rgba(0,0,0,1) 60%,
+                rgba(0,0,0,0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, 
+                rgba(0,0,0,1) 0%, 
+                rgba(0,0,0,1) 60%,
+                rgba(0,0,0,0) 100%);
+        }
+
+        /* CONTENT ON TOP */
+        .hero-content {
+            position: absolute;
+            z-index: 3;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .hero-logo {
+            width: 220px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }        
+
         .section {
             margin-bottom: 60px;
         }
@@ -172,6 +222,15 @@
     </style>
 </head>
 <body>
+    <section class="hero">
+        <img src="/assets/hero-bg.png" class="hero-bg hero-bg-mask">
+    
+        <div class="hero-content">
+            <img src="/assets/hero-logo.png" class="hero-logo">
+            <h1>LEARN FROM GAMING</h1>
+        </div>
+    </section>
+
     <div class="container">
 
         <section class="section">
@@ -352,11 +411,11 @@
     
         </section>
 
-        <div style="text-align:center; margin-top: 30px;">
-            <button class="btn-challenge" onclick="router.navigateTo('/challenges')">
-                🚀 Ikuti Challenge Sekarang
-            </button>
-        </div>
+    <div style="text-align:center; margin-top: 30px;">
+        <button class="btn-challenge" onclick="router.navigateTo('/challenges')">
+            🚀 Ikuti Challenge Sekarang
+        </button>
+    </div>
     
     </div>
 </body>
