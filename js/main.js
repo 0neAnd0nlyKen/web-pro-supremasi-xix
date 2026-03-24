@@ -28,6 +28,18 @@ class SPARouter {
         this.challengesProgress = {};
         this.gameInactivityTimers = {};
         this.visitedGames = new Set();
+        this.genreLikes = {
+            "Arcade": 0,
+            "Action": 0,
+            "Puzzle": 0,
+            "Adventure": 0,
+            "Sports": 0,
+            "Dress up games": 0,
+            "Driving": 0,
+            "Slacking": 0,
+            "Platformer": 0,
+            "Simulation": 0
+        };
         this.init();
         this.initSidebar();
     }
@@ -308,15 +320,35 @@ class SPARouter {
                     let totalLikes = (gameInfo.all_time_views || 0);
 
                     if (likesBtn) {
+                        const adjustGenreCounts = (delta) => {
+                            const genres = Array.isArray(gameInfo.genres)
+                                ? gameInfo.genres
+                                : (Array.isArray(metadata.subject) ? metadata.subject : []);
+
+                            genres.forEach((genre) => {
+                                const normalized = genre.trim();
+                                if (normalized in this.genreLikes) {
+                                    this.genreLikes[normalized] += delta;
+                                    if (this.genreLikes[normalized] < 0) {
+                                        this.genreLikes[normalized] = 0;
+                                    }
+                                }
+                            });
+
+                            console.log('Genre like counts:', this.genreLikes);
+                        };
+
                         likesBtn.addEventListener('click', () => {
                             if (!this.likes.includes(gameId)) {
                                 this.likes.push(gameId);
                                 likesBtn.classList.add('liked');
                                 likesCountEl.textContent = `${totalLikes + 1}`;
+                                adjustGenreCounts(1);
                             } else {
                                 this.likes.splice(this.likes.indexOf(gameId), 1);
                                 likesBtn.classList.remove('liked');
                                 likesCountEl.textContent = `${totalLikes}`;
+                                adjustGenreCounts(-1);
                             }
                             console.log('Liked games:', this.likes);
                         });
