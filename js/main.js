@@ -40,11 +40,14 @@ class SPARouter {
             "Platformer": 0,
             "Simulation": 0
         };
+        this.gameGenresMatrix = null;
         this.init();
         this.initSidebar();
     }
 
     init() {
+        this.loadGameGenresMatrix();
+
         // Handle menu clicks
         this.menuItems.forEach(item => {
             item.addEventListener('click', (e) => {
@@ -66,6 +69,18 @@ class SPARouter {
         
         // Make router available globally
         window.router = this;
+    }
+
+    // Add to your SPARouter constructor or init method
+    async loadGameGenresMatrix() {
+        try {
+            const response = await fetch('/assets/games_genres_matrix.json');
+            this.gameGenresMatrix = await response.json();
+            console.log('Game genres matrix loaded:', Object.keys(window.gameGenresMatrix).length, 'games');
+        } catch (error) {
+            console.error('Error loading game genres matrix:', error);
+            window.gameGenresMatrix = {};
+        }
     }
 
     initSidebar() {
@@ -178,14 +193,24 @@ class SPARouter {
     }
 
     initGamesFeed() {
+        this.gameInactivityTimers = {};
+
         const gameIds = [
             'homerun_20201126',
-            // 'stick-rpg-complete',
+            'bubble-shooter_swf',
             'cannibals-missioneries',
-            // 'swords-and-sandals-2',
-            // 'bloxors',
+            'red-ball-2-the-king',
             'candy-bar-adventure-1'
         ];
+
+        //shuffle gameIds
+        let currentIndex = gameIds.length;
+        while (currentIndex != 0) {
+            let randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+            [gameIds[currentIndex], gameIds[randomIndex]] = [
+            gameIds[randomIndex], gameIds[currentIndex]];
+        }
 
         const gamesFeed = document.querySelector('.games-feed');
         if (!gamesFeed) return;
@@ -226,7 +251,12 @@ class SPARouter {
                                     this.visitedGames.add(id);
                                     if (entry.target.dataset.isTail === 'true') {
                                         console.log(`Tail game ${id} is visible, loading more games...`);
-                                        // generate more games with gameIds returned from another function from another file
+                                        getNextGameIdsFromGenreLikes().forEach((gameId) => {
+                                            if (!gamesFeed.querySelector(`[data-game-id="${gameId}"]`)) {
+                                                appendGameById(gameId);
+                                            }
+                                        });
+                                        markTail();
                                     }
                                 }
 
@@ -277,11 +307,45 @@ class SPARouter {
                         });
                     };
 
-                    const getNextGameIdsFromGenreLikes = () => {
-                        if (typeof window.getNextGameIdsByGenreLikes === 'function') {
-                            return window.getNextGameIdsByGenreLikes(this.genreLikes) || [];
+                    const getNextGameIdsFromGenreLikes = (limit = 5) => {
+                        console.log('Calculating next game IDs based on genre likes:', this.genreLikes);
+                        // Get all available games from the genres matrix
+                        const allGames = Object.keys(window.gameGenresMatrix || {});
+                        
+                        // If no genre preferences, return random games
+                        if (Object.values(this.genreLikes).every(count => count === 0)) {
+                            return this.getRandomGames(allGames, limit);
                         }
-                        return [];
+                        
+                        // Calculate scores for each game based on genre preferences
+                        const gameScores = [];
+                        
+                        allGames.forEach(gameId => {
+                            const gameGenres = window.gameGenresMatrix[gameId];
+                            if (!gameGenres) return;
+                            
+                            let score = 0;
+                            
+                            // Calculate weighted score based on user's genre likes
+                            Object.keys(gameGenres).forEach(genre => {
+                                if (gameGenres[genre] === 1) {
+                                    // Add the user's like count for this genre
+                                    score += this.genreLikes[genre] || 0;
+                                }
+                            });
+                            
+                            // Add small random factor for variety (0-0.5)
+                            score += Math.random() * 0.5;
+                            
+                            if (score > 0) {
+                                gameScores.push({ gameId, score });
+                            }
+                        });
+                        
+                        // Sort by score descending and return top games
+                        const sortedGames = gameScores.sort((a, b) => b.score - a.score);
+                        console.log('Top scored games:', sortedGames.slice(0, limit));
+                        return sortedGames.slice(0, limit).map(item => item.gameId);
                     };
 
                     const appendGameById = (gameId) => {
@@ -514,6 +578,21 @@ class SPARouter {
                     }
 
                     gamesFeed.appendChild(gameContainer);
+                    
+                    const loadMoreGamesBatch = () => {
+                        const ids = getNextGameIdsFromGenreLikes();
+                        if (!Array.isArray(ids) || ids.length === 0) {
+                            console.log('No new game IDs returned for genreLikes.');
+                            return;
+                        }
+                        ids.forEach((id) => {
+                            if (!gamesFeed.querySelector(`[data-game-id="${id}"]`)) {
+                                appendGameById(id);
+                            }
+                        });
+                        markTail();
+                    };
+                };
                 
                 gameIds.forEach((gameId) => {
                     appendGameById(gameId);
@@ -668,6 +747,12 @@ class SPARouter {
                 challengesList.appendChild(challengeDiv);
             });
         }
+    }
+
+    getRandomGames(allGames, limit) {
+        // Shuffle the array and return first limit items
+        const shuffled = [...allGames].sort(() => Math.random() - 0.5);
+        return shuffled.slice(0, limit);
     }
 
     initChallengesPage() {
