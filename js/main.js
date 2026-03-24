@@ -691,6 +691,10 @@ class SPARouter {
                 switch(type) {
                     case 'material':
                         contentContainer.innerHTML = subSlide.content;
+                        const materialCard = contentContainer.querySelector('.material-card');
+                        if (materialCard) {
+                            materialCard.appendChild(navDiv);
+                        }
                         if (currentSubIndex === 0) {
                             // first material slide gets auto-completed on render
                             markSlideCompleted(type, 0);
@@ -699,6 +703,10 @@ class SPARouter {
 
                     case 'quiz':
                         contentContainer.innerHTML = this.renderQuiz(subSlide);
+                        const quizContainer = contentContainer.querySelector('.quiz-container');
+                        if (quizContainer) {
+                            quizContainer.appendChild(navDiv);
+                        }
                         this.attachQuizHandlers(contentContainer, subSlide, topic.title, type, currentSubIndex, markSlideCompleted);
                         break;
 
@@ -709,6 +717,10 @@ class SPARouter {
                                 <a href="${subSlide.link}" target="_blank" class="external-link">Open Project</a>
                             </div>
                         `;
+                        const externalCard = contentContainer.querySelector('.external-card');
+                        if (externalCard) {
+                            externalCard.appendChild(navDiv);
+                        }
                         const externalLink = contentContainer.querySelector('.external-link');
                         if (externalLink) {
                             externalLink.addEventListener('click', () => {
@@ -743,7 +755,6 @@ class SPARouter {
             renderCurrentSubSlide();
             
             slideDiv.appendChild(contentContainer);
-            slideDiv.appendChild(navDiv);
             slidesContainer.appendChild(slideDiv);
         });
     }
