@@ -26,6 +26,8 @@ class SPARouter {
         this.likes = [];
         this.comments = {}; // {gameId: [{review,reviewtitle,reviewbody,reviewer,reviewdate},{}], gameId: []}
         this.challengesProgress = {};
+        this.gameInactivityTimers = {};
+        this.visitedGames = new Set();
         this.init();
         this.initSidebar();
     }
@@ -187,6 +189,67 @@ class SPARouter {
             .then(response => response.json())
             .then(data => {
                 this.gamesMetadata = data;
+                
+                    // Track on-screen state and cleanup after 60s away
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            const target = entry.target;
+                            const id = target.dataset.gameId;
+                            console.log(`Intersection update for ${id}: isIntersecting=${entry.isIntersecting}, ratio=${entry.intersectionRatio}`);
+
+                            const ruffleObject = target.querySelector('ruffle-object');
+
+                            console.log(`Ruffle object for ${id}:`, ruffleObject);
+
+                            let player = null;
+
+                            if (ruffleObject && typeof ruffleObject.ruffle === 'function') {
+                                player = ruffleObject.ruffle(1);
+                            }
+                            console.log(`Ruffle player for ${id}:`, player);
+                            if (entry.isIntersecting && entry.intersectionRatio > 0) {
+                                console.log(`👀 ${id} is visible`);
+                                this.visitedGames.add(id);
+
+                                if (player && typeof player.resume === 'function') {
+                                    console.log(`Resuming Ruffle player for ${id}`);
+                                    player.resume();
+                                } else if (ruffleObject && ruffleObject.dataset.originalSrc) {
+                                    // fallback for non-Ruffle or old behavior
+                                    console.log(`Restoring SWF for ${id}`);
+                                    ruffleObject.setAttribute('data', ruffleObject.dataset.originalSrc);
+                                }
+
+                                if (this.gameInactivityTimers[id]) {
+                                    console.log(`Clearing inactivity timer for ${id}`);
+                                    clearTimeout(this.gameInactivityTimers[id]);
+                                    delete this.gameInactivityTimers[id];
+                                }
+                            } else {
+                                console.log(`🚪 ${id} is not visible`);
+                                if (!this.visitedGames.has(id)) return;
+
+                                if (player && typeof player.suspend === 'function') {
+                                    console.log(`Suspending Ruffle player for ${id}`);
+                                    player.suspend();
+                                } else if (objectEl) {
+                                    console.log(`Pausing SWF for ${id}`);
+                                    objectEl.setAttribute('data', '');
+                                }
+
+                                if (this.gameInactivityTimers[id]) return;
+
+                                this.gameInactivityTimers[id] = setTimeout(() => {
+                                    observer.unobserve(target);
+                                    if (target.parentNode) {
+                                        console.log(`Removing ${id} from DOM due to inactivity`);
+                                        target.parentNode.removeChild(target);
+                                    }
+                                    delete this.gameInactivityTimers[id];
+                                }, 60000); // 60 seconds inactivity
+                            }
+                        });
+                    }, { threshold: [0, 0.01] });
 
                 gameIds.forEach((gameId) => {
                     const gameInfo = this.gamesMetadata[gameId];
@@ -208,11 +271,14 @@ class SPARouter {
                     const objectEl = gameContainer.querySelector('object');
                     if (objectEl) {
                         console.log(`Setting SWF path for ${gameId}: ${swfPath}`);
-                        objectEl.setAttribute('data', `${swfPath}`); // "example -> games/homerun.swf"
+                        objectEl.dataset.originalSrc = swfPath;
+                        objectEl.setAttribute('data', swfPath); // "example -> games/homerun.swf"
                         objectEl.setAttribute('type', 'application/x-shockwave-flash');
                     }
 
                     const titleEl = gameContainer.querySelector('.title');
+
+                    observer.observe(gameContainer);
                     if (titleEl) titleEl.textContent = metadata.title || gameId;
 
                     const yearEl = gameContainer.querySelector('.year');
