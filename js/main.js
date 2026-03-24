@@ -449,6 +449,40 @@ class SPARouter {
     populateHistoryPage() {
         if (!this.gamesMetadata || !this.challengesData) return; // Wait for both to load
 
+        // Calculate level based on completed challenge topics
+        const totalTopics = this.challengesData.topics.length;
+        let completedTopics = 0;
+        this.challengesData.topics.forEach(topic => {
+            const topicTitle = topic.title;
+            let allCompleted = true;
+            Object.keys(topic.slides).forEach(type => {
+                Object.keys(topic.slides[type]).forEach(idx => {
+                    if (!this.challengesProgress[topicTitle]?.[type]?.[idx]) {
+                        allCompleted = false;
+                    }
+                });
+            });
+            if (allCompleted) completedTopics++;
+        });
+        const percentage = Math.round((completedTopics / totalTopics) * 100);
+        let level;
+        if (completedTopics >= 4) level = 'pro-player';
+        else if (completedTopics >= 3) level = 'immortal';
+        else if (completedTopics >= 2) level = 'ranked-pusher';
+        else if (completedTopics >= 1) level = 'CASUAL';
+        else level = 'NOOB';
+        const levelIconSrc = `assets/level-${level.toLowerCase().replace(/\s+/g, '-')}.png`;
+
+        // Update level container
+        const levelIconImg = document.querySelector('.level-icon img');
+        if (levelIconImg) levelIconImg.src = levelIconSrc;
+        const levelNameH3 = document.querySelector('.level-label-name h3');
+        if (levelNameH3) levelNameH3.textContent = level;
+        const levelPercentH3 = document.querySelector('.level-label-percent h3');
+        if (levelPercentH3) levelPercentH3.textContent = `${percentage}%`;
+        const progressFill = document.querySelector('.progress-fill');
+        if (progressFill) progressFill.style.width = `${percentage}%`;
+
         // Populate likes history
         const likesGrid = document.querySelector('.likes-grid');
         if (likesGrid) {
@@ -798,9 +832,9 @@ class SPARouter {
                 // Mark selected answer
                 e.target.classList.add(isCorrect ? 'correct' : 'wrong');
                 
-                if (isCorrect) {
+                // if (isCorrect) {
                     markSlideCompleted(type, slideIndex);
-                }
+                // }
                 
                 // Show appropriate explanation
                 if (isCorrect) {
