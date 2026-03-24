@@ -12,7 +12,7 @@ class SPARouter {
         this.routes = {
             '/': 'pages/home.html',
             '/challenges': 'pages/challengesTest.html',
-            '/profile': 'pages/profile.html',
+            '/profile': 'pages/history.html',
             '/games': 'pages/games.html',
             '/videos': 'pages/videos.html'
         };
@@ -23,7 +23,9 @@ class SPARouter {
         this.sidebarOverlay = document.getElementById('sidebarOverlay');
         
         this.gamesMetadata = null;
-
+        this.likes = [];
+        this.comments = {}; // {gameId: [{review,reviewtitle,reviewbody,reviewer,reviewdate},{}], gameId: []}
+        this.challengesProgress = {};
         this.init();
         this.initSidebar();
     }
@@ -106,7 +108,7 @@ class SPARouter {
         const titles = {
             '/': 'Home - FLISH FLASH',
             '/challenges': 'Challenges - FLISH FLASH',
-            '/profile': 'Profile - FLISH FLASH',
+            '/profile': 'History - FLISH FLASH',
             '/games': 'Games - FLISH FLASH',
             '/videos': 'Videos - FLISH FLASH'
         };
@@ -153,7 +155,7 @@ class SPARouter {
                 this.initGamesFeed();
                 break;
             case '/profile':
-                this.initProfilePage();
+                this.initHistoryPage();
                 break;
             case '/challenges':
                 this.initChallengesPage();
@@ -235,7 +237,33 @@ class SPARouter {
                     if (genresEl) genresEl.textContent = `Genres: ${genres.length ? genres.join(', ') : 'N/A'}`;
 
                     const likesCountEl = gameContainer.querySelector('.likes-count');
-                    if (likesCountEl) likesCountEl.textContent = `Views: ${gameInfo.all_time_views || 0}`;
+                    const likesBtn = gameContainer.querySelector('.likes-btn');
+
+                    let totalLikes = (gameInfo.all_time_views || 0);
+
+                    if (likesBtn) {
+                        likesBtn.addEventListener('click', () => {
+                            if (!this.likes.includes(gameId)) {
+                                this.likes.push(gameId);
+                                likesBtn.classList.add('liked');
+                                likesCountEl.textContent = `${totalLikes + 1}`;
+                            } else {
+                                this.likes.splice(this.likes.indexOf(gameId), 1);
+                                likesBtn.classList.remove('liked');
+                                likesCountEl.textContent = `${totalLikes}`;
+                            }
+                            console.log('Liked games:', this.likes);
+                        });
+                    }
+                    
+                    if (this.likes.includes(gameId)) {
+                        if (likesBtn) likesBtn.classList.add('liked');
+                        if (likesCountEl) likesCountEl.textContent = `${totalLikes + 1}`;
+                    } else {
+                        if (likesCountEl) likesCountEl.textContent = `${totalLikes}`;
+
+                    }
+
 
                     const commentsCountEl = gameContainer.querySelector('.comments-count');
                     if (commentsCountEl) commentsCountEl.textContent = `${(gameInfo.reviews || []).length} reviews`;
@@ -297,43 +325,72 @@ class SPARouter {
 
                     const commentsList = gameContainer.querySelector('.comments-list');
                     if (commentsList) {
-                        commentsList.innerHTML = '';
+                        const commentsCountDisplay = commentsCountEl || document.createElement('div');
+                        commentsCountDisplay.className = 'comments-count';
 
-                        const reviewsEl = document.createElement('div');
-                        reviewsEl.className = 'reviews';
+                        const renderComments = () => {
+                            commentsList.innerHTML = '';
 
-                        const reviews = Array.isArray(gameInfo.reviews) ? gameInfo.reviews : [];
-                        reviews.forEach((review) => {
-                            const reviewEl = document.createElement('div');
-                            reviewEl.className = 'review';
-                            reviewEl.innerHTML = `
-                                <strong>${review.reviewtitle || 'Untitled review'}</strong>
-                                <p>${review.reviewbody || ''}</p>
-                                <small>by ${review.reviewer || 'Anonymous'} on ${review.reviewdate || 'unknown date'}</small>
+                            const reviewsEl = document.createElement('div');
+                            reviewsEl.className = 'reviews';
+
+                            const comments = gameInfo.reviews;
+                            if(Array.isArray(this.comments[gameId])) comments.push(...this.comments[gameId]);
+                            else this.comments[gameId] = [];
+                            
+                            // comments.concat(this.comments[gameId]? this.comments[gameId] : []);
+                            if (comments.length > 0) {
+                                comments.forEach((review) => {
+                                    const reviewEl = document.createElement('div');
+                                    reviewEl.className = 'review';
+                                    reviewEl.innerHTML = `
+                                        <strong>${review.reviewtitle || 'Untitled review'}</strong>
+                                        <p>${review.reviewbody || ''}</p>
+                                        <small>by ${review.reviewer || 'Anonymous'} on ${review.reviewdate || 'unknown date'}</small>
+                                    `;
+                                    reviewsEl.appendChild(reviewEl);
+                                });
+                            } else {
+                                const emptyReview = document.createElement('div');
+                                emptyReview.className = 'review';
+                                emptyReview.textContent = 'No reviews available.';
+                                reviewsEl.appendChild(emptyReview);
+                            }
+
+                            commentsList.appendChild(reviewsEl);
+
+                            commentsCountDisplay.textContent = `${comments.length} review${comments.length === 1 ? '' : 's'}`;
+                            commentsList.appendChild(commentsCountDisplay);
+
+                            const commentForm = document.createElement('form');
+                            commentForm.className = 'comment-form';
+                            commentForm.innerHTML = `
+                                <input type="text" class="comment-input" placeholder="Write a comment..." aria-label="Write a comment" />
+                                <button type="submit">Post</button>
                             `;
-                            reviewsEl.appendChild(reviewEl);
-                        });
 
-                        if (!reviews.length) {
-                            const emptyReview = document.createElement('div');
-                            emptyReview.className = 'review';
-                            emptyReview.textContent = 'No reviews available.';
-                            reviewsEl.appendChild(emptyReview);
-                        }
+                            const inputEl = commentForm.querySelector('.comment-input');
 
-                        commentsList.appendChild(reviewsEl);
+                            commentForm.addEventListener('submit', (event) => {
+                                event.preventDefault();
+                                const text = inputEl.value.trim();
+                                if (!text) return;
 
-                        const commentsCount = document.createElement('div');
-                        commentsCount.className = 'comments-count';
-                        commentsCount.textContent = `${reviews.length} reviews`;
-                        commentsList.appendChild(commentsCount);
+                                this.comments[gameId].push({
+                                    reviewtitle: 'User comment',
+                                    reviewbody: text,
+                                    reviewer: 'You',
+                                    reviewdate: new Date().toLocaleString()
+                                });
 
-                        const commentForm = document.createElement('form');
-                        commentForm.innerHTML = `
-                            <input type="text" placeholder="Write a comment..." />
-                            <button type="submit">Post</button>
-                        `;
-                        commentsList.appendChild(commentForm);
+                                inputEl.value = '';
+                                renderComments();
+                            });
+
+                            commentsList.appendChild(commentForm);
+                        };
+
+                        renderComments();
                     }
 
                     gamesFeed.appendChild(gameContainer);
@@ -357,12 +414,100 @@ class SPARouter {
     }
 
 
-    initProfilePage() {
-        // Add profile page specific functionality
-        const editButton = document.querySelector('.edit-profile-btn');
-        if (editButton) {
-            editButton.addEventListener('click', () => {
-                alert('Edit profile functionality would go here!');
+    initHistoryPage() {
+        // Load games metadata if not loaded
+        if (!this.gamesMetadata) {
+            fetch('/assets/games-metadata.json')
+                .then(response => response.json())
+                .then(data => {
+                    this.gamesMetadata = data;
+                    this.populateHistoryPage();
+                })
+                .catch(error => {
+                    console.error('Error loading games metadata:', error);
+                });
+        } else {
+            this.populateHistoryPage();
+        }
+
+        // Load challenges data if not loaded
+        if (!this.challengesData) {
+            fetch('assets/challenges.json')
+                .then(response => response.json())
+                .then(data => {
+                    this.challengesData = data;
+                    this.populateHistoryPage();
+                })
+                .catch(error => {
+                    console.error('Error loading challenges:', error);
+                });
+        } else {
+            this.populateHistoryPage();
+        }
+    }
+
+    populateHistoryPage() {
+        if (!this.gamesMetadata || !this.challengesData) return; // Wait for both to load
+
+        // Populate likes history
+        const likesGrid = document.querySelector('.likes-grid');
+        if (likesGrid) {
+            likesGrid.innerHTML = '';
+            this.likes.forEach(gameId => {
+                const gameInfo = this.gamesMetadata[gameId];
+                if (!gameInfo) return;
+                const metadata = gameInfo.metadata || {};
+                const gameItem = document.createElement('div');
+                gameItem.className = 'game-item';
+                gameItem.innerHTML = `
+                    <img src="${gameInfo.screenshot_paths ? gameInfo.screenshot_paths[0] : ''}" alt="${metadata.title || gameId}">
+                    <div>${metadata.title || gameId}</div>
+                `;
+                likesGrid.appendChild(gameItem);
+            });
+        }
+
+        // Populate comments history
+        const commentsList = document.querySelector('.comments-list');
+        if (commentsList) {
+            commentsList.innerHTML = '';
+            Object.keys(this.comments).forEach(gameId => {
+                const gameInfo = this.gamesMetadata[gameId];
+                const gameTitle = gameInfo ? (gameInfo.metadata?.title || gameId) : gameId;
+                this.comments[gameId].forEach(review => {
+                    const commentDiv = document.createElement('div');
+                    commentDiv.className = 'comment';
+                    commentDiv.innerHTML = `
+                        <strong>${gameTitle}</strong>
+                        <p>${review.reviewbody || ''}</p>
+                        <small>by ${review.reviewer || 'Anonymous'} on ${review.reviewdate || 'unknown date'}</small>
+                    `;
+                    commentsList.appendChild(commentDiv);
+                });
+            });
+        }
+
+        // Populate challenges history
+        const challengesList = document.querySelector('.challenges-list');
+        if (challengesList) {
+            challengesList.innerHTML = '';
+            Object.keys(this.challengesProgress).forEach(topicTitle => {
+                const topicProgress = this.challengesProgress[topicTitle];
+                let totalSlides = 0;
+                let completedSlides = 0;
+                Object.keys(topicProgress).forEach(type => {
+                    Object.keys(topicProgress[type]).forEach(idx => {
+                        totalSlides++;
+                        if (topicProgress[type][idx]) completedSlides++;
+                    });
+                });
+                const challengeDiv = document.createElement('div');
+                challengeDiv.className = 'challenge';
+                challengeDiv.innerHTML = `
+                    <div class="topic">${topicTitle}</div>
+                    <div class="progress-label">${completedSlides} / ${totalSlides} completed</div>
+                `;
+                challengesList.appendChild(challengeDiv);
             });
         }
     }
@@ -402,6 +547,16 @@ class SPARouter {
         `)}`;
 
         topics.forEach((topic, index) => {
+            // Initialize progress tracking for this topic
+            if (!this.challengesProgress[topic.title]) {
+                this.challengesProgress[topic.title] = {};
+                Object.keys(topic.slides).forEach(type => {
+                    this.challengesProgress[topic.title][type] = {};
+                    topic.slides[type].forEach((_, idx) => {
+                        this.challengesProgress[topic.title][type][idx] = false;
+                    });
+                });
+            }
             const card = document.createElement('div');
             card.className = 'topic-card';
             card.dataset.topicIndex = index;
@@ -484,6 +639,13 @@ class SPARouter {
         const slidesContainer = document.getElementById('slidesContainer');
         slidesContainer.innerHTML = '';
         
+        const markSlideCompleted = (type, idx) => {
+            if (!this.challengesProgress[topic.title] || !this.challengesProgress[topic.title][type]) return;
+            if (this.challengesProgress[topic.title][type][idx]) return;
+            this.challengesProgress[topic.title][type][idx] = true;
+            console.log(`🏁 Progress marked: [${topic.title}] ${type}[${idx}]`);
+        };
+        
         const types = Object.keys(topic.slides);
         
         types.forEach((type, typeIndex) => {
@@ -525,7 +687,7 @@ class SPARouter {
             const renderCurrentSubSlide = () => {
                 contentContainer.innerHTML = '';
                 const subSlide = subSlides[currentSubIndex];
-                
+
                 switch(type) {
                     case 'material':
                         contentContainer.innerHTML = subSlide.content;
@@ -533,17 +695,21 @@ class SPARouter {
                         if (materialCard) {
                             materialCard.appendChild(navDiv);
                         }
+                        if (currentSubIndex === 0) {
+                            // first material slide gets auto-completed on render
+                            markSlideCompleted(type, 0);
+                        }
                         break;
-                        
+
                     case 'quiz':
                         contentContainer.innerHTML = this.renderQuiz(subSlide);
                         const quizContainer = contentContainer.querySelector('.quiz-container');
                         if (quizContainer) {
                             quizContainer.appendChild(navDiv);
                         }
-                        this.attachQuizHandlers(contentContainer, subSlide);
+                        this.attachQuizHandlers(contentContainer, subSlide, topic.title, type, currentSubIndex, markSlideCompleted);
                         break;
-                        
+
                     case 'external':
                         contentContainer.innerHTML = `
                             <div class="external-card">
@@ -555,9 +721,15 @@ class SPARouter {
                         if (externalCard) {
                             externalCard.appendChild(navDiv);
                         }
+                        const externalLink = contentContainer.querySelector('.external-link');
+                        if (externalLink) {
+                            externalLink.addEventListener('click', () => {
+                                markSlideCompleted(type, currentSubIndex);
+                            });
+                        }
                         break;
                 }
-                
+
                 counter.textContent = `${currentSubIndex + 1} / ${subSlides.length}`;
                 prevBtn.disabled = currentSubIndex === 0;
                 nextBtn.disabled = currentSubIndex === subSlides.length - 1;
@@ -574,6 +746,7 @@ class SPARouter {
             nextBtn.addEventListener('click', () => {
                 if (currentSubIndex < subSlides.length - 1) {
                     currentSubIndex++;
+                    markSlideCompleted(type, currentSubIndex);
                     renderCurrentSubSlide();
                 }
             });
@@ -606,7 +779,7 @@ class SPARouter {
         `;
     }
 
-    attachQuizHandlers(container, slide) {
+    attachQuizHandlers(container, slide, topicTitle, type, slideIndex, markSlideCompleted) {
         const answers = container.querySelectorAll('.chooseAnswer');
         const correctBox = container.querySelector('#correctExplanation');
         const wrongBox = container.querySelector('#wrongExplanation');
@@ -624,6 +797,10 @@ class SPARouter {
                 
                 // Mark selected answer
                 e.target.classList.add(isCorrect ? 'correct' : 'wrong');
+                
+                if (isCorrect) {
+                    markSlideCompleted(type, slideIndex);
+                }
                 
                 // Show appropriate explanation
                 if (isCorrect) {
