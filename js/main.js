@@ -674,7 +674,7 @@ class SPARouter {
         else if (completedTopics >= 2) level = 'ranked-pusher';
         else if (completedTopics >= 1) level = 'CASUAL';
         else level = 'NOOB';
-        const levelIconSrc = `assets/level-${level.toLowerCase().replace(/\s+/g, '-')}.png`;
+        const levelIconSrc = `assets/level.png`;
 
         // Update level container
         const levelIconImg = document.querySelector('.level-icon img');
