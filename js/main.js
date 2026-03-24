@@ -12,7 +12,7 @@ class SPARouter {
         this.routes = {
             '/': 'pages/home.html',
             '/challenges': 'pages/challengesTest.html',
-            '/profile': 'pages/profile.html',
+            '/profile': 'pages/history.html',
             '/games': 'pages/games.html',
             '/videos': 'pages/videos.html'
         };
@@ -23,8 +23,8 @@ class SPARouter {
         this.sidebarOverlay = document.getElementById('sidebarOverlay');
         
         this.gamesMetadata = null;
-
         this.likes = [];
+        this.comments = {}; // {gameId: [{review,reviewtitle,reviewbody,reviewer,reviewdate},{}], gameId: []}
         this.challengesProgress = {};
         this.init();
         this.initSidebar();
@@ -108,7 +108,7 @@ class SPARouter {
         const titles = {
             '/': 'Home - FLISH FLASH',
             '/challenges': 'Challenges - FLISH FLASH',
-            '/profile': 'Profile - FLISH FLASH',
+            '/profile': 'History - FLISH FLASH',
             '/games': 'Games - FLISH FLASH',
             '/videos': 'Videos - FLISH FLASH'
         };
@@ -155,7 +155,7 @@ class SPARouter {
                 this.initGamesFeed();
                 break;
             case '/profile':
-                this.initProfilePage();
+                this.initHistoryPage();
                 break;
             case '/challenges':
                 this.initChallengesPage();
@@ -414,12 +414,100 @@ class SPARouter {
     }
 
 
-    initProfilePage() {
-        // Add profile page specific functionality
-        const editButton = document.querySelector('.edit-profile-btn');
-        if (editButton) {
-            editButton.addEventListener('click', () => {
-                alert('Edit profile functionality would go here!');
+    initHistoryPage() {
+        // Load games metadata if not loaded
+        if (!this.gamesMetadata) {
+            fetch('/assets/games-metadata.json')
+                .then(response => response.json())
+                .then(data => {
+                    this.gamesMetadata = data;
+                    this.populateHistoryPage();
+                })
+                .catch(error => {
+                    console.error('Error loading games metadata:', error);
+                });
+        } else {
+            this.populateHistoryPage();
+        }
+
+        // Load challenges data if not loaded
+        if (!this.challengesData) {
+            fetch('assets/challenges.json')
+                .then(response => response.json())
+                .then(data => {
+                    this.challengesData = data;
+                    this.populateHistoryPage();
+                })
+                .catch(error => {
+                    console.error('Error loading challenges:', error);
+                });
+        } else {
+            this.populateHistoryPage();
+        }
+    }
+
+    populateHistoryPage() {
+        if (!this.gamesMetadata || !this.challengesData) return; // Wait for both to load
+
+        // Populate likes history
+        const likesGrid = document.querySelector('.likes-grid');
+        if (likesGrid) {
+            likesGrid.innerHTML = '';
+            this.likes.forEach(gameId => {
+                const gameInfo = this.gamesMetadata[gameId];
+                if (!gameInfo) return;
+                const metadata = gameInfo.metadata || {};
+                const gameItem = document.createElement('div');
+                gameItem.className = 'game-item';
+                gameItem.innerHTML = `
+                    <img src="${gameInfo.screenshot_paths ? gameInfo.screenshot_paths[0] : ''}" alt="${metadata.title || gameId}">
+                    <div>${metadata.title || gameId}</div>
+                `;
+                likesGrid.appendChild(gameItem);
+            });
+        }
+
+        // Populate comments history
+        const commentsList = document.querySelector('.comments-list');
+        if (commentsList) {
+            commentsList.innerHTML = '';
+            Object.keys(this.comments).forEach(gameId => {
+                const gameInfo = this.gamesMetadata[gameId];
+                const gameTitle = gameInfo ? (gameInfo.metadata?.title || gameId) : gameId;
+                this.comments[gameId].forEach(review => {
+                    const commentDiv = document.createElement('div');
+                    commentDiv.className = 'comment';
+                    commentDiv.innerHTML = `
+                        <strong>${gameTitle}</strong>
+                        <p>${review.reviewbody || ''}</p>
+                        <small>by ${review.reviewer || 'Anonymous'} on ${review.reviewdate || 'unknown date'}</small>
+                    `;
+                    commentsList.appendChild(commentDiv);
+                });
+            });
+        }
+
+        // Populate challenges history
+        const challengesList = document.querySelector('.challenges-list');
+        if (challengesList) {
+            challengesList.innerHTML = '';
+            Object.keys(this.challengesProgress).forEach(topicTitle => {
+                const topicProgress = this.challengesProgress[topicTitle];
+                let totalSlides = 0;
+                let completedSlides = 0;
+                Object.keys(topicProgress).forEach(type => {
+                    Object.keys(topicProgress[type]).forEach(idx => {
+                        totalSlides++;
+                        if (topicProgress[type][idx]) completedSlides++;
+                    });
+                });
+                const challengeDiv = document.createElement('div');
+                challengeDiv.className = 'challenge';
+                challengeDiv.innerHTML = `
+                    <div class="topic">${topicTitle}</div>
+                    <div class="progress-label">${completedSlides} / ${totalSlides} completed</div>
+                `;
+                challengesList.appendChild(challengeDiv);
             });
         }
     }
