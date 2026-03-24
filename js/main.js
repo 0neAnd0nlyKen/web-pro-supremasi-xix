@@ -23,6 +23,7 @@ class SPARouter {
         this.sidebarOverlay = document.getElementById('sidebarOverlay');
         
         this.gamesMetadata = null;
+        this.challengesData = null;
         this.likes = [];
         this.comments = {}; // {gameId: [{review,reviewtitle,reviewbody,reviewer,reviewdate},{}], gameId: []}
         this.challengesProgress = {};
@@ -226,6 +227,23 @@ class SPARouter {
             .then(response => response.json())
             .then(data => {
                 this.gamesMetadata = data;
+                
+                // Load challenges data if not already loaded
+                if (!this.challengesData) {
+                    return fetch('assets/challenges.json')
+                        .then(response => response.json())
+                        .then(challengesData => {
+                            this.challengesData = challengesData;
+                            return data;
+                        })
+                        .catch(error => {
+                            console.error('Error loading challenges:', error);
+                            return data;
+                        });
+                }
+                return data;
+            })
+            .then(() => {
                     // Track on-screen state and cleanup after 60s away
                     const observer = new IntersectionObserver((entries) => {
                         entries.forEach(entry => {
@@ -576,7 +594,27 @@ class SPARouter {
 
                         renderComments();
                     }
-
+                    
+                    // Populate challenges container
+                    const challengesContainer = gameContainer.querySelector('.challenges-container');
+                    if (challengesContainer && this.challengesData) {
+                        const matchingTopic = this.getMatchingChallengeTopicForGame(genres, gameId);
+                        
+                        if (matchingTopic) {
+                            const externalLink = matchingTopic.slides.external && matchingTopic.slides.external[0] 
+                                ? matchingTopic.slides.external[0].link 
+                                : '/challenges';
+                            
+                            const topicImagePath = `/assets/challenges/${matchingTopic.title.toLowerCase()}/b.png`;
+                            const topicTitle = matchingTopic.title;
+                            
+                            challengesContainer.innerHTML = `
+                                <img src="${topicImagePath}" alt="${topicTitle} challenge" style="width: 100%; border-radius: 10px; margin-bottom: 10px; max-height: 200px; object-fit: cover;">
+                                <a href="${externalLink}" target="_blank">ACCEPT CHALLENGE</a>
+                            `;
+                        }
+                    }
+                    
                     gamesFeed.appendChild(gameContainer);
                     
                     const loadMoreGamesBatch = () => {
@@ -753,6 +791,33 @@ class SPARouter {
         // Shuffle the array and return first limit items
         const shuffled = [...allGames].sort(() => Math.random() - 0.5);
         return shuffled.slice(0, limit);
+    }
+
+    getMatchingChallengeTopicForGame(gameGenres, gameId) {
+        // Load challenges data if not already loaded
+        if (!this.challengesData) {
+            return null;
+        }
+
+        // Normalize game genres to compare with topic titles
+        const normalizedGenres = gameGenres.map(g => g.toLowerCase().trim());
+
+        // Find a topic that matches one of the game's genres
+        let matchingTopic = null;
+        this.challengesData.topics.forEach(topic => {
+            const topicTitle = topic.title.toLowerCase().trim();
+            if (normalizedGenres.some(genre => genre.includes(topicTitle) || topicTitle.includes(genre))) {
+                matchingTopic = topic;
+            }
+        });
+
+        // If no match found, select a random topic
+        if (!matchingTopic && this.challengesData.topics.length > 0) {
+            const randomIndex = Math.floor(Math.random() * this.challengesData.topics.length);
+            matchingTopic = this.challengesData.topics[randomIndex];
+        }
+
+        return matchingTopic;
     }
 
     initChallengesPage() {
