@@ -14,7 +14,6 @@ class SPARouter {
             '/challenges': 'pages/challengesTest.html',
             '/profile': 'pages/history.html',
             '/games': 'pages/games.html',
-            '/videos': 'pages/videos.html'
         };
         
         // Sidebar elements
@@ -140,7 +139,6 @@ class SPARouter {
             '/challenges': 'Challenges - FLISH FLASH',
             '/profile': 'History - FLISH FLASH',
             '/games': 'Games - FLISH FLASH',
-            '/videos': 'Videos - FLISH FLASH'
         };
         document.title = titles[route] || 'FLISH FLASH';
     }

@@ -111,6 +111,21 @@ html, body {
     letter-spacing: 1px;
 }
 
+.sidebar-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border: 8px solid white;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.sidebar-logo img {
+    width: 100%;
+    height: auto;
+}
+
 /* Menu */
 .menu {
     width: 100%;
