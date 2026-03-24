@@ -694,6 +694,7 @@ class SPARouter {
                         const materialCard = contentContainer.querySelector('.material-card');
                         if (materialCard) {
                             materialCard.appendChild(navDiv);
+                        }
                         if (currentSubIndex === 0) {
                             // first material slide gets auto-completed on render
                             markSlideCompleted(type, 0);
@@ -706,7 +707,6 @@ class SPARouter {
                         if (quizContainer) {
                             quizContainer.appendChild(navDiv);
                         }
-                        this.attachQuizHandlers(contentContainer, subSlide);
                         this.attachQuizHandlers(contentContainer, subSlide, topic.title, type, currentSubIndex, markSlideCompleted);
                         break;
 
@@ -720,6 +720,7 @@ class SPARouter {
                         const externalCard = contentContainer.querySelector('.external-card');
                         if (externalCard) {
                             externalCard.appendChild(navDiv);
+                        }
                         const externalLink = contentContainer.querySelector('.external-link');
                         if (externalLink) {
                             externalLink.addEventListener('click', () => {
