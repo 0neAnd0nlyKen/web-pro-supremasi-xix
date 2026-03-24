@@ -17,7 +17,7 @@
         ],
         "quiz": [
           {
-            "question": "<h3>Which action should happen if you follow the flowchart?</h3> <img src='assets/challenges/platformer/a.png' class='slide-image question'>",
+            "question": "<h3>Aksi apa yang harus dilakukan untuk memenuhi flowchart ini?</h3> <img src='assets/challenges/platformer/a.png' class='slide-image question'>",
             "answerA": "<img src='assets/challenges/platformer/1.png' class='slide-image answers'>",
             "answerB": "<img src='assets/challenges/platformer/2.png' class='slide-image answers'>",
             "answerC": "<img src='assets/challenges/platformer/3.png' class='slide-image answers'>",
@@ -25,6 +25,26 @@
             "rightAnswer": 2,
             "explanationRight": "<div class='explanation correct'>✅ Correct! var, let, and const are all used to declare variables in JavaScript.</div>",
             "explanationWrong": "<div class='explanation wrong'>❌ Not quite. The correct answer is 'All of the above'. var, let, and const are all variable declarations.</div>"
+          },
+          {
+            "question": "<h3>Apa faktor terbesar yang memengaruhi feel movement karakter?</h3>",
+            "answerA": "Warna background",
+            "answerB": "Kecepatan animasi",
+            "answerC": "Gravity dan acceleration",
+            "answerD": "Ukuran UI",
+            "rightAnswer": 3,
+            "explanationRight": "<div class='explanation correct'>✅ Correct! Faktor fisik seperti gravity dan acceleration adalah inti movement feeling.</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Movement dipengaruhi oleh gravity dan acceleration, bukan faktor visual.</div>"
+          },
+          {
+            "question": "<h3>Jika karakter dapat double jump, penyesuaian apa yang perlu dilakukan pada level desain?</h3>",
+            "answerA": "Platform lebih tinggi dan celah lebih lebar",
+            "answerB": "Semua platform diratakan",
+            "answerC": "Kurangi musuh",
+            "answerD": "Tidak ada perubahan",
+            "rightAnswer": 1,
+            "explanationRight": "<div class='explanation correct'>✅ Correct! Double jump memungkinkan platform lebih tinggi dan celah lebih besar.</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Double jump memerlukan desain yang lebih vertikal dan menantang, jadi jawabannya adalah A.</div>"
           }
         ],
         "external": [
@@ -45,16 +65,36 @@
           }
         ],
         "quiz": [
-          {
-            "question": "<h3>What part is important for an Adventure type game to be fun to play?</h3>",
-            "answerA": "Story",
-            "answerB": "Gameplay",
-            "answerC": "OSTs",
-            "answerD": "All of aboce",
-            "rightAnswer": 4,
-            "explanationRight": "<div class='explanation correct'>✅ Correct! Everything on the top is as important as the other, because if one is lacking it will be.....</div>",
-            "explanationWrong": "<div class='explanation wrong'>❌ Not quite. The correct answer is 'All of the above'. because.....</div>"
-          }
+        {
+          "question": "<h3>Apa yang membuat game adventure menarik?</h3>",
+          "answerA": "Banyak menu",
+          "answerB": "Dunia yang kaya dan eksploratif",
+          "answerC": "Grafik sederhana",
+          "answerD": "Quest yang repetitif",
+          "rightAnswer": 2,
+          "explanationRight": "<div class='explanation correct'>✅ Correct! Inti game adventure adalah dunia yang kaya dan eksplorasi.</div>",
+          "explanationWrong": "<div class='explanation wrong'>❌ Faktor utama adalah dunia dan eksplorasi, bukan elemen lainnya.</div>"
+        },
+        {
+          "question": "<h3>Jika tujuan gameplay adalah menciptakan 'misteri', apa elemen terpenting?</h3>",
+          "answerA": "Dialog berlebihan",
+          "answerB": "Musik ambient & atmosfer visual",
+          "answerC": "Musuh sebanyak mungkin",
+          "answerD": "Warna super cerah",
+          "rightAnswer": 2,
+          "explanationRight": "<div class='explanation correct'>✅ Correct! Atmosfer audio dan visual adalah pembentuk rasa misteri.</div>",
+          "explanationWrong": "<div class='explanation wrong'>❌ Untuk misteri, musik ambient & atmosfer visual adalah kunci.</div>"
+        },
+        {
+          "question": "<h3>NPC yang memorable biasanya memiliki...</h3>",
+          "answerA": "Dialog acak",
+          "answerB": "Kepribadian dan peran unik",
+          "answerC": "Sedikit animasi",
+          "answerD": "Tidak pernah berbicara",
+          "rightAnswer": 2,
+          "explanationRight": "<div class='explanation correct'>✅ Correct! NPC memorable punya karakter dan peran khas.</div>",
+          "explanationWrong": "<div class='explanation wrong'>❌ Jawaban yang benar adalah NPC dengan kepribadian dan peran yang kuat.</div>"
+        }
         ]
       }
     },
@@ -65,6 +105,28 @@
         "material": [
           {
             "content": "<div class='material-card'><h2>HTML Structure</h2><p>HTML uses tags to structure content on the web.</p><pre>&lt;div&gt;Hello World&lt;/div&gt;</pre></div>"
+          }
+        ],
+        "quiz":[
+          {
+          "question": "<h3>Hal terpenting dalam game simulasi adalah...</h3>",
+          "answerA": "Grafik ultra 3D",
+          "answerB": "Konsistensi sistem dan logika",
+          "answerC": "Cerita linear",
+          "answerD": "Satu jenis interaksi",
+          "rightAnswer": 2,
+          "explanationRight": "<div class='explanation correct'>✅ Correct! Simulasi harus memiliki sistem yang konsisten dan masuk akal.</div>",
+          "explanationWrong": "<div class='explanation wrong'>❌ Yang paling penting adalah konsistensi logika simulasi.</div>"
+          },
+          {
+            "question": "<h3>Jika simulasi terasa membosankan, apa yang bisa ditambahkan?</h3>",
+            "answerA": "Event acak yang memberi variasi",
+            "answerB": "Kurangi fitur",
+            "answerC": "Percepat waktu",
+            "answerD": "Hapus mekanik",
+            "rightAnswer": 1,
+            "explanationRight": "<div class='explanation correct'>✅ Correct! Event acak memberi dinamika pada simulasi.</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Agar tidak membosankan, tambahkan event acak, bukan menghapus fitur.</div>"
           }
         ]
       }
@@ -77,6 +139,28 @@
           {
             "content": "<div class='material-card'><h2>HTML Structure</h2><p>HTML uses tags to structure content on the web.</p><pre>&lt;div&gt;Hello World&lt;/div&gt;</pre></div>"
           }
+        ],
+        "quiz":[
+          {
+            "question": "<h3>Puzzle yang baik harus...</h3>",
+            "answerA": "Membuat frustrasi",
+            "answerB": "Menantang tapi adil",
+            "answerC": "Tidak ada logika",
+            "answerD": "Sangat acak",
+            "rightAnswer": 2,
+            "explanationRight": "<div class='explanation correct'>✅ Correct! Puzzle ideal menantang namun tetap adil.</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Puzzle yang baik harus menantang namun adil.</div>"
+          },
+          {
+            "question": "<h3>Jika pemain gagal terus pada puzzle tertentu, apa solusinya?</h3>",
+            "answerA": "Tambah hint bertahap",
+            "answerB": "Tambah timer",
+            "answerC": "Hapus tutorial",
+            "answerD": "Tambah distractor",
+            "rightAnswer": 1,
+            "explanationRight": "<div class='explanation correct'>✅ Correct! Hint bertahap membantu tanpa mengorbankan tantangan.</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Solusi terbaik adalah memberi hint, bukan membuat puzzle lebih sulit.</div>"
+          }
         ]
       }
     },
@@ -88,7 +172,39 @@
           {
             "content": "<div class='material-card'><h2>HTML Structure</h2><p>HTML uses tags to structure content on the web.</p><pre>&lt;div&gt;Hello World&lt;/div&gt;</pre></div>"
           }
-        ]
+        ],
+        "quiz":[
+          {
+          "question": "<h3>Game memasak biasanya menguji kemampuan...</h3>",
+          "answerA": "Parkour",
+          "answerB": "Manajemen waktu & akurasi",
+          "answerC": "Stealth",
+          "answerD": "Shooting",
+          "rightAnswer": 2,
+          "explanationRight": "<div class='explanation correct'>✅ Correct! Inti gameplay cooking adalah time management dan akurasi.</div>",
+          "explanationWrong": "<div class='explanation wrong'>❌ Gameplay memasak fokus pada manajemen waktu dan akurasi, bukan genre lain.</div>"
+          },
+          {
+            "question": "<h3>Jika pemain sering gagal menyelesaikan pesanan tepat waktu, apa yang bisa ditambahkan?</h3>",
+            "answerA": "Timer lebih ketat",
+            "answerB": "Kurangi jumlah pesanan",
+            "answerC": "Tambah bantuan visual untuk langkah penting",
+            "answerD": "Hapus beberapa langkah",
+            "rightAnswer": 3,
+            "explanationRight": "<div class='explanation correct'>✅ Correct! Bantuan visual membantu pemain memahami langkah penting tanpa mengurangi tantangan.</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Solusi terbaik adalah menambahkan bantuan visual, bukan mengurangi tantangan secara drastis.</div>"
+          },
+          {
+            "question": "<h3>Elemen apa yang paling meningkatkan replayability dalam game memasak?</h3>",
+            "answerA": "Resep acak setiap kali",
+            "answerB": "Grafik lebih baik",
+            "answerC": "Musik baru",
+            "answerD": "Satu resep tetap",
+            "rightAnswer": 1,
+            "explanationRight": "<div class='explanation correct'>✅ Correct! Resep acak memberikan pengalaman baru setiap kali bermain, meningkatkan replayability.</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Resep acak adalah elemen utama yang meningkatkan replayability, bukan grafik atau musik.</div>"
+          }
+        ] 
       }
     }
   ]
