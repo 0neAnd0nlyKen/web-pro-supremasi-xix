@@ -201,10 +201,11 @@ class SPARouter {
             .then(response => response.json())
             .then(data => {
                 this.gamesMetadata = data;
-                
                     // Track on-screen state and cleanup after 60s away
                     const observer = new IntersectionObserver((entries) => {
                         entries.forEach(entry => {
+                            if (!entry.target.dataset) return;
+
                             const target = entry.target;
                             const id = target.dataset.gameId;
                             console.log(`Intersection update for ${id}: isIntersecting=${entry.isIntersecting}, ratio=${entry.intersectionRatio}`);
@@ -221,7 +222,13 @@ class SPARouter {
                             console.log(`Ruffle player for ${id}:`, player);
                             if (entry.isIntersecting && entry.intersectionRatio > 0) {
                                 console.log(`👀 ${id} is visible`);
-                                this.visitedGames.add(id);
+                                if (!this.visitedGames.has(id)) {
+                                    this.visitedGames.add(id);
+                                    if (entry.target.dataset.isTail === 'true') {
+                                        console.log(`Tail game ${id} is visible, loading more games...`);
+                                        // generate more games with gameIds returned from another function from another file
+                                    }
+                                }
 
                                 if (player && typeof player.resume === 'function') {
                                     console.log(`Resuming Ruffle player for ${id}`);
@@ -263,7 +270,21 @@ class SPARouter {
                         });
                     }, { threshold: [0, 0.01] });
 
-                gameIds.forEach((gameId) => {
+                    const markTail = () => {
+                        const allGames = gamesFeed.querySelectorAll('.game-wrapper');
+                        allGames.forEach((gameEl, index) => {
+                            gameEl.dataset.isTail = index === allGames.length - 1 ? 'true' : 'false';
+                        });
+                    };
+
+                    const getNextGameIdsFromGenreLikes = () => {
+                        if (typeof window.getNextGameIdsByGenreLikes === 'function') {
+                            return window.getNextGameIdsByGenreLikes(this.genreLikes) || [];
+                        }
+                        return [];
+                    };
+
+                    const appendGameById = (gameId) => {
                     const gameInfo = this.gamesMetadata[gameId];
                     if (!gameInfo) {
                         console.warn(`Game metadata missing for ${gameId}`);
@@ -279,6 +300,7 @@ class SPARouter {
                     const gameContainer = baseTemplate.cloneNode(true);
                     gameContainer.dataset.gameId = gameId;
                     gameContainer.dataset.gameName = metadata.title || gameId;
+                    gameContainer.dataset.isTail = 'false';
 
                     const objectEl = gameContainer.querySelector('object');
                     if (objectEl) {
@@ -492,7 +514,11 @@ class SPARouter {
                     }
 
                     gamesFeed.appendChild(gameContainer);
+                
+                gameIds.forEach((gameId) => {
+                    appendGameById(gameId);
                 });
+                markTail();
 
                 console.log(`✅ Loaded ${gameIds.length} games`);
             })
