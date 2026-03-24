@@ -101,6 +101,12 @@
           "explanationRight": "<div class='explanation correct'>✅ Correct! NPC memorable punya karakter dan peran khas.</div>",
           "explanationWrong": "<div class='explanation wrong'>❌ Jawaban yang benar adalah NPC dengan kepribadian dan peran yang kuat.</div>"
         }
+        ],
+        "external": [
+          {
+            "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+            "link": "https://scratch.mit.edu/projects/1294925357/"
+          }
         ]
       }
     },
@@ -140,6 +146,12 @@
             "explanationRight": "<div class='explanation correct'>✅ Correct! Event acak memberi dinamika pada simulasi.</div>",
             "explanationWrong": "<div class='explanation wrong'>❌ Agar tidak membosankan, tambahkan event acak, bukan menghapus fitur.</div>"
           }
+        ],
+        "external": [
+          {
+            "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+            "link": "To be continued"
+          }
         ]
       }
     },
@@ -178,6 +190,12 @@
             "rightAnswer": 1,
             "explanationRight": "<div class='explanation correct'>✅ Correct! Hint bertahap membantu tanpa mengorbankan tantangan.</div>",
             "explanationWrong": "<div class='explanation wrong'>❌ Solusi terbaik adalah memberi hint, bukan membuat puzzle lebih sulit.</div>"
+          }
+        ],
+        "external": [
+          {
+            "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+            "link": "To be continued"
           }
         ]
       }
@@ -228,7 +246,13 @@
             "explanationRight": "<div class='explanation correct'>✅ Correct! Resep acak memberikan pengalaman baru setiap kali bermain, meningkatkan replayability.</div>",
             "explanationWrong": "<div class='explanation wrong'>❌ Resep acak adalah elemen utama yang meningkatkan replayability, bukan grafik atau musik.</div>"
           }
-        ] 
+        ],
+          "external": [
+            {
+              "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+              "link": "To be continued"
+            }
+          ] 
       }
     },
       {
@@ -283,7 +307,13 @@
                 "explanationRight": "<div class='explanation correct'>✅ Memberikan feedback membantu pemain memahami kapan harus braking dan drifting.</div>",
                 "explanationWrong": "<div class='explanation wrong'>❌ Memberikan feedback teknis adalah cara terbaik untuk meningkatkan skill pemain.</div>"
               }
-            ]
+            ],
+              "external": [
+                {
+                  "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+                  "link": "https://scratch.mit.edu/projects/1294957058/"
+                }
+              ]
           }
         },
       {
@@ -338,7 +368,13 @@
               "explanationRight": "<div class='explanation correct'>✅ Benar! Stamina bar membatasi aksi pemain dan menambah strategi.</div>",
               "explanationWrong": "<div class='explanation wrong'>❌ Stamina bar membatasi aksi agar gameplay lebih strategis.</div>"
             }
-          ]
+          ],
+            "external": [
+              {
+                "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+                "link": "https://scratch.mit.edu/projects/1294929270/"
+              }
+            ]
         }
       },
       {
@@ -393,7 +429,13 @@
             "explanationRight": "<div class='explanation correct'>✅ Fitur tema dan makeup sangat penting untuk kreativitas dalam dress-up.</div>",
             "explanationWrong": "<div class='explanation wrong'>❌ Tema dan makeup adalah elemen utama penunjang kreativitas.</div>"
           }
-        ]
+        ],
+          "external": [
+            {
+              "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+              "link": "To be continued"
+            }
+          ]
       }
     },
       {
@@ -448,7 +490,13 @@
               "explanationRight": "<div class='explanation correct'>✅ Betul! Score multiplier dan peningkatan difficulty memberi tantangan berulang.</div>",
               "explanationWrong": "<div class='explanation wrong'>❌ Replayability arcade biasanya ditingkatkan melalui multiplier dan scaling.</div>"
             }
-          ]
+          ],
+            "external": [
+              {
+                "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+                "link": "https://scratch.mit.edu/projects/1294932057/"
+              }
+             ]
         }
       }
   ]
