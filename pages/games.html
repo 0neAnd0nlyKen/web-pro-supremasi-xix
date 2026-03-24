@@ -23,10 +23,13 @@
         .game-container {
             display: flex;
             width: 90%;
-            height: 90%;
-            gap: 20px;
+            /* height: 90%; */
             padding: 20px;
+            gap: 20px;
             border-radius: 30px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;            
             border: 6px solid #FFAE4E;
             background: rgba(0,0,0,0.6);
         }
@@ -98,13 +101,32 @@
         }
 
         .likes-btn, .comments-btn {
+            cursor: pointer;
+            transition: 0.3s;
             border: none;
             background: #FF4E4E;
             color: white;
             padding: 8px 18px;
             border-radius: 20px;
+        }
+        .likes-btn-fill, .comments-btn-fill {
             cursor: pointer;
             transition: 0.3s;
+            border: none;
+            background: #FF4E4E;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+        }
+
+        .likes-count, .comments-count {
+            font-size: 14px;
+            opacity: 0.8;
+            align-items: center;
+        }
+
+        .likes-btn-mask{
+            
         }
 
         .likes-btn:hover,
@@ -186,12 +208,21 @@
             <div class="games-feed">
                 <div class="game-wrapper">
                     <div class="game-container">
-                         <div class="col left">
+                        <div class="col left">
                             <div class="title"></div>
                             <div class="year"></div>
                             <div class="creator-label">Created by:</div>
                             <div class="description"></div>
                             <div class="genres"></div>
+                            <div class="screenshots-container"> 
+                                <div class="screenshots-row">
+                                    <div class="screenshot"></div>                                    
+                                </div>
+                                <div class="screenshots-row">
+                                    <div class="screenshot"></div>
+                                </div>
+                            </div>
+
                         </div>
                     
                         <div class="col middle">
@@ -216,14 +247,6 @@
                         </div>
                         
                         <div class="col right">
-                            <div class="screenshots-container"> 
-                                <div class="screenshots-row">
-                                    <div class="screenshot"></div>                                    
-                                </div>
-                                <div class="screenshots-row">
-                                    <div class="screenshot"></div>
-                                </div>
-                            </div>
                             <div class="comments-list">
                                 <div class="comment"></div>
                                 <div class="comments-count"></div>
