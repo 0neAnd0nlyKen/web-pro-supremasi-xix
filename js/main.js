@@ -25,6 +25,7 @@ class SPARouter {
         this.gamesMetadata = null;
 
         this.likes = [];
+        this.challengesProgress = {};
         this.init();
         this.initSidebar();
     }
@@ -458,6 +459,16 @@ class SPARouter {
         `)}`;
 
         topics.forEach((topic, index) => {
+            // Initialize progress tracking for this topic
+            if (!this.challengesProgress[topic.title]) {
+                this.challengesProgress[topic.title] = {};
+                Object.keys(topic.slides).forEach(type => {
+                    this.challengesProgress[topic.title][type] = {};
+                    topic.slides[type].forEach((_, idx) => {
+                        this.challengesProgress[topic.title][type][idx] = false;
+                    });
+                });
+            }
             const card = document.createElement('div');
             card.className = 'topic-card';
             card.dataset.topicIndex = index;
@@ -540,6 +551,13 @@ class SPARouter {
         const slidesContainer = document.getElementById('slidesContainer');
         slidesContainer.innerHTML = '';
         
+        const markSlideCompleted = (type, idx) => {
+            if (!this.challengesProgress[topic.title] || !this.challengesProgress[topic.title][type]) return;
+            if (this.challengesProgress[topic.title][type][idx]) return;
+            this.challengesProgress[topic.title][type][idx] = true;
+            console.log(`🏁 Progress marked: [${topic.title}] ${type}[${idx}]`);
+        };
+        
         const types = Object.keys(topic.slides);
         
         types.forEach((type, typeIndex) => {
@@ -581,17 +599,21 @@ class SPARouter {
             const renderCurrentSubSlide = () => {
                 contentContainer.innerHTML = '';
                 const subSlide = subSlides[currentSubIndex];
-                
+
                 switch(type) {
                     case 'material':
                         contentContainer.innerHTML = subSlide.content;
+                        if (currentSubIndex === 0) {
+                            // first material slide gets auto-completed on render
+                            markSlideCompleted(type, 0);
+                        }
                         break;
-                        
+
                     case 'quiz':
                         contentContainer.innerHTML = this.renderQuiz(subSlide);
-                        this.attachQuizHandlers(contentContainer, subSlide);
+                        this.attachQuizHandlers(contentContainer, subSlide, topic.title, type, currentSubIndex, markSlideCompleted);
                         break;
-                        
+
                     case 'external':
                         contentContainer.innerHTML = `
                             <div class="external-card">
@@ -599,9 +621,15 @@ class SPARouter {
                                 <a href="${subSlide.link}" target="_blank" class="external-link">Open Project</a>
                             </div>
                         `;
+                        const externalLink = contentContainer.querySelector('.external-link');
+                        if (externalLink) {
+                            externalLink.addEventListener('click', () => {
+                                markSlideCompleted(type, currentSubIndex);
+                            });
+                        }
                         break;
                 }
-                
+
                 counter.textContent = `${currentSubIndex + 1} / ${subSlides.length}`;
                 prevBtn.disabled = currentSubIndex === 0;
                 nextBtn.disabled = currentSubIndex === subSlides.length - 1;
@@ -618,6 +646,7 @@ class SPARouter {
             nextBtn.addEventListener('click', () => {
                 if (currentSubIndex < subSlides.length - 1) {
                     currentSubIndex++;
+                    markSlideCompleted(type, currentSubIndex);
                     renderCurrentSubSlide();
                 }
             });
@@ -651,7 +680,7 @@ class SPARouter {
         `;
     }
 
-    attachQuizHandlers(container, slide) {
+    attachQuizHandlers(container, slide, topicTitle, type, slideIndex, markSlideCompleted) {
         const answers = container.querySelectorAll('.chooseAnswer');
         const correctBox = container.querySelector('#correctExplanation');
         const wrongBox = container.querySelector('#wrongExplanation');
@@ -669,6 +698,10 @@ class SPARouter {
                 
                 // Mark selected answer
                 e.target.classList.add(isCorrect ? 'correct' : 'wrong');
+                
+                if (isCorrect) {
+                    markSlideCompleted(type, slideIndex);
+                }
                 
                 // Show appropriate explanation
                 if (isCorrect) {
