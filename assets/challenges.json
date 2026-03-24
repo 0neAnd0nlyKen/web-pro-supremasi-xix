@@ -6,13 +6,13 @@
       "slides": {
         "material": [
           {
-            "content": "<div class='material-card'><h2>What is JavaScript?</h2><p>JavaScript is a programming language that makes websites interactive.How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? </p><img src='assets/js-logo.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>What is a Platformer Game?</h2><p>Platformer adalah genre game yang berfokus pada lompatan, timing, dan navigasi rintangan. Inti dari platformer adalah kontrol karakter yang responsif, desain level yang menarik, serta tantangan yang menguji ketepatan pemain. Genre ini berkembang sejak era klasik seperti Mario, Mega Man, hingga platformer modern dengan fisika realistis. Platformer mengajarkan fundamental game design seperti movement, collision, pacing, dan reward sistem.</p><img src='assets/platformer1.png' class='slide-image'></div>"
           },
           {
-            "content": "<div class='material-card'><h2>What JavaScript?</h2><p>JavaScript is a programming language that makes websites interactive.How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? </p><img src='assets/js-logo.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>Core Mechanics in Platformer</h2><p>Mekanik inti platformer meliputi movement, jump, double jump, dash, wall slide, hingga grappling hook. Movement yang baik menentukan feel keseluruhan game. Pembuatan mekanik harus memperhatikan gravity, acceleration, friction, dan jump curve. Semakin baik mekanik dasar dirancang, semakin seru pengalaman pemain. Desainer harus menguji setiap gerak hingga terasa natural dan fun.</p><img src='assets/platformer2.png' class='slide-image'></div>"
           },
           {
-            "content": "<div class='material-card'><h2>What is?</h2><p>JavaScript is a programming language that makes websites interactive.How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? How much can you add? </p><img src='assets/js-logo.png' class='slide-image'></div>"
+            "content": "<div class='material-card'><h2>Level Design Principles</h2><p>Pembuatan level platformer melibatkan flow, pacing, tantangan bertahap, dan penempatan rintangan yang adil. Level harus memperkenalkan mekanik baru secara bertahap, memberi ruang eksplorasi, serta menghadirkan tantangan tanpa membuat pemain frustrasi. Teknik seperti teaser, safe zone, reward path, dan hidden area membantu menciptakan pengalaman yang seimbang dan memuaskan.</p><img src='assets/platformer3.png' class='slide-image'></div>"
           }
         ],
         "quiz": [
@@ -61,7 +61,13 @@
       "slides": {
         "material": [
           {
-            "content": "<div class='material-card'><h2>HTML Structure</h2><p>HTML uses tags to structure content on the web.</p><pre>&lt;div&gt;Hello World&lt;/div&gt;</pre></div>"
+            "content": "<div class='material-card'><h2>What is an Adventure Game?</h2><p>Adventure adalah genre yang menekankan eksplorasi, narasi, serta interaksi dengan dunia game. Pemain diajak menjelajah lingkungan yang luas, menemukan rahasia, berinteraksi dengan NPC, dan mengikuti alur cerita yang kuat. Fokus utama genre ini adalah pengalaman emosional dan rasa ingin tahu pemain terhadap dunia yang dibangun.</p><img src='assets/adventure1.png' class='slide-image'></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>Worldbuilding in Adventure Games</h2><p>Worldbuilding menjadi fondasi penting dalam game adventure. Dunia harus terasa hidup: mulai dari lore, budaya, lokasi, sejarah, hingga karakter yang mengisinya. Detail kecil seperti suara lingkungan, desain bangunan, dan interaksi NPC memperkuat imersi pemain. Semakin kaya dunianya, semakin dalam pengalaman pemain dalam berpetualang.</p><img src='assets/adventure2.png' class='slide-image'></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>Quest and Exploration Design</h2><p>Quest dalam game adventure dibagi menjadi main quest dan side quest yang membantu memperluas cerita dunia. Desain quest harus relevan, memiliki tujuan jelas, namun tetap memberi ruang pilihan pemain. Eksplorasi didorong melalui discovery points, puzzles, hidden items, serta dialog NPC yang memberikan petunjuk atau lore tambahan.</p><img src='assets/adventure3.png' class='slide-image'></div>"
           }
         ],
         "quiz": [
@@ -104,7 +110,13 @@
       "slides": {
         "material": [
           {
-            "content": "<div class='material-card'><h2>HTML Structure</h2><p>HTML uses tags to structure content on the web.</p><pre>&lt;div&gt;Hello World&lt;/div&gt;</pre></div>"
+            "content": "<div class='material-card'><h2>What is a Simulation Game?</h2><p>Simulation adalah genre game yang meniru sistem kehidupan nyata, seperti ekonomi, ekosistem, pertanian, bisnis, hingga hubungan sosial. Tujuan utamanya adalah menciptakan dunia yang berjalan dengan logika dan aturan yang konsisten. Pemain mengelola sumber daya, mengambil keputusan, dan melihat hasilnya dalam jangka waktu tertentu.</p><img src='assets/simulation1.png' class='slide-image'></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>Systems and Mechanics in Simulation</h2><p>Setiap game simulasi dibangun dari sistem yang saling terhubung, seperti sistem ekonomi, AI agent, growth system, fatigue system, dan environmental conditions. Kekuatan genre ini ada pada kedalaman mekanik dan keseimbangan sistem. Pemain harus memahami hubungan sebab-akibat dan memanfaatkan mekanik untuk mencapai tujuan.</p><img src='assets/simulation2.png' class='slide-image'></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>Emergent Gameplay in Simulation</h2><p>Salah satu keunikan simulasi adalah munculnya perilaku atau kejadian yang tidak dirancang secara langsung oleh developer, disebut emergent gameplay. Ini terjadi ketika sistem interaktif menghasilkan situasi baru secara alami. Semakin kompleks sistemnya, semakin banyak kejadian unik yang dialami pemain, sehingga membuat game terasa hidup dan dinamis.</p><img src='assets/simulation3.png' class='slide-image'></div>"
           }
         ],
         "quiz":[
@@ -137,7 +149,13 @@
       "slides": {
         "material": [
           {
-            "content": "<div class='material-card'><h2>HTML Structure</h2><p>HTML uses tags to structure content on the web.</p><pre>&lt;div&gt;Hello World&lt;/div&gt;</pre></div>"
+            "content": "<div class='material-card'><h2>What is a Puzzle Game?</h2><p>Puzzle adalah genre game yang menantang logika, pola pikir, dan keterampilan pemecahan masalah pemain. Tujuannya adalah menyelesaikan teka-teki yang membutuhkan strategi, analisis, atau observasi. Genre puzzle dapat bersifat santai, kompetitif, atau bahkan berfokus pada narasi.</p><img src='assets/puzzle1.png' class='slide-image'></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>Puzzle Mechanics and Design</h2><p>Game puzzle dibangun dari mekanik inti seperti matching, pattern recognition, physics interaction, atau logic sequence. Desain puzzle harus memiliki tingkat kesulitan yang bertahap, memiliki solusi yang adil, serta memberi pemain pengalaman aha-moment ketika menemukan jawabannya.</p><img src='assets/puzzle2.png' class='slide-image'></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>Balancing Difficulty in Puzzle Games</h2><p>Tantangan terbesar puzzle adalah menyeimbangkan tingkat kesulitan. Jika terlalu mudah, pemain bosan; terlalu sulit, pemain frustrasi. Teknik seperti hint bertahap, level tutorial, visual cues, dan puzzle layering membantu mengontrol pacing dan membuat pengalaman pemain tetap menyenangkan.</p><img src='assets/puzzle3.png' class='slide-image'></div>"
           }
         ],
         "quiz":[
@@ -170,7 +188,13 @@
       "slides": {
         "material": [
           {
-            "content": "<div class='material-card'><h2>HTML Structure</h2><p>HTML uses tags to structure content on the web.</p><pre>&lt;div&gt;Hello World&lt;/div&gt;</pre></div>"
+            "content": "<div class='material-card'><h2>What is a Cooking Game?</h2><p>Cooking adalah genre game yang berfokus pada aktivitas memasak, menyajikan makanan, dan mengelola dapur atau restoran. Pemain harus mengatur waktu, memilih bahan yang tepat, dan menyelesaikan pesanan pelanggan. Genre ini menggabungkan kecepatan, akurasi, dan kreativitas dalam satu paket.</p><img src='assets/cooking1.png' class='slide-image'></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>Cooking Mechanics and Recipes</h2><p>Mekanik inti meliputi chopping, mixing, frying, boiling, dan plating. Pemain harus mengikuti resep, namun juga diberi ruang untuk bereksperimen menciptakan hidangan baru. Semakin kompleks proses memasak, semakin tinggi nilai strategis dan kepuasan pemain.</p><img src='assets/cooking2.png' class='slide-image'></div>"
+          },
+          {
+            "content": "<div class='material-card'><h2>Restaurant and Customer Management</h2><p>Selain memasak, banyak cooking game menambahkan elemen manajemen restoran: mengatur pelanggan, meningkatkan peralatan, dan mengelola staf. Pelanggan memiliki preferensi, kesabaran, dan kepribadian yang berbeda. Semakin Anda memahami pelanggan, semakin mudah mencapai rating tinggi dan memperbesar usaha kuliner dalam game.</p><img src='assets/cooking3.png' class='slide-image'></div>"
           }
         ],
         "quiz":[
