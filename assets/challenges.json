@@ -23,8 +23,8 @@
             "answerC": "<img src='assets/challenges/platformer/3.png' class='slide-image answers'>",
             "answerD": "<img src='assets/challenges/platformer/4.png' class='slide-image answers'>",
             "rightAnswer": 2,
-            "explanationRight": "<div class='explanation correct'>✅ Correct! var, let, and const are all used to declare variables in JavaScript.</div>",
-            "explanationWrong": "<div class='explanation wrong'>❌ Not quite. The correct answer is 'All of the above'. var, let, and const are all variable declarations.</div>"
+            "explanationRight": "<div class='explanation correct'>✅ Correct!</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Not quite.</div>"
           },
           {
             "question": "<h3>Apa faktor terbesar yang memengaruhi feel movement karakter?</h3>",
@@ -49,7 +49,7 @@
         ],
         "external": [
           {
-            "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+            "content": "<div class='external-card'><h3>Scratch Project: Platformer Basic</h3><img src='assets/challenges/platformer/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
             "link": "https://scratch.mit.edu/projects/12345678"
           }
         ]
@@ -71,7 +71,17 @@
           } 
         ],
         "quiz": [
-        {
+          {
+            "question": "<h3>Apa yang akan terjadi ketika program pada gambar tersebut dijalankan?</h3> <img src='assets/challenges/adventure/c.png' class='slide-image question'>",
+            "answerA": "<img src='assets/challenges/adventure/1.png' class='slide-image answers'>",
+            "answerB": "<img src='assets/challenges/adventure/2.png' class='slide-image answers'>",
+            "answerC": "<img src='assets/challenges/adventure/3.png' class='slide-image answers'>",
+            "answerD": "<img src='assets/challenges/adventure/4.png' class='slide-image answers'>",
+            "rightAnswer": 2,
+            "explanationRight": "<div class='explanation correct'>✅ Correct!</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Not quite.</div>"
+          },
+          {
           "question": "<h3>Apa yang membuat game adventure menarik?</h3>",
           "answerA": "Banyak menu",
           "answerB": "Dunia yang kaya dan eksploratif",
@@ -104,7 +114,7 @@
         ],
         "external": [
           {
-            "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+            "content": "<div class='external-card'><h3>Scratch Project: Adventure Quest</h3><img src='assets/challenges/adventure/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
             "link": "https://scratch.mit.edu/projects/1294925357/"
           }
         ]
@@ -149,7 +159,7 @@
         ],
         "external": [
           {
-            "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+            "content": "<div class='external-card'><h3>Scratch Project: Simulation World</h3><img src='assets/challenges/simulation/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
             "link": "To be continued"
           }
         ]
@@ -171,6 +181,16 @@
           }
         ],
         "quiz":[
+          {
+            "question":"<h3>Sebaiknya menjadi sprite mana kalau sekarang giliran X ?</h3> <img src='assets/challenges/puzzle/c.png' class='slide-image question'>",
+          "answerA": "Switch to cotsume 1",
+          "answerB": "Switch to costume 2",
+          "answerC": "Switch to costume 3",
+          "answerD": "Switch to costume 4",
+          "rightAnswer": 2,
+          "explanationRight": "<div class='explanation correct'>✅ Correct!</div>",
+          "explanationWrong": "<div class='explanation wrong'>❌ Not quite.</div>"
+          },
           {
             "question": "<h3>Puzzle yang baik harus...</h3>",
             "answerA": "Membuat frustrasi",
@@ -194,8 +214,8 @@
         ],
         "external": [
           {
-            "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
-            "link": "To be continued"
+            "content": "<div class='external-card'><h3>Scratch Project: Puzzle Challenge</h3><img src='assets/challenges/puzzle/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
+            "link": "https://scratch.mit.edu/projects/1294998818/"
           }
         ]
       }
@@ -249,7 +269,7 @@
         ],
           "external": [
             {
-              "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+              "content": "<div class='external-card'><h3>Scratch Project: Cooking Challenge</h3><img src='assets/challenges/cooking/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
               "link": "To be continued"
             }
           ] 
@@ -277,6 +297,16 @@
               }
             ],
             "quiz": [
+              {
+                "question": "<h3>Blok di atas menunjukkan perintah if – then yang akan menjalankan aksi tertentu.Apa fungsi utama dari blok ini?</h3> <img src='assets/challenges/racing/c.png' class='slide-image question'>",
+                "answerA": "Memutar sprite tanpa syarat hingga 15 derajat",
+                "answerB": "Memutar sprite 15 derajat hanya jika kondisi terpenuhi",
+                "answerC": "Mengubah warna sprite saat kondisi benar",
+                "answerD": "Menjalankan script lain secara otomatis",
+                "rightAnswer": 2,
+                "explanationRight": "<div class='explanation correct'>✅ Correct!</div>",
+                "explanationWrong": "<div class='explanation wrong'>❌ Not quite.</div>"
+              },
               {
                 "question": "<h3>Apa faktor terpenting dalam desain trek racing?</h3>",
                 "answerA": "Jumlah musuh",
@@ -310,7 +340,7 @@
             ],
               "external": [
                 {
-                  "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+                  "content": "<div class='external-card'><h3>Scratch Project: Racing Championship</h3><img src='assets/challenges/racing/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
                   "link": "https://scratch.mit.edu/projects/1294957058/"
                 }
               ]
@@ -338,6 +368,16 @@
             }
           ],
           "quiz": [
+            {
+              "question": "<h3>Apa yang akan terjadi jika script ini dijalankan?</h3> <img src='assets/challenges/action/c.png' class='slide-image question'>",
+              "answerA": "<img src='assets/challenges/action/1.png' class='slide-image answers'>",
+              "answerB": "<img src='assets/challenges/action/2.png' class='slide-image answers'>",
+              "answerC": "<img src='assets/challenges/action/3.png' class='slide-image answers'>",
+              "answerD": "<img src='assets/challenges/action/4.png' class='slide-image answers'>",
+              "rightAnswer": 1,
+              "explanationRight": "<div class='explanation correct'>✅ Correct!</div>",
+              "explanationWrong": "<div class='explanation wrong'>❌ Not quite.</div>"
+            },
             {
               "question": "<h3>Apa yang paling menentukan kualitas game action?</h3>",
               "answerA": "Kecepatan internet",
@@ -371,7 +411,7 @@
           ],
             "external": [
               {
-                "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+                "content": "<div class='external-card'><h3>Scratch Project: Action Hero</h3><img src='assets/challenges/action/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
                 "link": "https://scratch.mit.edu/projects/1294929270/"
               }
             ]
@@ -399,6 +439,16 @@
           }
         ],
         "quiz": [
+          {
+            "question": "<h3>Apa yang akan terjadi jika script ini dijalankan?</h3> <img src='assets/challenges/dress-up/c.png' class='slide-image question'>",
+            "answerA": "<img src='assets/challenges/dress-up/1.png' class='slide-image answers'>",
+            "answerB": "<img src='assets/challenges/dress-up/2.png' class='slide-image answers'>",
+            "answerC": "<img src='assets/challenges/dress-up/3.png' class='slide-image answers'>",
+            "answerD": "<img src='assets/challenges/dress-up/4.png' class='slide-image answers'>",
+            "rightAnswer": 3,
+            "explanationRight": "<div class='explanation correct'>✅ Correct!</div>",
+            "explanationWrong": "<div class='explanation wrong'>❌ Not quite.</div>"
+          },
           {
             "question": "<h3>Apa elemen terpenting dalam game dress-up?</h3>",
             "answerA": "Senjata besar",
@@ -432,8 +482,8 @@
         ],
           "external": [
             {
-              "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
-              "link": "To be continued"
+              "content": "<div class='external-card'><h3>Scratch Project: Fashion Designer</h3><img src='assets/challenges/dress-up/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
+              "link": "https://scratch.mit.edu/projects/1294986450/"
             }
           ]
       }
@@ -493,7 +543,7 @@
           ],
             "external": [
               {
-                "content": "<div class='external-card'><h3>Scratch Project: Interactive Story</h3><p>Click below to open the project:</p></div>",
+                "content": "<div class='external-card'><h3>Scratch Project: Arcade Master</h3><img src='assets/challenges/arcade/b.png' class='external-card-image'><p>Click below to open the project:</p></div>",
                 "link": "https://scratch.mit.edu/projects/1294932057/"
               }
              ]
