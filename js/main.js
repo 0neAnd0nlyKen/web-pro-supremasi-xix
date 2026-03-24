@@ -324,43 +324,72 @@ class SPARouter {
 
                     const commentsList = gameContainer.querySelector('.comments-list');
                     if (commentsList) {
-                        commentsList.innerHTML = '';
+                        const commentsCountDisplay = commentsCountEl || document.createElement('div');
+                        commentsCountDisplay.className = 'comments-count';
 
-                        const reviewsEl = document.createElement('div');
-                        reviewsEl.className = 'reviews';
+                        const renderComments = () => {
+                            commentsList.innerHTML = '';
 
-                        const reviews = Array.isArray(gameInfo.reviews) ? gameInfo.reviews : [];
-                        reviews.forEach((review) => {
-                            const reviewEl = document.createElement('div');
-                            reviewEl.className = 'review';
-                            reviewEl.innerHTML = `
-                                <strong>${review.reviewtitle || 'Untitled review'}</strong>
-                                <p>${review.reviewbody || ''}</p>
-                                <small>by ${review.reviewer || 'Anonymous'} on ${review.reviewdate || 'unknown date'}</small>
+                            const reviewsEl = document.createElement('div');
+                            reviewsEl.className = 'reviews';
+
+                            const comments = gameInfo.reviews;
+                            if(Array.isArray(this.comments[gameId])) comments.push(...this.comments[gameId]);
+                            else this.comments[gameId] = [];
+                            
+                            // comments.concat(this.comments[gameId]? this.comments[gameId] : []);
+                            if (comments.length > 0) {
+                                comments.forEach((review) => {
+                                    const reviewEl = document.createElement('div');
+                                    reviewEl.className = 'review';
+                                    reviewEl.innerHTML = `
+                                        <strong>${review.reviewtitle || 'Untitled review'}</strong>
+                                        <p>${review.reviewbody || ''}</p>
+                                        <small>by ${review.reviewer || 'Anonymous'} on ${review.reviewdate || 'unknown date'}</small>
+                                    `;
+                                    reviewsEl.appendChild(reviewEl);
+                                });
+                            } else {
+                                const emptyReview = document.createElement('div');
+                                emptyReview.className = 'review';
+                                emptyReview.textContent = 'No reviews available.';
+                                reviewsEl.appendChild(emptyReview);
+                            }
+
+                            commentsList.appendChild(reviewsEl);
+
+                            commentsCountDisplay.textContent = `${comments.length} review${comments.length === 1 ? '' : 's'}`;
+                            commentsList.appendChild(commentsCountDisplay);
+
+                            const commentForm = document.createElement('form');
+                            commentForm.className = 'comment-form';
+                            commentForm.innerHTML = `
+                                <input type="text" class="comment-input" placeholder="Write a comment..." aria-label="Write a comment" />
+                                <button type="submit">Post</button>
                             `;
-                            reviewsEl.appendChild(reviewEl);
-                        });
 
-                        if (!reviews.length) {
-                            const emptyReview = document.createElement('div');
-                            emptyReview.className = 'review';
-                            emptyReview.textContent = 'No reviews available.';
-                            reviewsEl.appendChild(emptyReview);
-                        }
+                            const inputEl = commentForm.querySelector('.comment-input');
 
-                        commentsList.appendChild(reviewsEl);
+                            commentForm.addEventListener('submit', (event) => {
+                                event.preventDefault();
+                                const text = inputEl.value.trim();
+                                if (!text) return;
 
-                        const commentsCount = document.createElement('div');
-                        commentsCount.className = 'comments-count';
-                        commentsCount.textContent = `${reviews.length} reviews`;
-                        commentsList.appendChild(commentsCount);
+                                this.comments[gameId].push({
+                                    reviewtitle: 'User comment',
+                                    reviewbody: text,
+                                    reviewer: 'You',
+                                    reviewdate: new Date().toLocaleString()
+                                });
 
-                        const commentForm = document.createElement('form');
-                        commentForm.innerHTML = `
-                            <input type="text" placeholder="Write a comment..." />
-                            <button type="submit">Post</button>
-                        `;
-                        commentsList.appendChild(commentForm);
+                                inputEl.value = '';
+                                renderComments();
+                            });
+
+                            commentsList.appendChild(commentForm);
+                        };
+
+                        renderComments();
                     }
 
                     gamesFeed.appendChild(gameContainer);
